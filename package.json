@@ -1,0 +1,18 @@
+{
+  "name": "blackjack-1011",
+  "version": "0.0.0",
+  "description": "Web-based blackjack game",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "start": "npx http-server . --port 3000"
+  },
+  "keywords": [],
+  "author": "Hajime Yamasaki Vukelic <hajime@yamasakivukelic.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.4"
+  }
+}

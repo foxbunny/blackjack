@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" media="screen" href="index.screen.css">
+
+		<script type="module" src="index.client.js"></script>
+
+		<title>Blackjack 1011</title>
+	</head>
+	<body>
+		<h1>Balackjack 1011</h1>
+
+		<noscript>
+			<h2>This game requires JavaScript</h2>
+
+			<p>
+				This game needs a browser with JavaScript support. Please enable JavaScript or use a
+				different browser.
+			</p>
+		</noscript>
+
+		<main id="initial-screen" aria-labelledby="new-game">
+			<h2 id="new-game">New game</h2>
+
+			<button id="start-game">Start a new game</button>
+		</main>
+
+		<main id="game-screen" aria-labelledby="table" hidden>
+			<h2 id="table">Table</h2>
+
+			<div role="region" aria-labelledby="points">
+				<h3>Points</h3>
+
+				<div id="dealer-points">
+					<span>Dealer:</span>
+					<span></span>
+				</div>
+				<div id="player-points">
+					<span>Player:</span>
+					<span></span>
+				</div>
+			</div>
+
+			<div role="region" aria-labelledby="dealers-hand">
+				<h3 id="dealers-hand">Dealer's hand</h3>
+				<ul id="dealer-cards"></ul>
+			</div>
+
+			<div role="region" aria-labelledby="players-hand">
+				<h3 id="players-hand">Your hand</h3>
+				<ul id="player-cards"></ul>
+			</div>
+
+			<div role="region" aria-labelledby="actions" hidden>
+				<h2 id="actions">Your next move</h2>
+
+				<div>
+					<button value="stay">Stay</button>
+					<button value="hit">Hit</button>
+				</div>
+			</div>
+		</main>
+
+		<template data-name="card">
+			<li data-slot="card">
+				<span data-slot="value"></span>
+				of
+				<span data-slot="suit"></span>
+			</li>
+		</template>
+	</body>
+</html>
