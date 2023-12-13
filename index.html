@@ -54,7 +54,7 @@
 				<ul id="player-cards"></ul>
 			</div>
 
-			<div role="region" aria-labelledby="actions" hidden>
+			<div id="player-actions" role="region" aria-labelledby="actions" hidden>
 				<h2 id="actions">Your next move</h2>
 
 				<div>
@@ -62,6 +62,8 @@
 					<button value="hit">Hit</button>
 				</div>
 			</div>
+
+			<div id="outcome" aria-live="polite"></div>
 		</main>
 
 		<template data-name="card">
