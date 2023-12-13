@@ -4,15 +4,24 @@
   "description": "Web-based blackjack game",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test",
-    "test:ui": "playwright test --ui",
+    "test:behavior": "playwright test",
+    "test:behavior:ui": "playwright test --ui",
+    "test:libs": "mocha",
+    "test": "npm test:libs && npm test:behavior",
     "start": "npx http-server . --port 3000"
   },
+  "type": "module",
   "keywords": [],
   "author": "Hajime Yamasaki Vukelic <hajime@yamasakivukelic.com>",
   "license": "UNLICENSED",
   "devDependencies": {
     "@playwright/test": "^1.40.1",
-    "@types/node": "^20.10.4"
+    "@types/node": "^20.10.4",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
+  },
+  "mocha": {
+    "spec": "**/*.test.js",
+    "parallel": true
   }
 }

@@ -1,10 +1,10 @@
 import {test, expect} from '@playwright/test'
-import {getCardList, startGame, rigTheDeck} from './shared'
+import {getCardList, startGame, await rigTheDeck} from './shared'
 
 test(
 	'When I start a game, dealer deals two cards to me, and two cards to them',
 	async function ({page, context}) {
-		rigTheDeck(context, [
+		await rigTheDeck(context, [
 			{suit: 'spade', value: 2},
 			{suit: 'heart', value: 9},
 			{suit: 'club', value: 1},
@@ -19,7 +19,7 @@ test(
 test(
 	'When the dealer deails the second card to themselves, it should be a hole',
 	async function ({page, context}) {
-		rigTheDeck(context, [
+		await rigTheDeck(context, [
 			{suit: 'spade', value: 2},
 			{suit: 'heart', value: 9},
 			{suit: 'club', value: 1},
@@ -34,7 +34,7 @@ test(
 test(
 	'When the dealer deals the cards, I can choose to either hit or stay',
 	async function ({page, context}) {
-		rigTheDeck(context, [
+		await rigTheDeck(context, [
 			{suit: 'spade', value: 2},
 			{suit: 'heart', value: 9},
 			{suit: 'club', value: 1},
@@ -47,9 +47,23 @@ test(
 )
 
 test(
+	'When the dealer deals the cards, I can see mine and the dealer\'s scores.',
+	async function ({page, context}) {
+		await rigTheDeck(context, [
+			{suit: 'spade', value: 2},
+			{suit: 'heart', value: 9},
+			{suit: 'club', value: 1},
+			{suit: 'spade', value: 12},
+		])
+		await startGame(page)
+
+	},
+)
+
+test(
 	'When the dealer deals the cards, and I get a blackjack, I win if the dealer does not get a blackjack',
 	async function ({page, context}) {
-		rigTheDeck(context, [
+		await rigTheDeck(context, [
 			{suit: 'spade', value: 13},
 			{suit: 'heart', value: 9},
 			{suit: 'club', value: 1},

@@ -1,31 +1,27 @@
 export function createDeck() {
 	let cards = []
 
-	for (let value = 0; value++ < 13;) cards.push(
-		{suit: 'spade', value},
-		{suit: 'heart', value},
-		{suit: 'club', value},
-		{suit: 'diamond', value},
-	)
+	shuffle()
 
-	{ // shuffle -->
-		let shuffled = []
-		while (cards.length) shuffled.push(pickRandomCard(cards))
-		cards = shuffled
-	} // <-- shuffle
+	function shuffle() {
+		let newCards = []
 
-	cards.push(
-		{suit: 'spade', value: 12},
-		{suit: 'spade', value: 1},
-		{suit: 'spade', value: 12},
-		{suit: 'spade', value: 12},
-	)
+		for (let value = 0; value++ < 13;) newCards.push(
+			{suit: 'spade', value},
+			{suit: 'heart', value},
+			{suit: 'club', value},
+			{suit: 'diamond', value},
+		)
+
+		while (newCards.length) cards.push(pickRandomCard(newCards))
+	}
 
 	function pickRandomCard(cards) {
 		return cards.splice(Math.round(Math.random() * (cards.length - 1)), 1)[0]
 	}
 
 	function draw() {
+		if (!cards.length) shuffle()
 		return cards.pop()
 	}
 
