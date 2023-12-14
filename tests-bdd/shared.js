@@ -1,9 +1,9 @@
 import path from 'node:path'
 import url from 'node:url'
-import {fileURLToPath} from 'url'
-import shuffledDeck from './fixtures/shuffled-deck.json'
-import unshuffledDeck from './fixtures/unshuffled-deck.json'
+import shuffledDeck from './fixtures/shuffled-deck.json' assert {type: 'json'}
+import unshuffledDeck from './fixtures/unshuffled-deck.json' assert {type: 'json'}
 
+let __dirname = path.dirname(url.fileURLToPath(import.meta.url))
 let mocksDir = path.resolve(__dirname, '..', 'mocks')
 
 export function getCardList(page, label) {
@@ -16,12 +16,23 @@ export async function rigTheDeck(context, cards) {
 	}, cards)
 }
 
-export async function startGame(page) {
+export async function startGame(page, options = {}) {
 	// Shorten the timeout for faster tests
 	await page.addInitScript(`{
-		let setTimeoutOrig = setTimeout
-		window.setTimeout = function (callback, timeout, ...args) {
-			setTimeoutOrig(callback, 1, ...args)
+		let _setTimeout = setTimeout
+		let timersStopped = ${!!options?.stopTimers}
+		let timerCallbacks = []
+		window.__runTimers = function () {
+			// NB: Copy because executing a callback may run code that adds new timers
+			let timersToRun = [...timerCallbacks]
+			for (let {callback, args} of timersToRun) callback(...args)
+		}
+		window.setTimeout = function (callback, _ignored, ...args) {
+			if (timersStopped)
+				timerCallbacks.push({callback, args}) 
+			else 
+				// NB: Speed up timeouts by using 1ms delay
+				_setTimeout(callback, 1, ...args)
 		}
 	}`)
 
@@ -35,6 +46,14 @@ export async function startGame(page) {
 	// Go to the page and start the game
 	await page.goto('/')
 	await page.getByRole('button', {name: 'Start a new game'}).click()
+
+	async function runTimers() {
+		await page.evaluate(`__runTimers()`)
+	}
+
+	return {
+		runTimers,
+	}
 }
 
 export {

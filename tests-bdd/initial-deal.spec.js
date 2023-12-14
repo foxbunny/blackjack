@@ -1,5 +1,5 @@
 import {test, expect} from '@playwright/test'
-import {getCardList, startGame, await rigTheDeck} from './shared'
+import {getCardList, startGame, rigTheDeck} from './shared'
 
 test(
 	'When I start a game, dealer deals two cards to me, and two cards to them',
@@ -56,7 +56,8 @@ test(
 			{suit: 'spade', value: 12},
 		])
 		await startGame(page)
-
+		await expect(page.getByText('Dealer: 9')).toBeVisible()
+		await expect(page.getByText('Player: 13')).toBeVisible()
 	},
 )
 
@@ -69,9 +70,29 @@ test(
 			{suit: 'club', value: 1},
 			{suit: 'spade', value: 12},
 		])
-		await startGame(page)
+		let {runTimers} = await startGame(page, {stopTimers: true})
+		await expect(page.getByText('You have blackjack!')).toBeVisible()
+		await runTimers()
 		await expect(page.getByRole('button', {name: 'Hit'})).toBeHidden()
 		await expect(page.getByRole('button', {name: 'Stay'})).toBeHidden()
 		await expect(page.getByText('Blackjack, you win!')).toBeVisible()
+	},
+)
+
+test(
+	'When the dealer deals the cards, and I both the dealer and I get blackjacks, it\'s a push.',
+	async function ({page, context}) {
+		await rigTheDeck(context, [
+			{suit: 'spade', value: 13},
+			{suit: 'heart', value: 1},
+			{suit: 'club', value: 1},
+			{suit: 'spade', value: 12},
+		])
+		let {runTimers} = await startGame(page, {stopTimers: true})
+		await expect(page.getByText('You have blackjack!')).toBeVisible()
+		await runTimers()
+		await expect(page.getByRole('button', {name: 'Hit'})).toBeHidden()
+		await expect(page.getByRole('button', {name: 'Stay'})).toBeHidden()
+		await expect(page.getByText('It\'s a push')).toBeVisible()
 	},
 )

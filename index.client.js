@@ -27,32 +27,13 @@ let Blackjack = (function () {
 	let PLAYERS_TURN = 'player\'s turn'
 	let PLAYER_WINS_WITH_BLACKJACK = 'player wins with blackjack'
 	let ITS_A_PUSH = 'it\'s a push'
+	let ITS_A_BUST = 'it\'s a bust'
 
-	function calculateHandValue(cards) {
-		let lowValue = 0
-		let highValue = 0
+	// Actions
+	let HIT = 'hit'
+	let STAY = 'stay'
 
-		for (let card of cards) switch (card.value) {
-			case 1:
-				lowValue += 1
-				highValue += 11
-				break
-			case 11:
-			case 12:
-			case 13:
-				lowValue += 10
-				highValue += 10
-				break
-			default:
-				lowValue += card.value
-				highValue += card.value
-		}
-
-		if (highValue > 21) return lowValue
-		else return highValue
-	}
-
-	function createHand() {
+	function createPlayerHand() {
 		let cards = []
 
 		function addCard(card) {
@@ -63,65 +44,98 @@ let Blackjack = (function () {
 			return cards
 		}
 
-		function getValue() {
-			return calculateHandValue(cards)
+		return {
+			addCard,
+			getCards,
+		}
+	} // <-- createPlayerHand
+
+	function createDealerHand() {
+		let cards = []
+		let holeShown = false
+
+		function addCard(card) {
+			if (cards.length == 1) cards[1] = {suit: 'hole', value: 0, actual: card}
+			else cards.push(card)
+		}
+
+		function getCards() {
+			return cards
+		}
+
+		function revealHole() {
+			cards[1] = cards[1].actual
+			revealHole = function () {}
 		}
 
 		return {
 			addCard,
 			getCards,
-			getValue,
+			revealHole,
 		}
-	} // <-- createHand
+	} // <-- createDealerHand
 
-	function createDealerHand() {
-		let hand = createHand()
-
-		let holeCard
-		let holeShown = false
-
-		function addCard(card) {
-			if (hand.getCards().length == 1) holeCard = card
-			else hand.addCard(card)
-		}
-
-		function getCards() {
-			if (!holeCard) return hand.getCards()
-
-			let [firstCard, ...otherCards] = hand.getCards()
-
-			if (holeShown) return [firstCard, holeCard, ...otherCards]
-			return [firstCard, {suit: 'hole'}, ...otherCards]
-		}
-
-		function revealHole() {
-			holeShown = true
-		}
-
+	function createHandWithValue(hand) {
 		function getValue() {
-			if (holeShown) return calculateHandValue([holeCard, ...hand.getCards()])
-			return calculateHandValue(hand.getCards())
+			let lowValue = 0
+			let highValue = 0
+			let cards = hand.getCards()
+
+			if (!cards.length) return 0
+
+			for (let card of cards) {
+				switch (card.value) {
+					case 1:
+						lowValue += 1
+						highValue += 11
+						break
+					case 11:
+					case 12:
+					case 13:
+						lowValue += 10
+						highValue += 10
+						break
+					default:
+						lowValue += card.value
+						highValue += card.value
+				}
+			}
+
+			if (highValue > 21) return lowValue
+			else return highValue
+		}
+
+		function isBlackjack() {
+			return hand.getCards().length == 2 && getValue() == 21
+		}
+
+		function isBust() {
+			return getValue() > 21
 		}
 
 		return {
 			...hand,
-			addCard,
-			getCards,
-			revealHole,
 			getValue,
+			isBlackjack,
+			isBust,
 		}
-	} // <-- createDealerHand
+	} // <-- createHandWithValue
 
 	function* createRound(deck) {
-		let playerHand = createHand()
-		let dealerHand = createDealerHand()
+		// Use 'return' to end the round
+		// yield a game event to let the application take control
+
+		let playerHand = createHandWithValue(createPlayerHand())
+		let dealerHand = createHandWithValue(createDealerHand())
 		let outcome = ''
 
 		function createGameEvent(eventName) {
 			return {
 				event: eventName,
 				dealerCards: dealerHand.getCards(),
+				dealerHandValue: dealerHand.getValue(),
 				playerCards: playerHand.getCards(),
+				playerHandValue: playerHand.getValue(),
 				outcome,
 			}
 		} // <-- createGameEvent
@@ -144,19 +158,32 @@ let Blackjack = (function () {
 		dealerHand.addCard(deck.draw())
 		yield createGameEvent(DEAL_TO_DEALER)
 
-		if (playerHand.getValue() == 21) { // Blackjack or push?
+		if (playerHand.isBlackjack()) { // Blackjack or push?
 			yield createGameEvent(PLAYER_HAS_BLACKJACK)
 
 			dealerHand.revealHole()
 			yield createGameEvent(DEALER_REVEALS_HOLE)
 
-			if (dealerHand.getValue() == 21) // push
+			if (dealerHand.isBlackjack()) // push
 				yield createGameEvent(ITS_A_PUSH)
 			else
 				yield createGameEvent(PLAYER_WINS_WITH_BLACKJACK)
+
+			return
 		}
-		else { // Continue...
-			yield createGameEvent(PLAYERS_TURN)
+
+		// Continue...
+		while (true) {
+			let action = yield createGameEvent(PLAYERS_TURN)
+			if (action == STAY) break
+
+			playerHand.addCard(deck.draw())
+			yield createGameEvent(DEAL_TO_PLAYER)
+
+			if (playerHand.isBust()) {
+				yield createGameEvent(ITS_A_BUST)
+				return
+			}
 		}
 	} // <-- createRound
 
@@ -182,6 +209,7 @@ let Blackjack = (function () {
 
 	return {
 		createGame,
+
 		NEW_ROUND,
 		DEAL_TO_PLAYER,
 		DEAL_TO_DEALER,
@@ -189,6 +217,7 @@ let Blackjack = (function () {
 		DEALER_REVEALS_HOLE,
 		PLAYER_WINS_WITH_BLACKJACK,
 		ITS_A_PUSH,
+		ITS_A_BUST,
 		PLAYERS_TURN,
 	}
 }()) // <-- Blackjack
@@ -206,7 +235,9 @@ gameScreen({
 	elements: {
 		region: document.getElementById('game-screen'),
 		dealerCards: document.getElementById('dealer-cards'),
+		dealerHandValue: document.getElementById('dealer-hand-value'),
 		playerCards: document.getElementById('player-cards'),
+		playerHandValue: document.getElementById('player-hand-value'),
 		cardTemplate: document.querySelector('template[data-name=card]').content,
 		playerActions: document.getElementById('player-actions'),
 		outcome: document.getElementById('outcome'),
@@ -233,53 +264,82 @@ function gameScreen(options) {
 
 	bus.on('startGame', startGame)
 
-	function handleGameEvent(gameState) {
-		switch (gameState.event) {
-			case gameFlow.NEW_ROUND:
-				hidePlayerActions()
-				game.advance()
-				break
+	elements.playerActions.addEventListener('click', performPlayerAction)
 
-			case gameFlow.DEAL_TO_PLAYER:
-				renderNextPlayerCard(gameState.playerCards.at(-1))
-				game.advance()
-				break
+	function performPlayerAction(ev) {
+		let action = ev.target.closest('button').dataset.action
+		game.advance(action)
+	}
 
-			case gameFlow.DEAL_TO_DEALER:
-				renderNextDealerCard(gameState.dealerCards.at(-1))
-				game.advance()
-				break
-
-			case gameFlow.DEALER_REVEALS_HOLE:
-				revealHoleCard(gameState.dealerCards[1])
-				game.advance()
-				break
-
-			case gameFlow.PLAYER_HAS_BLACKJACK:
-				renderPlayerHasBlackjack()
-				setTimeout(game.advance, PAUSE_FOR_MESSAGE)
-				break
-
-			case gameFlow.PLAYER_WINS_WITH_BLACKJACK:
-				renderPlayerWinsWithBlackjack()
-				setTimeout(game.advance, PAUSE_FOR_MESSAGE)
-				break
-
-			case gameFlow.ITS_A_PUSH:
-				renderItsAPush()
-				setTimeout(game.advance, PAUSE_FOR_MESSAGE)
-				break
-
-			case gameFlow.PLAYERS_TURN:
-				showPlayerActions()
-				break
-		}
-	} // <-- handleGameEvent
+	function advanceGameAfterPause() {
+		setTimeout(game.advance, PAUSE_FOR_MESSAGE)
+	}
 
 	function startGame() {
 		elements.region.hidden = false
 		game = gameFlow.createGame(handleGameEvent)
 		game.advance()
+	}
+
+	function handleGameEvent(gameState) {
+		switch (gameState.event) {
+			case gameFlow.NEW_ROUND:
+				hidePlayerActions()
+				clearTable()
+				clearMessage()
+				renderPlayerHandValue(0)
+				renderDealerHandValue(0)
+				game.advance()
+				break
+
+			case gameFlow.DEAL_TO_PLAYER:
+				renderNextPlayerCard(gameState.playerCards.at(-1))
+				renderPlayerHandValue(gameState.playerHandValue)
+				game.advance()
+				break
+
+			case gameFlow.DEAL_TO_DEALER:
+				renderNextDealerCard(gameState.dealerCards.at(-1))
+				renderDealerHandValue(gameState.dealerHandValue)
+				game.advance()
+				break
+
+			case gameFlow.DEALER_REVEALS_HOLE:
+				revealHoleCard(gameState.dealerCards[1])
+				renderDealerHandValue(gameState.dealerHandValue)
+				game.advance()
+				break
+
+			case gameFlow.PLAYER_HAS_BLACKJACK:
+				renderPlayerHasBlackjack()
+				advanceGameAfterPause()
+				break
+
+			case gameFlow.PLAYER_WINS_WITH_BLACKJACK:
+				renderPlayerWinsWithBlackjack()
+				advanceGameAfterPause()
+				break
+
+			case gameFlow.ITS_A_PUSH:
+				renderItsAPush()
+				advanceGameAfterPause()
+				break
+
+			case gameFlow.PLAYERS_TURN:
+				showPlayerActions()
+				break
+
+			case gameFlow.ITS_A_BUST:
+				hidePlayerActions()
+				renderPlayerBusts()
+				advanceGameAfterPause()
+				break
+		}
+	} // <-- handleGameEvent
+
+	function clearTable() {
+		for (let card of elements.region.querySelectorAll('[data-slot=card]'))
+			card.remove()
 	}
 
 	function renderNextDealerCard(card) {
@@ -302,12 +362,28 @@ function gameScreen(options) {
 		})
 	}
 
+	function renderPlayerHandValue(value) {
+		elements.playerHandValue.textContent = value
+	}
+
+	function renderDealerHandValue(value) {
+		elements.dealerHandValue.textContent = value
+	}
+
+	function clearMessage() {
+		outcome.textContent = ''
+	}
+
 	function renderPlayerHasBlackjack() {
 		outcome.textContent = 'You have blackjack!'
 	}
 
 	function renderPlayerWinsWithBlackjack() {
 		outcome.textContent = 'Blackjack, you win!'
+	}
+
+	function renderPlayerBusts() {
+		outcome.textContent = 'It\'s a bust'
 	}
 
 	function renderItsAPush() {
