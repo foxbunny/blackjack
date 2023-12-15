@@ -33,53 +33,10 @@ let Blackjack = (function () {
 	let HIT = 'hit'
 	let STAY = 'stay'
 
-	function createPlayerHand() {
-		let cards = []
-
-		function addCard(card) {
-			cards.push(card)
-		}
-
-		function getCards() {
-			return cards
-		}
-
-		return {
-			addCard,
-			getCards,
-		}
-	} // <-- createPlayerHand
-
-	function createDealerHand() {
-		let cards = []
-		let holeShown = false
-
-		function addCard(card) {
-			if (cards.length == 1) cards[1] = {suit: 'hole', value: 0, actual: card}
-			else cards.push(card)
-		}
-
-		function getCards() {
-			return cards
-		}
-
-		function revealHole() {
-			cards[1] = cards[1].actual
-			revealHole = function () {}
-		}
-
-		return {
-			addCard,
-			getCards,
-			revealHole,
-		}
-	} // <-- createDealerHand
-
-	function createHandWithValue(hand) {
+	function createHandValueCalculator(cards) {
 		function getValue() {
 			let lowValue = 0
 			let highValue = 0
-			let cards = hand.getCards()
 
 			if (!cards.length) return 0
 
@@ -106,7 +63,7 @@ let Blackjack = (function () {
 		}
 
 		function isBlackjack() {
-			return hand.getCards().length == 2 && getValue() == 21
+			return cards.length == 2 && getValue() == 21
 		}
 
 		function isBust() {
@@ -114,19 +71,64 @@ let Blackjack = (function () {
 		}
 
 		return {
-			...hand,
 			getValue,
 			isBlackjack,
 			isBust,
 		}
 	} // <-- createHandWithValue
 
+	function createPlayerHand() {
+		let cards = []
+		let handValues = createHandValueCalculator(cards)
+
+		function addCard(card) {
+			cards.push(card)
+		}
+
+		function getCards() {
+			return cards
+		}
+
+		return {
+			...handValues,
+			addCard,
+			getCards,
+		}
+	} // <-- createPlayerHand
+
+	function createDealerHand() {
+		let cards = []
+		let holeShown = false
+		let handValues = createHandValueCalculator(cards)
+
+		function addCard(card) {
+			if (cards.length == 1) cards[1] = {suit: 'hole', value: 0, actual: card}
+			else cards.push(card)
+		}
+
+		function getCards() {
+			return cards
+		}
+
+		function revealHole() {
+			cards[1] = cards[1].actual
+			revealHole = function () {}
+		}
+
+		return {
+			...handValues,
+			addCard,
+			getCards,
+			revealHole,
+		}
+	} // <-- createDealerHand
+
 	function* createRound(deck) {
 		// Use 'return' to end the round
 		// yield a game event to let the application take control
 
-		let playerHand = createHandWithValue(createPlayerHand())
-		let dealerHand = createHandWithValue(createDealerHand())
+		let playerHand = createPlayerHand()
+		let dealerHand = createDealerHand()
 		let outcome = ''
 
 		function createGameEvent(eventName) {
