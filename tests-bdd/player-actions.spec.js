@@ -1,20 +1,12 @@
 import {test, expect} from '@playwright/test'
-import {startGame, rigTheDeck} from './shared'
-
-async function getCardList(page, handLabel) {
-	return await page.getByRole('region', {name: handLabel})
-		.getByRole('listitem')
-		.evaluateAll(function (cardNodes) {
-			let cardNames = []
-			for (let node of cardNodes) cardNames.push(
-				node.textContent.replace(/\s+/g, ' ').trim(),
-			)
-			return cardNames
-		})
-}
+import {startGame, rigTheDeck, getCardListAsText, getCardList} from './shared'
 
 function getPlayerCardList(page) {
-	return getCardList(page, 'Your hand')
+	return getCardListAsText(page, 'Your hand')
+}
+
+function getDealerCardList(page) {
+	return getCardListAsText(page, 'Dealer\'s hand')
 }
 
 test(
@@ -64,12 +56,15 @@ test(
 	'When I bust, a new round starts shortly',
 	async function ({page, context}) {
 		await rigTheDeck(context, [
+			// Initial deal
 			{suit: 'spade', value: 2},
 			{suit: 'heart', value: 9},
 			{suit: 'club', value: 1},
 			{suit: 'spade', value: 12},
+			// Hits
 			{suit: 'spade', value: 11},
 			{suit: 'heart', value: 9},
+			// Next round
 			{suit: 'club', value: 2},
 			{suit: 'diamond', value: 3},
 			{suit: 'spade', value: 4},
@@ -80,8 +75,8 @@ test(
 		await page.getByRole('button', {name: 'Hit'}).click()
 		await expect(page.getByText('It\'s a bust')).toBeVisible()
 		await runTimers()
-		await expect(await getCardList(page, 'Dealer\'s hand')).toHaveLength(2)
-		await expect(await getCardList(page, 'Your hand')).toHaveLength(2)
+		await expect(await getPlayerCardList(page)).toHaveLength(2)
+		await expect(await getDealerCardList(page)).toHaveLength(2)
 		await expect(page.getByText('It\'s a bust')).toBeHidden()
 	},
 )

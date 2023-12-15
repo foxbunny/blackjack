@@ -25,9 +25,13 @@ let Blackjack = (function () {
 	let PLAYER_HAS_BLACKJACK = 'player has backjack'
 	let DEALER_REVEALS_HOLE = 'dealer reveals hole'
 	let PLAYERS_TURN = 'player\'s turn'
-	let PLAYER_WINS_WITH_BLACKJACK = 'player wins with blackjack'
+	let DEALERS_TURN = 'dealer\'s turn'
 	let ITS_A_PUSH = 'it\'s a push'
 	let ITS_A_BUST = 'it\'s a bust'
+	let PLAYER_WINS_WITH_BLACKJACK = 'player wins with blackjack'
+	let PLAYER_WINS_WITH_DEALER_BUST = 'player wins with dealer bust'
+	let DEALER_WINS = 'dealer wins'
+	let PLAYER_WINS = 'player wins'
 
 	// Actions
 	let HIT = 'hit'
@@ -124,8 +128,8 @@ let Blackjack = (function () {
 	} // <-- createDealerHand
 
 	function* createRound(deck) {
-		// Use 'return' to end the round
-		// yield a game event to let the application take control
+		// Use `return` to end the round
+		// `yield` a game event to let the application take control
 
 		let playerHand = createPlayerHand()
 		let dealerHand = createDealerHand()
@@ -174,19 +178,51 @@ let Blackjack = (function () {
 			return
 		}
 
-		// Continue...
+		// Player's turn
+
 		while (true) {
 			let action = yield createGameEvent(PLAYERS_TURN)
-			if (action == STAY) break
 
-			playerHand.addCard(deck.draw())
-			yield createGameEvent(DEAL_TO_PLAYER)
+			if (action != HIT) break
 
-			if (playerHand.isBust()) {
-				yield createGameEvent(ITS_A_BUST)
-				return
-			}
+			 playerHand.addCard(deck.draw())
+			 yield createGameEvent(DEAL_TO_PLAYER)
+			 if (playerHand.isBust()) {
+				  yield createGameEvent(ITS_A_BUST)
+				  return
+			 }
 		}
+
+		// Dealer's turn
+
+		yield createGameEvent(DEALERS_TURN)
+
+		dealerHand.revealHole()
+		yield createGameEvent(DEALER_REVEALS_HOLE)
+
+		while (dealerHand.getValue() < 17) {
+			dealerHand.addCard(deck.draw())
+			yield createGameEvent(DEAL_TO_DEALER)
+		}
+
+		// Final outcome
+
+		if (dealerHand.isBust()) {
+			yield createGameEvent(PLAYER_WINS_WITH_DEALER_BUST)
+			return
+		}
+
+		if (dealerHand.getValue() > playerHand.getValue()) {
+			yield createGameEvent(DEALER_WINS)
+			return
+		}
+
+		if (dealerHand.getValue() < playerHand.getValue()) {
+			yield createGameEvent(PLAYER_WINS)
+			return
+		}
+
+		yield createGameEvent(ITS_A_PUSH)
 	} // <-- createRound
 
 	function createGame(eventHandler) {
@@ -217,10 +253,14 @@ let Blackjack = (function () {
 		DEAL_TO_DEALER,
 		PLAYER_HAS_BLACKJACK,
 		DEALER_REVEALS_HOLE,
-		PLAYER_WINS_WITH_BLACKJACK,
+		PLAYERS_TURN,
+		DEALERS_TURN,
 		ITS_A_PUSH,
 		ITS_A_BUST,
-		PLAYERS_TURN,
+		PLAYER_WINS_WITH_BLACKJACK,
+		PLAYER_WINS_WITH_DEALER_BUST,
+		DEALER_WINS,
+		PLAYER_WINS,
 	}
 }()) // <-- Blackjack
 
@@ -269,7 +309,7 @@ function gameScreen(options) {
 	elements.playerActions.addEventListener('click', performPlayerAction)
 
 	function performPlayerAction(ev) {
-		let action = ev.target.closest('button').dataset.action
+		let action = ev.target.closest('button').value
 		game.advance(action)
 	}
 
@@ -331,9 +371,33 @@ function gameScreen(options) {
 				showPlayerActions()
 				break
 
+			case gameFlow.DEALERS_TURN:
+				hidePlayerActions()
+				game.advance()
+				break
+
 			case gameFlow.ITS_A_BUST:
 				hidePlayerActions()
 				renderPlayerBusts()
+				advanceGameAfterPause()
+				break
+
+			case gameFlow.DEALERS_TURN:
+				hidePlayerActions()
+				break
+
+			case gameFlow.PLAYER_WINS_WITH_DEALER_BUST:
+				renderPlayerWinsWithDealerBust()
+				advanceGameAfterPause()
+				break
+
+			case gameFlow.DEALER_WINS:
+				renderDealerWins()
+				advanceGameAfterPause()
+				break
+
+			case gameFlow.PLAYER_WINS:
+				renderPlayerWins()
 				advanceGameAfterPause()
 				break
 		}
@@ -382,6 +446,18 @@ function gameScreen(options) {
 
 	function renderPlayerWinsWithBlackjack() {
 		outcome.textContent = 'Blackjack, you win!'
+	}
+
+	function renderPlayerWinsWithDealerBust() {
+		outcome.textContent = 'Dealer busted, you win!'
+	}
+
+	function renderPlayerWins() {
+		outcome.textContent = 'You win!'
+	}
+
+	function renderDealerWins() {
+		outcome.textContent = 'House wins'
 	}
 
 	function renderPlayerBusts() {

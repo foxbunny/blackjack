@@ -1,6 +1,6 @@
 [
 	{
-		"suit": "spade",
+		"suit": "spades",
 		"value": 1
 	},
 	{
@@ -16,7 +16,7 @@
 		"value": 1
 	},
 	{
-		"suit": "spade",
+		"suit": "spades",
 		"value": 2
 	},
 	{
@@ -32,7 +32,7 @@
 		"value": 2
 	},
 	{
-		"suit": "spade",
+		"suit": "spades",
 		"value": 3
 	},
 	{
@@ -48,7 +48,7 @@
 		"value": 3
 	},
 	{
-		"suit": "spade",
+		"suit": "spades",
 		"value": 4
 	},
 	{
@@ -64,7 +64,7 @@
 		"value": 4
 	},
 	{
-		"suit": "spade",
+		"suit": "spades",
 		"value": 5
 	},
 	{
@@ -80,7 +80,7 @@
 		"value": 5
 	},
 	{
-		"suit": "spade",
+		"suit": "spades",
 		"value": 6
 	},
 	{
@@ -96,7 +96,7 @@
 		"value": 6
 	},
 	{
-		"suit": "spade",
+		"suit": "spades",
 		"value": 7
 	},
 	{
@@ -112,7 +112,7 @@
 		"value": 7
 	},
 	{
-		"suit": "spade",
+		"suit": "spades",
 		"value": 8
 	},
 	{
@@ -128,7 +128,7 @@
 		"value": 8
 	},
 	{
-		"suit": "spade",
+		"suit": "spades",
 		"value": 9
 	},
 	{
@@ -144,7 +144,7 @@
 		"value": 9
 	},
 	{
-		"suit": "spade",
+		"suit": "spades",
 		"value": 10
 	},
 	{
@@ -160,7 +160,7 @@
 		"value": 10
 	},
 	{
-		"suit": "spade",
+		"suit": "spades",
 		"value": 11
 	},
 	{
@@ -176,7 +176,7 @@
 		"value": 11
 	},
 	{
-		"suit": "spade",
+		"suit": "spades",
 		"value": 12
 	},
 	{
@@ -192,7 +192,7 @@
 		"value": 12
 	},
 	{
-		"suit": "spade",
+		"suit": "spades",
 		"value": 13
 	},
 	{

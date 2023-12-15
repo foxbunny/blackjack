@@ -10,6 +10,18 @@ export function getCardList(page, label) {
 	return page.getByRole('region', {name: label}).getByRole('list')
 }
 
+export async function getCardListAsText(page, label) {
+	return await page.getByRole('region', {name: label})
+		.getByRole('listitem')
+		.evaluateAll(function (cardNodes) {
+			let cardNames = []
+			for (let node of cardNodes) cardNames.push(
+				node.textContent.replace(/\s+/g, ' ').trim(),
+			)
+			return cardNames
+		})
+}
+
 export async function rigTheDeck(context, cards) {
 	await context.addInitScript(function (cards) {
 		window.__TEST_DECK = cards
