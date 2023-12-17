@@ -22,8 +22,6 @@ export function createDeck() {
 
 	function draw() {
 		if (!cards.length) shuffle()
-		let card = cards.pop()
-		return card
 		return cards.pop()
 	}
 
