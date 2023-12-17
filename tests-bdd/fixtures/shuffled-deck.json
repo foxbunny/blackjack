@@ -1,210 +1,210 @@
 [
   {
-    "suit": "club",
+    "suit": "clubs",
     "value": 5
   },
   {
-    "suit": "diamond",
+    "suit": "diamonds",
     "value": 2
   },
   {
-    "suit": "spade",
+    "suit": "spades",
     "value": 13
   },
   {
-    "suit": "club",
+    "suit": "clubs",
     "value": 8
   },
   {
-    "suit": "club",
+    "suit": "clubs",
     "value": 7
   },
   {
-    "suit": "spade",
+    "suit": "spades",
     "value": 12
   },
   {
-    "suit": "club",
+    "suit": "clubs",
     "value": 1
   },
   {
-    "suit": "club",
+    "suit": "clubs",
     "value": 3
   },
   {
-    "suit": "heart",
+    "suit": "hearts",
     "value": 11
   },
   {
-    "suit": "spade",
+    "suit": "spades",
     "value": 5
   },
   {
-    "suit": "heart",
+    "suit": "hearts",
     "value": 12
   },
   {
-    "suit": "spade",
+    "suit": "spades",
     "value": 7
   },
   {
-    "suit": "heart",
+    "suit": "hearts",
     "value": 5
   },
   {
-    "suit": "spade",
+    "suit": "spades",
     "value": 8
   },
   {
-    "suit": "spade",
+    "suit": "spades",
     "value": 1
   },
   {
-    "suit": "diamond",
+    "suit": "diamonds",
     "value": 7
   },
   {
-    "suit": "diamond",
+    "suit": "diamonds",
     "value": 3
   },
   {
-    "suit": "heart",
+    "suit": "hearts",
     "value": 6
   },
   {
-    "suit": "diamond",
+    "suit": "diamonds",
     "value": 5
   },
   {
-    "suit": "heart",
+    "suit": "hearts",
     "value": 3
   },
   {
-    "suit": "spade",
+    "suit": "spades",
     "value": 6
   },
   {
-    "suit": "heart",
+    "suit": "hearts",
     "value": 7
   },
   {
-    "suit": "club",
+    "suit": "clubs",
     "value": 12
   },
   {
-    "suit": "club",
+    "suit": "clubs",
     "value": 9
   },
   {
-    "suit": "heart",
+    "suit": "hearts",
     "value": 8
   },
   {
-    "suit": "spade",
+    "suit": "spades",
     "value": 9
   },
   {
-    "suit": "diamond",
+    "suit": "diamonds",
     "value": 13
   },
   {
-    "suit": "diamond",
+    "suit": "diamonds",
     "value": 9
   },
   {
-    "suit": "heart",
+    "suit": "hearts",
     "value": 13
   },
   {
-    "suit": "spade",
+    "suit": "spades",
     "value": 2
   },
   {
-    "suit": "spade",
+    "suit": "spades",
     "value": 11
   },
   {
-    "suit": "diamond",
+    "suit": "diamonds",
     "value": 11
   },
   {
-    "suit": "spade",
+    "suit": "spades",
     "value": 10
   },
   {
-    "suit": "diamond",
+    "suit": "diamonds",
     "value": 12
   },
   {
-    "suit": "heart",
+    "suit": "hearts",
     "value": 2
   },
   {
-    "suit": "spade",
+    "suit": "spades",
     "value": 4
   },
   {
-    "suit": "club",
+    "suit": "clubs",
     "value": 2
   },
   {
-    "suit": "diamond",
+    "suit": "diamonds",
     "value": 4
   },
   {
-    "suit": "club",
+    "suit": "clubs",
     "value": 6
   },
   {
-    "suit": "heart",
+    "suit": "hearts",
     "value": 1
   },
   {
-    "suit": "club",
+    "suit": "clubs",
     "value": 10
   },
   {
-    "suit": "diamond",
+    "suit": "diamonds",
     "value": 6
   },
   {
-    "suit": "club",
+    "suit": "clubs",
     "value": 13
   },
   {
-    "suit": "heart",
+    "suit": "hearts",
     "value": 4
   },
   {
-    "suit": "diamond",
+    "suit": "diamonds",
     "value": 10
   },
   {
-    "suit": "heart",
+    "suit": "hearts",
     "value": 9
   },
   {
-    "suit": "club",
+    "suit": "clubs",
     "value": 4
   },
   {
-    "suit": "spade",
+    "suit": "spades",
     "value": 3
   },
   {
-    "suit": "heart",
+    "suit": "hearts",
     "value": 10
   },
   {
-    "suit": "diamond",
+    "suit": "diamonds",
     "value": 8
   },
   {
-    "suit": "club",
+    "suit": "clubs",
     "value": 11
   },
   {
-    "suit": "diamond",
+    "suit": "diamonds",
     "value": 1
   }
 ]

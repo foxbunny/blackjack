@@ -4,15 +4,15 @@
 		"value": 1
 	},
 	{
-		"suit": "heart",
+		"suit": "hearts",
 		"value": 1
 	},
 	{
-		"suit": "club",
+		"suit": "clubs",
 		"value": 1
 	},
 	{
-		"suit": "diamond",
+		"suit": "diamonds",
 		"value": 1
 	},
 	{
@@ -20,15 +20,15 @@
 		"value": 2
 	},
 	{
-		"suit": "heart",
+		"suit": "hearts",
 		"value": 2
 	},
 	{
-		"suit": "club",
+		"suit": "clubs",
 		"value": 2
 	},
 	{
-		"suit": "diamond",
+		"suit": "diamonds",
 		"value": 2
 	},
 	{
@@ -36,15 +36,15 @@
 		"value": 3
 	},
 	{
-		"suit": "heart",
+		"suit": "hearts",
 		"value": 3
 	},
 	{
-		"suit": "club",
+		"suit": "clubs",
 		"value": 3
 	},
 	{
-		"suit": "diamond",
+		"suit": "diamonds",
 		"value": 3
 	},
 	{
@@ -52,15 +52,15 @@
 		"value": 4
 	},
 	{
-		"suit": "heart",
+		"suit": "hearts",
 		"value": 4
 	},
 	{
-		"suit": "club",
+		"suit": "clubs",
 		"value": 4
 	},
 	{
-		"suit": "diamond",
+		"suit": "diamonds",
 		"value": 4
 	},
 	{
@@ -68,15 +68,15 @@
 		"value": 5
 	},
 	{
-		"suit": "heart",
+		"suit": "hearts",
 		"value": 5
 	},
 	{
-		"suit": "club",
+		"suit": "clubs",
 		"value": 5
 	},
 	{
-		"suit": "diamond",
+		"suit": "diamonds",
 		"value": 5
 	},
 	{
@@ -84,15 +84,15 @@
 		"value": 6
 	},
 	{
-		"suit": "heart",
+		"suit": "hearts",
 		"value": 6
 	},
 	{
-		"suit": "club",
+		"suit": "clubs",
 		"value": 6
 	},
 	{
-		"suit": "diamond",
+		"suit": "diamonds",
 		"value": 6
 	},
 	{
@@ -100,15 +100,15 @@
 		"value": 7
 	},
 	{
-		"suit": "heart",
+		"suit": "hearts",
 		"value": 7
 	},
 	{
-		"suit": "club",
+		"suit": "clubs",
 		"value": 7
 	},
 	{
-		"suit": "diamond",
+		"suit": "diamonds",
 		"value": 7
 	},
 	{
@@ -116,15 +116,15 @@
 		"value": 8
 	},
 	{
-		"suit": "heart",
+		"suit": "hearts",
 		"value": 8
 	},
 	{
-		"suit": "club",
+		"suit": "clubs",
 		"value": 8
 	},
 	{
-		"suit": "diamond",
+		"suit": "diamonds",
 		"value": 8
 	},
 	{
@@ -132,15 +132,15 @@
 		"value": 9
 	},
 	{
-		"suit": "heart",
+		"suit": "hearts",
 		"value": 9
 	},
 	{
-		"suit": "club",
+		"suit": "clubs",
 		"value": 9
 	},
 	{
-		"suit": "diamond",
+		"suit": "diamonds",
 		"value": 9
 	},
 	{
@@ -148,15 +148,15 @@
 		"value": 10
 	},
 	{
-		"suit": "heart",
+		"suit": "hearts",
 		"value": 10
 	},
 	{
-		"suit": "club",
+		"suit": "clubs",
 		"value": 10
 	},
 	{
-		"suit": "diamond",
+		"suit": "diamonds",
 		"value": 10
 	},
 	{
@@ -164,15 +164,15 @@
 		"value": 11
 	},
 	{
-		"suit": "heart",
+		"suit": "hearts",
 		"value": 11
 	},
 	{
-		"suit": "club",
+		"suit": "clubs",
 		"value": 11
 	},
 	{
-		"suit": "diamond",
+		"suit": "diamonds",
 		"value": 11
 	},
 	{
@@ -180,15 +180,15 @@
 		"value": 12
 	},
 	{
-		"suit": "heart",
+		"suit": "hearts",
 		"value": 12
 	},
 	{
-		"suit": "club",
+		"suit": "clubs",
 		"value": 12
 	},
 	{
-		"suit": "diamond",
+		"suit": "diamonds",
 		"value": 12
 	},
 	{
@@ -196,15 +196,15 @@
 		"value": 13
 	},
 	{
-		"suit": "heart",
+		"suit": "hearts",
 		"value": 13
 	},
 	{
-		"suit": "club",
+		"suit": "clubs",
 		"value": 13
 	},
 	{
-		"suit": "diamond",
+		"suit": "diamonds",
 		"value": 13
 	}
 ]

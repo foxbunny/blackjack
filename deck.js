@@ -7,10 +7,10 @@ export function createDeck() {
 		let newCards = []
 
 		for (let value = 0; value++ < 13;) newCards.push(
-			{suit: 'spades', value},
-			{suit: 'heart', value},
-			{suit: 'club', value},
-			{suit: 'diamond', value},
+			{suit: 'spadess', value},
+			{suit: 'hearts', value},
+			{suit: 'clubs', value},
+			{suit: 'diamonds', value},
 		)
 
 		while (newCards.length) cards.push(pickRandomCard(newCards))

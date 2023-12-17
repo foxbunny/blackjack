@@ -10,23 +10,23 @@ test(
 	async function ({page, context}) {
 		await rigTheDeck(context, [
 			// Initial deal
-			{suit: 'spade', value: 2},
-			{suit: 'heart', value: 9},
-			{suit: 'club', value: 1},
-			{suit: 'spade', value: 4},
+			{suit: 'spades', value: 2},
+			{suit: 'hearts', value: 9},
+			{suit: 'clubs', value: 1},
+			{suit: 'spades', value: 4},
 			// Hit
-			{suit: 'spade', value: 11},
+			{suit: 'spades', value: 11},
 			// Dealer draws
-			{suit: 'club', value: 9},
+			{suit: 'clubs', value: 9},
 		])
 		let {runTimers} = await startGame(page, {stopTimers: true})
 		await page.getByRole('button', {name: 'Hit'}).click()
 		await page.getByRole('button', {name: 'Stay'}).click()
 		let dealerCardList = await getDealerCardList(page)
 		await expect(dealerCardList).toEqual([
-			'9 of heart',
-			'4 of spade',
-			'9 of club',
+			'9 of hearts',
+			'4 of spades',
+			'9 of clubs',
 		])
 		await expect(page.getByText('Dealer busted, you win!')).toBeVisible()
 	},
@@ -37,14 +37,14 @@ test(
 	async function ({page, context}) {
 		await rigTheDeck(context, [
 			// Initial deal
-			{suit: 'spade', value: 2},
-			{suit: 'heart', value: 9},
-			{suit: 'club', value: 1},
-			{suit: 'spade', value: 4},
+			{suit: 'spades', value: 2},
+			{suit: 'hearts', value: 9},
+			{suit: 'clubs', value: 1},
+			{suit: 'spades', value: 4},
 			// Hit
-			{suit: 'spade', value: 11},
+			{suit: 'spades', value: 11},
 			// Dealer draws
-			{suit: 'diamond', value: 5},
+			{suit: 'diamonds', value: 5},
 		])
 		let {runTimers} = await startGame(page, {stopTimers: true})
 		await page.getByRole('button', {name: 'Hit'}).click()
@@ -58,14 +58,14 @@ test(
 	async function ({page, context}) {
 		await rigTheDeck(context, [
 			// Initial deal
-			{suit: 'spade', value: 7},
-			{suit: 'heart', value: 7},
-			{suit: 'club', value: 2},
-			{suit: 'spade', value: 2},
+			{suit: 'spades', value: 7},
+			{suit: 'hearts', value: 7},
+			{suit: 'clubs', value: 2},
+			{suit: 'spades', value: 2},
 			// Hit
-			{suit: 'spade', value: 9},
+			{suit: 'spades', value: 9},
 			// Dealer draws
-			{suit: 'diamond', value: 9},
+			{suit: 'diamonds', value: 9},
 		])
 		let {runTimers} = await startGame(page, {stopTimers: true})
 		await page.getByRole('button', {name: 'Hit'}).click()
@@ -79,14 +79,14 @@ test(
 	async function ({page, context}) {
 		await rigTheDeck(context, [
 			// Initial deal
-			{suit: 'spade', value: 7},
-			{suit: 'heart', value: 7},
-			{suit: 'club', value: 2},
-			{suit: 'spade', value: 2},
+			{suit: 'spades', value: 7},
+			{suit: 'hearts', value: 7},
+			{suit: 'clubs', value: 2},
+			{suit: 'spades', value: 2},
 			// Hit
-			{suit: 'spade', value: 9},
+			{suit: 'spades', value: 9},
 			// Dealer draws
-			{suit: 'diamond', value: 8},
+			{suit: 'diamonds', value: 8},
 		])
 		let {runTimers} = await startGame(page, {stopTimers: true})
 		await page.getByRole('button', {name: 'Hit'}).click()
@@ -100,14 +100,14 @@ test(
 	async function ({page, context}) {
 		await rigTheDeck(context, [
 			// Initial deal
-			{suit: 'spade', value: 7},
-			{suit: 'heart', value: 7},
-			{suit: 'club', value: 2},
-			{suit: 'spade', value: 2},
+			{suit: 'spades', value: 7},
+			{suit: 'hearts', value: 7},
+			{suit: 'clubs', value: 2},
+			{suit: 'spades', value: 2},
 			// Hit
-			{suit: 'spade', value: 9},
+			{suit: 'spades', value: 9},
 			// Dealer draws
-			{suit: 'diamond', value: 8},
+			{suit: 'diamonds', value: 8},
 		])
 		let {runTimers} = await startGame(page, {stopTimers: true})
 		await page.getByRole('button', {name: 'Hit'}).click()
