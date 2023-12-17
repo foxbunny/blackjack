@@ -38,3 +38,5 @@ number of characters used for indentation and reduce the payload.
 - [ ] Streamline the handling of card rendering by introducing a concept 
   of a generic face-down card (for future use such as double-down face-down).
 - [ ] Allow multiple players.
+- [ ] Fix wonky animation while cards are being pushed aside for the new card.
+- [ ] Animate filliping of the hole card.
