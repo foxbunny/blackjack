@@ -185,12 +185,14 @@ let Blackjack = (function () {
 
 			if (action != HIT) break
 
-			 playerHand.addCard(deck.draw())
-			 yield createGameEvent(DEAL_TO_PLAYER)
-			 if (playerHand.isBust()) {
-				  yield createGameEvent(ITS_A_BUST)
-				  return
-			 }
+			playerHand.addCard(deck.draw())
+			yield createGameEvent(DEAL_TO_PLAYER)
+			if (playerHand.isBust()) {
+				dealerHand.revealHole()
+				yield createGameEvent(DEALER_REVEALS_HOLE)
+				yield createGameEvent(ITS_A_BUST)
+				return
+			}
 		}
 
 		// Dealer's turn
@@ -405,9 +407,9 @@ function gameScreen(options) {
 		!function removeCard() {
 			let card = cards.shift()
 			if (!card) advance()
-			card.animate([
+			else card.animate([
 				{transform: 'translate(0, 0)'},
-				{transform: 'translate(-100vw, -100vh)'}
+				{transform: 'translate(-100vw, -100vh)'},
 			], {duration: 300}).onfinish = function () {
 				card.remove()
 				removeCard()
@@ -490,7 +492,7 @@ function gameScreen(options) {
 		cardNode.querySelector('[data-slot=value]').textContent = formatCardValue(card.value)
 		cardNode.querySelector('[data-slot=graphic]').setAttribute(
 			'href',
-			'cards.svg#card-' + card.suit + '-' + card.value
+			'cards.svg#card-' + card.suit + '-' + card.value,
 		)
 		return cardNode
 	}

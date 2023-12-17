@@ -53,6 +53,27 @@ test(
 )
 
 test(
+	'When I hit and go over 21, and I bust, dealer reveals the hole',
+	async function ({page, context}) {
+		await rigTheDeck(context, [
+			{suit: 'spades', value: 2},
+			{suit: 'hearts', value: 9},
+			{suit: 'clubs', value: 1},
+			{suit: 'spades', value: 12},
+			{suit: 'spades', value: 11},
+			{suit: 'hearts', value: 9},
+		])
+		await startGame(page, {stopTimers: true})
+		await expect(page.getByText('Dealer\'s hand: 9')).toBeVisible()
+		await expect(page.getByText('face-down card')).toBeVisible()
+		await page.getByRole('button', {name: 'Hit'}).click()
+		await page.getByRole('button', {name: 'Hit'}).click()
+		await expect(page.getByText('Dealer\'s hand: 19')).toBeVisible()
+		await expect(page.getByText('face-down card')).toBeHidden()
+	},
+)
+
+test(
 	'When I bust, a new round starts shortly',
 	async function ({page, context}) {
 		await rigTheDeck(context, [
