@@ -56,8 +56,8 @@ test(
 			{suit: 'spades', value: 12},
 		])
 		await startGame(page)
-		await expect(page.getByText('Dealer: 9')).toBeVisible()
-		await expect(page.getByText('Player: 13')).toBeVisible()
+		await expect(page.getByText('Dealer\'s hand: 9')).toBeVisible()
+		await expect(page.getByText('Player\'s hand: 13')).toBeVisible()
 	},
 )
 

@@ -39,37 +39,33 @@
 
 			<h2 id="table">Table</h2>
 
-			<div role="region" aria-labelledby="points">
-				<h3>Points</h3>
-
-				<div>
-					<span>Dealer:</span>
-					<span id="dealer-hand-value"></span>
-				</div>
-				<div>
-					<span>Player:</span>
-					<span id="player-hand-value"></span>
-				</div>
-			</div>
-
 			<div role="region" aria-labelledby="dealers-hand">
 				<h3 id="dealers-hand">Dealer's hand</h3>
 				<ul id="dealer-cards"></ul>
+				<div class="points">
+					<span>Dealer's hand:</span>
+					<span id="dealer-hand-value"></span>
+				</div>
 			</div>
 
-			<div id="outcome" aria-live="polite"></div>
+			<div id="middle-ground">
+				<div id="outcome" aria-live="polite"></div>
 
+				<div id="player-actions" role="region" aria-labelledby="actions" hidden>
+					<h3 id="actions">Your next move</h3>
 
-			<div id="player-actions" role="region" aria-labelledby="actions" hidden>
-				<h3 id="actions">Your next move</h3>
-
-				 <button value="stay">Stay</button>
-				 <button value="hit">Hit</button>
+					<button value="stay">Stay</button>
+					<button value="hit">Hit</button>
+				</div>
 			</div>
 
 			<div role="region" aria-labelledby="players-hand">
 				<h3 id="players-hand">Your hand</h3>
 				<ul id="player-cards"></ul>
+				<div class="points">
+					<span>Player's hand:</span>
+					<span id="player-hand-value"></span>
+				</div>
 			</div>
 		</main>
 

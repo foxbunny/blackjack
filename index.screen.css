@@ -58,7 +58,7 @@ h2, h3,
 body {
 	--table-shadow: rgba(31,68,8,1);
 	--table-back:  rgba(67,126,14,1);
-	--table-front: rgba(73,149,78,1);
+	--table-front: rgb(92, 149, 73);
 	--text-color: white;
 	--text-secondary: #feff94;
 	--accent-bg: #e92200;
@@ -68,9 +68,10 @@ body {
 	--table-lettering-color: #d0c52d;
 
 	min-height: 100vh;
+
 	font-family: "Playfair Display", serif;
 	background-color: var(--table-back);
-	background-image: linear-gradient(180deg, var(--table-shadow) 10em, var(--table-back) 20em, var(--table-front) 100%);
+	background-image: linear-gradient(180deg, var(--table-shadow) 10em, var(--table-back) 20em, var(--table-front) 90%, var(--table-shadow) 100%);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	color: var(--text-color);
@@ -88,6 +89,11 @@ body {
 	justify-content: center;
 	transition: min-width 0.5s;
 	padding: 3em;
+}
+
+#initial-screen h1 svg {
+	min-width: 40em;
+	max-width: calc(100vw - 2em);
 }
 
 #start-game {
@@ -126,8 +132,18 @@ body {
 	bottom: 0;
 }
 
+#game-screen:not([hidden]) {
+	display: flex;
+	flex-direction: column;
+	height: min(50em, 100vh);
+	gap: 0.5em;
+	overflow-x: hidden;
+	padding-bottom: min(5vh, 5em);
+}
+
 #game-screen h1 {
 	padding: 1em;
+	text-align: center;
 }
 
 #game-screen h1 svg {
@@ -135,18 +151,19 @@ body {
 	aspect-ratio: 726/186;
 }
 
-h1 svg {
-	max-width: calc(100vw - 2em);
-}
-
-#initial-screen h1 svg {
-	min-width: 40em;
-}
-
-#game-screen:not([hidden]) {
+[aria-labelledby="dealers-hand"],
+[aria-labelledby="players-hand"] {
+	flex: 1;
 	display: flex;
+	align-items: center;
+}
+
+[aria-labelledby="dealers-hand"] {
 	flex-direction: column;
-	gap: 2em;
+}
+
+[aria-labelledby="players-hand"] {
+	flex-direction: column-reverse;
 }
 
 #dealer-cards,
@@ -154,30 +171,57 @@ h1 svg {
 	position: relative;
 	display: flex;
 	justify-content: center;
-	width: 3em; /* NB: causes the cards to overlap */
-	left: -2em;
+	gap: 0.5em;
+	max-width: 80vw;
 	margin: 0 auto;
+	flex: 1;
 }
 
 #dealer-cards {
-	flex-direction: row-reverse;
+	align-items: flex-end;
+}
+
+#player-cards {
+	align-items: flex-start;
 }
 
 .card {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.card:not(:last-child) {
 	min-width: 1em; /* NB: minimum visible portion of the card */
 }
 
+.card:last-child {
+	min-width: max-content;
+}
+
 .card > svg {
-	width: 6em;
+	height: 100%;
+	aspect-ratio: 160/224;
 	padding: 0.1em;
+
 	border-radius: 0.2em;
 	background: white;
 	box-shadow: 0 0.2em 0.1em rgba(0, 0, 0, 0.3);
-	aspect-ratio: 160/224;
 }
 
 [data-facedown=true] {
 	z-index: -1;
+}
+
+#middle-ground {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 4.5em;
+
+	color: var(--table-lettering-color);
+	border-top: 0.3em solid var(--table-lettering-color);
+	border-bottom: 0.3em solid var(--table-lettering-color);
 }
 
 #outcome:empty {
@@ -188,23 +232,15 @@ h1 svg {
 #outcome:not(:empty) {
 	position: relative;
 
-	color: var(--table-lettering-color);
-	border-top: 0.3em solid var(--table-lettering-color);
-	border-bottom: 0.3em solid var(--table-lettering-color);
 	text-align: center;
 	font-size: 120%;
 	text-transform: uppercase;
 }
 
-#outcome {
-	padding: 1.1em;
-}
-
 #player-actions:not([hidden]) {
-	padding: 1em;
 	display: flex;
 	justify-content: center;
-	gap: 3em;
+	gap: min(4vw, 3em);
 }
 
 #player-actions button {
@@ -214,8 +250,6 @@ h1 svg {
 	border-radius: 0.2em;
 }
 
-[aria-labelledby=points] {
-	position: absolute;
-	right: 0.5em;
-	top: 0.5em;
+.points {
+	padding: 1em 0;
 }

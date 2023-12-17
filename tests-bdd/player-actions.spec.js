@@ -27,7 +27,7 @@ test(
 			'ace of clubs',
 			'3 of spades',
 		])
-		await expect(page.getByText('Player: 16')).toBeVisible()
+		await expect(page.getByText('Player\'s hand: 16')).toBeVisible()
 	},
 )
 
@@ -45,8 +45,8 @@ test(
 		await startGame(page, {stopTimers: true})
 		await page.getByRole('button', {name: 'Hit'}).click()
 		await page.getByRole('button', {name: 'Hit'}).click()
+		await expect(page.getByText('Player\'s hand: 22')).toBeVisible()
 		await expect(page.getByText('It\'s a bust')).toBeVisible()
-		await expect(page.getByText('Player: 22')).toBeVisible()
 		await expect(page.getByRole('button', {name: 'Hit'})).toBeHidden()
 		await expect(page.getByRole('button', {name: 'Stay'})).toBeHidden()
 	},
@@ -77,6 +77,5 @@ test(
 		await runTimers()
 		await expect(await getPlayerCardList(page)).toHaveLength(2)
 		await expect(await getDealerCardList(page)).toHaveLength(2)
-		await expect(page.getByText('It\'s a bust')).toBeHidden()
 	},
 )

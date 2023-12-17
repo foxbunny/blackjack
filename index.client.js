@@ -327,23 +327,20 @@ function gameScreen(options) {
 		switch (gameState.event) {
 			case gameFlow.NEW_ROUND:
 				hidePlayerActions()
-				clearTable()
 				clearMessage()
 				renderPlayerHandValue(0)
 				renderDealerHandValue(0)
-				game.advance()
+				clearTable(game.advance)
 				break
 
 			case gameFlow.DEAL_TO_PLAYER:
-				renderNextPlayerCard(gameState.playerCards.at(-1))
 				renderPlayerHandValue(gameState.playerHandValue)
-				game.advance()
+				renderNextPlayerCard(gameState.playerCards.at(-1), game.advance)
 				break
 
 			case gameFlow.DEAL_TO_DEALER:
-				renderNextDealerCard(gameState.dealerCards.at(-1))
 				renderDealerHandValue(gameState.dealerHandValue)
-				game.advance()
+				renderNextDealerCard(gameState.dealerCards.at(-1), game.advance)
 				break
 
 			case gameFlow.DEALER_REVEALS_HOLE:
@@ -403,18 +400,40 @@ function gameScreen(options) {
 		}
 	} // <-- handleGameEvent
 
-	function clearTable() {
-		for (let card of elements.region.querySelectorAll('[data-slot=card]'))
-			card.remove()
+	function clearTable(advance) {
+		let cards = elements.region.querySelectorAll('[data-slot=card]')
+		let cardsToRemove = cards.length
+
+		if (!cardsToRemove) advance()
+
+		for (let i = 0, card; card = cards[i]; i++) {
+			let animation = card.animate([
+				{transform: 'translate(-100vw, -100vh)'}
+			], {duration: 300, delay: i * 200})
+			animation.onfinish = function () {
+				card.remove()
+				cardsToRemove--
+				if (!cardsToRemove) advance()
+			}
+		}
 	}
 
-	function renderNextDealerCard(card) {
+	function renderNextDealerCard(card, advance) {
 		if (card.suit == 'hole') elements.dealerCards.append(renderHole())
 		else elements.dealerCards.append(renderCard(card))
+		animateCardDeal(elements.dealerCards.lastElementChild, advance)
 	}
 
-	function renderNextPlayerCard(card) {
+	function renderNextPlayerCard(card, advance) {
 		elements.playerCards.append(renderCard(card))
+		animateCardDeal(elements.playerCards.lastElementChild, advance)
+	}
+
+	function animateCardDeal(cardNode, callback) {
+		cardNode.animate([
+			{transform: 'translate(100vw, -100vh)'},
+			{transform: 'none'},
+		], {duration: 300}).onfinish = callback
 	}
 
 	function revealHoleCard(card) {

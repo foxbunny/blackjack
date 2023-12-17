@@ -29,8 +29,8 @@ export async function rigTheDeck(context, cards) {
 }
 
 export async function startGame(page, options = {}) {
-	// Shorten the timeout for faster tests
 	await page.addInitScript(`{
+		// Shorten the timeout for faster tests
 		let _setTimeout = setTimeout
 		let timersStopped = ${!!options?.stopTimers}
 		let timerCallbacks = []
@@ -45,6 +45,15 @@ export async function startGame(page, options = {}) {
 			else 
 				// NB: Speed up timeouts by using 1ms delay
 				_setTimeout(callback, 1, ...args)
+		}
+		
+		// Shorten the animation timeouts
+		Element.prototype.animate = function () {
+			return {
+				 set onfinish(callback) {
+					 callback()
+				 }
+			}
 		}
 	}`)
 
