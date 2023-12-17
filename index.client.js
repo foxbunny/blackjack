@@ -410,7 +410,7 @@ function gameScreen(options) {
 			else card.animate([
 				{transform: 'translate(0, 0)'},
 				{transform: 'translate(-100vw, -100vh)'},
-			], {duration: 300}).onfinish = function () {
+			], {duration: 400, easing: 'cubic-bezier(0.4, 0, 1, 0.7)'}).onfinish = function () {
 				card.remove()
 				removeCard()
 			}
@@ -432,8 +432,7 @@ function gameScreen(options) {
 		cardNode.animate([
 			{transform: 'translate(100vw, -100vh)'},
 			{transform: 'translate(0, 0)'},
-			{transform: 'translate(0, 0)'},
-		], {duration: 500}).onfinish = callback
+		], {duration: 500, easing: 'cubic-bezier(0, 0.7, 0, 1)'}).onfinish = callback
 	}
 
 	function revealHoleCard(card) {
