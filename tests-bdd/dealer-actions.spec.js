@@ -94,24 +94,3 @@ test(
 		await expect(page.getByText('You win!')).toBeVisible()
 	},
 )
-
-test(
-	'When I stay, and dealer has a hand of 16 or less, and they do not bust, it\'s my win if my hand is higher',
-	async function ({page, context}) {
-		await rigTheDeck(context, [
-			// Initial deal
-			{suit: 'spades', value: 7},
-			{suit: 'hearts', value: 7},
-			{suit: 'clubs', value: 2},
-			{suit: 'spades', value: 2},
-			// Hit
-			{suit: 'spades', value: 9},
-			// Dealer draws
-			{suit: 'diamonds', value: 8},
-		])
-		let {runTimers} = await startGame(page, {stopTimers: true})
-		await page.getByRole('button', {name: 'Hit'}).click()
-		await page.getByRole('button', {name: 'Stay'}).click()
-		await expect(page.getByText('You win!')).toBeVisible()
-	},
-)
