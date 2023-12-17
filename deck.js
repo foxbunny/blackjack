@@ -7,7 +7,7 @@ export function createDeck() {
 		let newCards = []
 
 		for (let value = 0; value++ < 13;) newCards.push(
-			{suit: 'spadess', value},
+			{suit: 'spades', value},
 			{suit: 'hearts', value},
 			{suit: 'clubs', value},
 			{suit: 'diamonds', value},

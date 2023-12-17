@@ -32,3 +32,9 @@ program code to pass the test.
 
 The code base uses *tabs* for indentation. This is intended to minimize the 
 number of characters used for indentation and reduce the payload.
+
+# TODO
+
+- [ ] Streamline the handling of card rendering by introducing a concept 
+  of a generic face-down card (for future use such as double-down face-down).
+- [ ] Allow multiple players.

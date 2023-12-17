@@ -11,10 +11,8 @@
 		<title>Blackjack 10101</title>
 	</head>
 	<body>
-		<h1>Blackjack 10101</h1>
-
 		<noscript>
-			<h2>This game requires JavaScript</h2>
+			<h1>This game requires JavaScript</h1>
 
 			<p>
 				This game needs a browser with JavaScript support. Please enable JavaScript or use a
@@ -23,12 +21,22 @@
 		</noscript>
 
 		<main id="initial-screen" aria-labelledby="new-game">
+			<h1>
+				<span>Blackjack 10101</span>
+				<svg><use href="cards.svg#logo"/></svg>
+			</h1>
+
 			<h2 id="new-game">New game</h2>
 
 			<button id="start-game">Start a new game</button>
 		</main>
 
 		<main id="game-screen" aria-labelledby="table" hidden>
+			<h1>
+				<span>Blackjack 10101</span>
+				<svg><use href="cards.svg#logo"/></svg>
+			</h1>
+
 			<h2 id="table">Table</h2>
 
 			<div role="region" aria-labelledby="points">
@@ -49,28 +57,30 @@
 				<ul id="dealer-cards"></ul>
 			</div>
 
-			<div role="region" aria-labelledby="players-hand">
-				<h3 id="players-hand">Your hand</h3>
-				<ul id="player-cards"></ul>
-			</div>
+			<div id="outcome" aria-live="polite"></div>
+
 
 			<div id="player-actions" role="region" aria-labelledby="actions" hidden>
 				<h3 id="actions">Your next move</h3>
 
-				<div>
-					<button value="stay">Stay</button>
-					<button value="hit">Hit</button>
-				</div>
+				 <button value="stay">Stay</button>
+				 <button value="hit">Hit</button>
 			</div>
 
-			<div id="outcome" aria-live="polite"></div>
+			<div role="region" aria-labelledby="players-hand">
+				<h3 id="players-hand">Your hand</h3>
+				<ul id="player-cards"></ul>
+			</div>
 		</main>
 
 		<template data-name="card">
-			<li data-slot="card">
-				<span data-slot="value"></span>
-				of
-				<span data-slot="suit"></span>
+			<li data-slot="card" class="card">
+				<span data-slot="desc">
+					 <span data-slot="value"></span>
+					 of
+					 <span data-slot="suit"></span>
+				</span>
+				<svg><use data-slot="graphic" /></svg>
 			</li>
 		</template>
 	</body>

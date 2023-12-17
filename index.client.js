@@ -472,6 +472,10 @@ function gameScreen(options) {
 		let cardNode = elements.cardTemplate.cloneNode(true)
 		cardNode.querySelector('[data-slot=suit]').textContent = card.suit
 		cardNode.querySelector('[data-slot=value]').textContent = formatCardValue(card.value)
+		cardNode.querySelector('[data-slot=graphic]').setAttribute(
+			'href',
+			'cards.svg#card-' + card.suit + '-' + card.value
+		)
 		return cardNode
 	}
 
@@ -479,7 +483,8 @@ function gameScreen(options) {
 		let cardNode = elements.cardTemplate.cloneNode(true)
 		let cardSlot = cardNode.querySelector('[data-slot=card]')
 		cardSlot.dataset.facedown = true
-		cardSlot.textContent = 'face-down card'
+		cardNode.querySelector('[data-slot=desc]').textContent = 'face-down card'
+		cardNode.querySelector('[data-slot=graphic]').setAttribute('href', 'cards.svg#card-back')
 		return cardNode
 	}
 

@@ -1,0 +1,1384 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<symbol id="ace" viewBox="0 0 18 20">
+			<g>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M10.49,15.59h-1.06v1.1h3.15v-1.1h-.9l-2.02-12.27h-2.85v1.09h1.32l-1.79,11.19h-.92v1.1h3.15v-1.1h-1.05l.48-3.44h1.96l.53,3.44ZM8.95,5.29l.86,5.82h-1.67l.82-5.82Z"
+				      style="stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="ace_2" viewBox="0 0 18 20">
+			<g>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M10.49,15.59h-1.06v1.1h3.15v-1.1h-.9l-2.02-12.27h-2.85v1.09h1.32l-1.79,11.19h-.92v1.1h3.15v-1.1h-1.05l.48-3.44h1.96l.53,3.44ZM8.95,5.29l.86,5.82h-1.67l.82-5.82Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="card-back" viewBox="0 0 160 224">
+			<g>
+				<rect x="16.5" y="16.05" width="127" height="191.95" rx="4.83" ry="4.83"
+				      style="fill: #9f0000; stroke-width: 0px;"/>
+				<g>
+					<polygon points="32.5 48.05 16.5 32.05 32.5 16.04 48.51 32.05 32.5 48.05"
+						 style="fill: #fcc; stroke-width: 0px;"/>
+					<polygon points="64.29 48 48.29 31.99 64.29 15.99 80.3 31.99 64.29 48"
+						 style="fill: #701212; stroke-width: 0px;"/>
+					<polygon points="95.63 48.02 79.63 32.02 95.63 16.02 111.63 32.02 95.63 48.02"
+						 style="fill: #fcc; stroke-width: 0px;"/>
+					<polygon
+						points="127.42 47.97 111.42 31.97 127.42 15.97 143.42 31.97 127.42 47.97"
+						style="fill: #701212; stroke-width: 0px;"/>
+					<polygon
+						points="127.27 47.95 143.27 63.95 127.27 79.96 111.27 63.95 127.27 47.95"
+						style="fill: #fcc; stroke-width: 0px;"/>
+					<polygon points="95.48 48 111.48 64.01 95.48 80.01 79.47 64.01 95.48 48"
+						 style="fill: #701212; stroke-width: 0px;"/>
+					<polygon points="64.14 47.98 80.15 63.98 64.14 79.98 48.14 63.98 64.14 47.98"
+						 style="fill: #fcc; stroke-width: 0px;"/>
+					<polygon points="32.35 48.03 48.35 64.03 32.35 80.03 16.35 64.03 32.35 48.03"
+						 style="fill: #701212; stroke-width: 0px;"/>
+					<polygon points="32.5 112.05 16.5 96.05 32.5 80.04 48.51 96.05 32.5 112.05"
+						 style="fill: #fcc; stroke-width: 0px;"/>
+					<polygon points="64.29 112 48.29 95.99 64.29 79.99 80.3 95.99 64.29 112"
+						 style="fill: #701212; stroke-width: 0px;"/>
+					<polygon points="95.63 112.02 79.63 96.02 95.63 80.02 111.63 96.02 95.63 112.02"
+						 style="fill: #fcc; stroke-width: 0px;"/>
+					<polygon
+						points="127.42 111.97 111.42 95.97 127.42 79.97 143.42 95.97 127.42 111.97"
+						style="fill: #701212; stroke-width: 0px;"/>
+					<polygon
+						points="127.27 111.95 143.27 127.95 127.27 143.96 111.27 127.95 127.27 111.95"
+						style="fill: #fcc; stroke-width: 0px;"/>
+					<polygon points="95.48 112 111.48 128.01 95.48 144.01 79.47 128.01 95.48 112"
+						 style="fill: #701212; stroke-width: 0px;"/>
+					<polygon
+						points="64.14 111.98 80.15 127.98 64.14 143.98 48.14 127.98 64.14 111.98"
+						style="fill: #fcc; stroke-width: 0px;"/>
+					<polygon
+						points="32.35 112.03 48.35 128.03 32.35 144.03 16.35 128.03 32.35 112.03"
+						style="fill: #701212; stroke-width: 0px;"/>
+					<polygon points="32.5 176.05 16.5 160.05 32.5 144.04 48.51 160.05 32.5 176.05"
+						 style="fill: #fcc; stroke-width: 0px;"/>
+					<polygon points="64.29 176 48.29 159.99 64.29 143.99 80.3 159.99 64.29 176"
+						 style="fill: #701212; stroke-width: 0px;"/>
+					<polygon
+						points="95.63 176.02 79.63 160.02 95.63 144.02 111.63 160.02 95.63 176.02"
+						style="fill: #fcc; stroke-width: 0px;"/>
+					<polygon
+						points="127.42 175.97 111.42 159.97 127.42 143.97 143.42 159.97 127.42 175.97"
+						style="fill: #701212; stroke-width: 0px;"/>
+					<polygon
+						points="127.27 175.95 143.27 191.95 127.27 207.96 111.27 191.95 127.27 175.95"
+						style="fill: #fcc; stroke-width: 0px;"/>
+					<polygon points="95.48 176 111.48 192.01 95.48 208.01 79.47 192.01 95.48 176"
+						 style="fill: #701212; stroke-width: 0px;"/>
+					<polygon
+						points="64.14 175.98 80.15 191.98 64.14 207.98 48.14 191.98 64.14 175.98"
+						style="fill: #fcc; stroke-width: 0px;"/>
+					<polygon
+						points="32.35 176.03 48.35 192.03 32.35 208.03 16.35 192.03 32.35 176.03"
+						style="fill: #701212; stroke-width: 0px;"/>
+				</g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="card-clubs-1" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#ace"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#ace"/>
+				<use width="28" height="28" transform="translate(66 98)" xlink:href="#club"/>
+			</g>
+		</symbol>
+		<symbol id="card-clubs-10" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#ten"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#ten"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(66 150.33) rotate(-180)"
+				     xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(66 98)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(94 73.67)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(38 73.67)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(122 150.33) rotate(-180)"
+				     xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#club"/>
+			</g>
+		</symbol>
+		<symbol id="card-clubs-11" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#jack"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#jack"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#club"/>
+				<use width="106" height="140" transform="translate(31 31.5)"
+				     xlink:href="#jack-face-black"/>
+			</g>
+		</symbol>
+		<symbol id="card-clubs-12" viewBox="0 0 160 224">
+			<g>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#queen"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#queen"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#club"/>
+				<use width="106" height="140" transform="translate(31 31.5)"
+				     xlink:href="#queen-face-black"/>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="card-clubs-13" viewBox="0 0 160 224">
+			<g>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#king"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#king"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#club"/>
+				<use width="106" height="140" transform="translate(31 31.5)"
+				     xlink:href="#king-face-black"/>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="card-clubs-2" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#two"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#two"/>
+				<use width="28" height="28" transform="translate(66 25)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(94 199) rotate(-180)"
+				     xlink:href="#club"/>
+			</g>
+		</symbol>
+		<symbol id="card-clubs-3" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#three"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#three"/>
+				<use width="28" height="28" transform="translate(66 25)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(94 199) rotate(-180)"
+				     xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(66 98)" xlink:href="#club"/>
+			</g>
+		</symbol>
+		<symbol id="card-clubs-4" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#four"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#four"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#club"/>
+			</g>
+		</symbol>
+		<symbol id="card-clubs-5" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#five"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#five"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(66 98)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#club"/>
+			</g>
+		</symbol>
+		<symbol id="card-clubs-6" viewBox="0 0 160 224">
+			<g>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#six"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#six"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(38 98)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(94 98)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#club"/>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="card-clubs-7" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#seven"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#seven"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(38 98)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(94 98)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(66 61)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#club"/>
+			</g>
+		</symbol>
+		<symbol id="card-clubs-8" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#eight"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#eight"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(38 98)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(94 98)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(66 61)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(94 163) rotate(-180)"
+				     xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#club"/>
+			</g>
+		</symbol>
+		<symbol id="card-clubs-9" viewBox="0 0 160 224">
+			<g>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#nine"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#club"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#nine"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(66 150.33) rotate(-180)"
+				     xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(94 73.67)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(38 73.67)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(122 150.33) rotate(-180)"
+				     xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#club"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#club"/>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="card-diamonds-1" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#ace_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#ace_2"/>
+				<use width="28" height="28" transform="translate(66 98)" xlink:href="#diamond"/>
+			</g>
+		</symbol>
+		<symbol id="card-diamonds-10" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#ten_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#ten_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(66 150.33) rotate(-180)"
+				     xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(66 98)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(94 73.67)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(38 73.67)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(122 150.33) rotate(-180)"
+				     xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#diamond"/>
+			</g>
+		</symbol>
+		<symbol id="card-diamonds-11" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#jack_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#jack_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#diamond"/>
+				<use width="106" height="140" transform="translate(31 31.5)"
+				     xlink:href="#jack-face-red"/>
+			</g>
+		</symbol>
+		<symbol id="card-diamonds-12" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#queen_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#queen_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#diamond"/>
+				<use width="106" height="140" transform="translate(31 31.5)"
+				     xlink:href="#queen-face-red"/>
+			</g>
+		</symbol>
+		<symbol id="card-diamonds-13" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#king_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#king_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#diamond"/>
+				<use width="106" height="140" transform="translate(31 31.5)"
+				     xlink:href="#king-face-red"/>
+			</g>
+		</symbol>
+		<symbol id="card-diamonds-2" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#two_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#two_2"/>
+				<use width="28" height="28" transform="translate(66 25)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(94 199) rotate(-180)"
+				     xlink:href="#diamond"/>
+			</g>
+		</symbol>
+		<symbol id="card-diamonds-3" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#three_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#three_2"/>
+				<use width="28" height="28" transform="translate(66 25)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(94 199) rotate(-180)"
+				     xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(66 98)" xlink:href="#diamond"/>
+			</g>
+		</symbol>
+		<symbol id="card-diamonds-4" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#four_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#four_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#diamond"/>
+			</g>
+		</symbol>
+		<symbol id="card-diamonds-5" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#five_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#five_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(66 98)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#diamond"/>
+			</g>
+		</symbol>
+		<symbol id="card-diamonds-6" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#six_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#six_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(38 98)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(94 98)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#diamond"/>
+			</g>
+		</symbol>
+		<symbol id="card-diamonds-7" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#seven_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#seven_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(38 98)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(94 98)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(66 61)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#diamond"/>
+			</g>
+		</symbol>
+		<symbol id="card-diamonds-8" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#eight_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#eight_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(38 98)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(94 98)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(66 61)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(94 163) rotate(-180)"
+				     xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#diamond"/>
+			</g>
+		</symbol>
+		<symbol id="card-diamonds-9" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#nine_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#diamond"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#nine_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(66 150.33) rotate(-180)"
+				     xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(94 73.67)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(38 73.67)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(122 150.33) rotate(-180)"
+				     xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#diamond"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#diamond"/>
+			</g>
+		</symbol>
+		<symbol id="card-hearts-1" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#ace_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#ace_2"/>
+				<use width="28" height="28" transform="translate(66 98)" xlink:href="#heart"/>
+			</g>
+		</symbol>
+		<symbol id="card-hearts-10" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#ten_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#ten_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(66 150.33) rotate(-180)"
+				     xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(66 98)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(94 73.67)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(38 73.67)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(122 150.33) rotate(-180)"
+				     xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#heart"/>
+			</g>
+		</symbol>
+		<symbol id="card-hearts-11" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#jack_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#jack_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#heart"/>
+				<use width="106" height="140" transform="translate(31 31.5)"
+				     xlink:href="#jack-face-red"/>
+			</g>
+		</symbol>
+		<symbol id="card-hearts-12" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#queen_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#queen_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#heart"/>
+				<use width="106" height="140" transform="translate(31 31.5)"
+				     xlink:href="#queen-face-red"/>
+			</g>
+		</symbol>
+		<symbol id="card-hearts-13" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#king_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#king_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#heart"/>
+				<use width="106" height="140" transform="translate(31 31.5)"
+				     xlink:href="#king-face-red"/>
+			</g>
+		</symbol>
+		<symbol id="card-hearts-2" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#two_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#two_2"/>
+				<use width="28" height="28" transform="translate(66 25)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(94 199) rotate(-180)"
+				     xlink:href="#heart"/>
+			</g>
+		</symbol>
+		<symbol id="card-hearts-3" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#three_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#three_2"/>
+				<use width="28" height="28" transform="translate(66 25)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(94 199) rotate(-180)"
+				     xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(66 98)" xlink:href="#heart"/>
+			</g>
+		</symbol>
+		<symbol id="card-hearts-4" viewBox="0 0 160 224">
+			<g>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#four_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#four_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#heart"/>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="card-hearts-5" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#five_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#five_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(66 98)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#heart"/>
+			</g>
+		</symbol>
+		<symbol id="card-hearts-6" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#six_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#six_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(38 98)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(94 98)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#heart"/>
+			</g>
+		</symbol>
+		<symbol id="card-hearts-7" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#seven_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#seven_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(38 98)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(94 98)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(66 61)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#heart"/>
+			</g>
+		</symbol>
+		<symbol id="card-hearts-8" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#eight_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#eight_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(38 98)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(94 98)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(66 61)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(94 163) rotate(-180)"
+				     xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#heart"/>
+			</g>
+		</symbol>
+		<symbol id="card-hearts-9" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#nine_2"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#heart"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#nine_2"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(66 150.33) rotate(-180)"
+				     xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(94 73.67)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(38 73.67)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(122 150.33) rotate(-180)"
+				     xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#heart"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#heart"/>
+			</g>
+		</symbol>
+		<symbol id="card-spades-1" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#ace"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#ace"/>
+				<use width="28" height="28" transform="translate(47 79) scale(2.36)"
+				     xlink:href="#spade"/>
+			</g>
+		</symbol>
+		<symbol id="card-spades-10" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#ten"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#ten"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(66 150.33) rotate(-180)"
+				     xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(66 98)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(94 73.67)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(38 73.67)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(122 150.33) rotate(-180)"
+				     xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#spade"/>
+			</g>
+		</symbol>
+		<symbol id="card-spades-11" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#jack"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#jack"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#spade"/>
+				<use width="106" height="140" transform="translate(31 31.5)"
+				     xlink:href="#jack-face-black"/>
+			</g>
+		</symbol>
+		<symbol id="card-spades-12" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#queen"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#queen"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#spade"/>
+				<use width="106" height="140" transform="translate(31 31.5)"
+				     xlink:href="#queen-face-black"/>
+			</g>
+		</symbol>
+		<symbol id="card-spades-13" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#king"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#king"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#spade"/>
+				<use width="106" height="140" transform="translate(31 31.5)"
+				     xlink:href="#king-face-black"/>
+			</g>
+		</symbol>
+		<symbol id="card-spades-2" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#two"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#two"/>
+				<use width="28" height="28" transform="translate(66 25)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(94 199) rotate(-180)"
+				     xlink:href="#spade"/>
+			</g>
+		</symbol>
+		<symbol id="card-spades-3" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#three"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#three"/>
+				<use width="28" height="28" transform="translate(66 25)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(94 199) rotate(-180)"
+				     xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(66 98)" xlink:href="#spade"/>
+			</g>
+		</symbol>
+		<symbol id="card-spades-4" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#four"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#four"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#spade"/>
+			</g>
+		</symbol>
+		<symbol id="card-spades-5" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#five"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#five"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(66 98)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#spade"/>
+			</g>
+		</symbol>
+		<symbol id="card-spades-6" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#six"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#six"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(38 98)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(94 98)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#spade"/>
+			</g>
+		</symbol>
+		<symbol id="card-spades-7" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#seven"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#seven"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(38 98)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(94 98)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(66 61)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#spade"/>
+			</g>
+		</symbol>
+		<symbol id="card-spades-8" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#eight"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#eight"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(38 98)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(94 98)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(66 61)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(94 163) rotate(-180)"
+				     xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#spade"/>
+			</g>
+		</symbol>
+		<symbol id="card-spades-9" viewBox="0 0 160 224">
+			<g>
+				<rect width="160" height="224" style="fill: none; stroke-width: 0px;"/>
+				<use width="28" height="28" transform="translate(5 30) scale(.64)" xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(5 10)" xlink:href="#nine"/>
+				<use width="28" height="28" transform="translate(155 194) rotate(-180) scale(.64)"
+				     xlink:href="#spade"/>
+				<use width="18" height="20" transform="translate(155 214) rotate(-180)"
+				     xlink:href="#nine"/>
+				<use width="28" height="28" transform="translate(38 25)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(66 150.33) rotate(-180)"
+				     xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(94 73.67)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(38 73.67)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(122 150.33) rotate(-180)"
+				     xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(66 199) rotate(-180)"
+				     xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(94 25)" xlink:href="#spade"/>
+				<use width="28" height="28" transform="translate(122 199) rotate(-180)"
+				     xlink:href="#spade"/>
+			</g>
+		</symbol>
+		<symbol id="club" viewBox="0 0 28 28">
+			<g>
+				<rect width="28" height="28" style="fill: none; stroke-width: 0px;"/>
+				<path d="M13.98,2.97h.04c2.67,0,4.84,2.17,4.84,4.84,0,1.2-.6,2.4-1.43,3.54,1.34-.53,2.69-.83,3.88-.51,2.58.69,4.12,3.35,3.43,5.93,0,0,0,.01,0,.02,0,0,0,.01,0,.02-.69,2.58-3.35,4.12-5.93,3.43-1.51-.41-2.76-.78-3.8-1.82l-.04.81c-.15,2.82,2.76,5.79,2.76,5.79h-7.42s2.92-2.97,2.76-5.79l-.04-.78c-1.05,1.05-2.29,1.44-3.81,1.85-2.58.69-5.24-.84-5.93-3.43,0,0,0-.01,0-.02,0,0,0-.01,0-.02-.69-2.58.84-5.24,3.43-5.93,1.21-.32,2.58-.02,3.94.53-.86-1.16-1.5-2.39-1.5-3.62,0-2.67,2.17-4.84,4.84-4.84h0Z"
+				      style="stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="diamond" viewBox="0 0 28 28">
+			<g>
+				<rect width="28" height="28" style="fill: none; stroke-width: 0px;"/>
+				<path d="M23.76,14L14.01,1.23,4.26,14l9.75,12.77,9.75-12.77Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="eight" viewBox="0 0 18 20">
+			<g>
+				<rect x="2.25" y="2.5" width="13.5" height="15" style="fill: none; stroke-width: 0px;"/>
+				<rect x="2.25" y="2.5" width="13.5" height="15" style="fill: none; stroke-width: 0px;"/>
+				<path d="M10.57,8.84c.17-.22.32-.46.43-.72.12-.27.2-.54.25-.83.06-.29.09-.57.09-.84,0-.5-.06-.96-.18-1.37-.12-.41-.28-.77-.49-1.07-.21-.3-.45-.53-.74-.69-.28-.17-.6-.26-.94-.26s-.66.09-.94.26c-.29.16-.53.39-.74.69-.2.3-.36.66-.47,1.07-.11.42-.16.87-.16,1.37,0,.27.03.55.08.84.06.29.14.56.26.82.12.26.26.49.43.71.18.22.38.39.61.53-.29.11-.54.28-.76.5-.22.22-.41.49-.56.81-.15.31-.26.67-.34,1.07-.08.4-.12.84-.12,1.3,0,.58.06,1.11.18,1.59.12.48.3.89.54,1.24.24.34.53.61.87.81.34.19.72.28,1.15.28s.81-.09,1.15-.28c.34-.2.62-.46.86-.81.23-.34.41-.76.53-1.24.12-.48.19-1.01.19-1.59,0-.94-.15-1.73-.45-2.36-.29-.64-.73-1.07-1.32-1.29.23-.14.43-.31.6-.54ZM10.07,7.43c-.05.29-.11.55-.2.77-.09.22-.21.39-.35.52-.14.13-.31.2-.51.2s-.36-.07-.51-.2c-.14-.13-.26-.3-.36-.52-.09-.22-.16-.48-.2-.77s-.07-.6-.07-.91.02-.62.06-.92c.04-.29.1-.55.2-.77.09-.23.21-.41.35-.53.15-.13.33-.2.54-.2s.37.07.52.2c.15.13.27.31.35.53.09.22.16.48.19.77.05.29.07.6.07.92,0,.32-.02.62-.07.91ZM9.62,10.11c.19.14.35.33.48.59.13.26.23.57.29.94.07.37.11.79.11,1.26,0,.94-.13,1.67-.38,2.21-.26.53-.62.8-1.11.8s-.87-.27-1.12-.8c-.25-.54-.38-1.28-.38-2.21s.13-1.68.39-2.2c.26-.53.63-.79,1.11-.79.23,0,.43.07.61.2Z"
+				      style="stroke-width: 0px;"/>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M10.57,8.84c.17-.22.32-.46.43-.72.12-.27.2-.54.25-.83.06-.29.09-.57.09-.84,0-.5-.06-.96-.18-1.37-.12-.41-.28-.77-.49-1.07-.21-.3-.45-.53-.74-.69-.28-.17-.6-.26-.94-.26s-.66.09-.94.26c-.29.16-.53.39-.74.69-.2.3-.36.66-.47,1.07-.11.42-.16.87-.16,1.37,0,.27.03.55.08.84.06.29.14.56.26.82.12.26.26.49.43.71.18.22.38.39.61.53-.29.11-.54.28-.76.5-.22.22-.41.49-.56.81-.15.31-.26.67-.34,1.07-.08.4-.12.84-.12,1.3,0,.58.06,1.11.18,1.59.12.48.3.89.54,1.24.24.34.53.61.87.81.34.19.72.28,1.15.28s.81-.09,1.15-.28c.34-.2.62-.46.86-.81.23-.34.41-.76.53-1.24.12-.48.19-1.01.19-1.59,0-.94-.15-1.73-.45-2.36-.29-.64-.73-1.07-1.32-1.29.23-.14.43-.31.6-.54ZM10.07,7.43c-.05.29-.11.55-.2.77-.09.22-.21.39-.35.52-.14.13-.31.2-.51.2s-.36-.07-.51-.2c-.14-.13-.26-.3-.36-.52-.09-.22-.16-.48-.2-.77s-.07-.6-.07-.91.02-.62.06-.92c.04-.29.1-.55.2-.77.09-.23.21-.41.35-.53.15-.13.33-.2.54-.2s.37.07.52.2c.15.13.27.31.35.53.09.22.16.48.19.77.05.29.07.6.07.92,0,.32-.02.62-.07.91ZM9.62,10.11c.19.14.35.33.48.59.13.26.23.57.29.94.07.37.11.79.11,1.26,0,.94-.13,1.67-.38,2.21-.26.53-.62.8-1.11.8s-.87-.27-1.12-.8c-.25-.54-.38-1.28-.38-2.21s.13-1.68.39-2.2c.26-.53.63-.79,1.11-.79.23,0,.43.07.61.2Z"
+				      style="stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="eight_2" viewBox="0 0 18 20">
+			<g>
+				<rect x="2.25" y="2.5" width="13.5" height="15" style="fill: none; stroke-width: 0px;"/>
+				<rect x="2.25" y="2.5" width="13.5" height="15" style="fill: none; stroke-width: 0px;"/>
+				<path d="M10.57,8.84c.17-.22.32-.46.43-.72.12-.27.2-.54.25-.83.06-.29.09-.57.09-.84,0-.5-.06-.96-.18-1.37-.12-.41-.28-.77-.49-1.07-.21-.3-.45-.53-.74-.69-.28-.17-.6-.26-.94-.26s-.66.09-.94.26c-.29.16-.53.39-.74.69-.2.3-.36.66-.47,1.07-.11.42-.16.87-.16,1.37,0,.27.03.55.08.84.06.29.14.56.26.82.12.26.26.49.43.71.18.22.38.39.61.53-.29.11-.54.28-.76.5-.22.22-.41.49-.56.81-.15.31-.26.67-.34,1.07-.08.4-.12.84-.12,1.3,0,.58.06,1.11.18,1.59.12.48.3.89.54,1.24.24.34.53.61.87.81.34.19.72.28,1.15.28s.81-.09,1.15-.28c.34-.2.62-.46.86-.81.23-.34.41-.76.53-1.24.12-.48.19-1.01.19-1.59,0-.94-.15-1.73-.45-2.36-.29-.64-.73-1.07-1.32-1.29.23-.14.43-.31.6-.54ZM10.07,7.43c-.05.29-.11.55-.2.77-.09.22-.21.39-.35.52-.14.13-.31.2-.51.2s-.36-.07-.51-.2c-.14-.13-.26-.3-.36-.52-.09-.22-.16-.48-.2-.77s-.07-.6-.07-.91.02-.62.06-.92c.04-.29.1-.55.2-.77.09-.23.21-.41.35-.53.15-.13.33-.2.54-.2s.37.07.52.2c.15.13.27.31.35.53.09.22.16.48.19.77.05.29.07.6.07.92,0,.32-.02.62-.07.91ZM9.62,10.11c.19.14.35.33.48.59.13.26.23.57.29.94.07.37.11.79.11,1.26,0,.94-.13,1.67-.38,2.21-.26.53-.62.8-1.11.8s-.87-.27-1.12-.8c-.25-.54-.38-1.28-.38-2.21s.13-1.68.39-2.2c.26-.53.63-.79,1.11-.79.23,0,.43.07.61.2Z"
+				      style="stroke-width: 0px;"/>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M10.57,8.84c.17-.22.32-.46.43-.72.12-.27.2-.54.25-.83.06-.29.09-.57.09-.84,0-.5-.06-.96-.18-1.37-.12-.41-.28-.77-.49-1.07-.21-.3-.45-.53-.74-.69-.28-.17-.6-.26-.94-.26s-.66.09-.94.26c-.29.16-.53.39-.74.69-.2.3-.36.66-.47,1.07-.11.42-.16.87-.16,1.37,0,.27.03.55.08.84.06.29.14.56.26.82.12.26.26.49.43.71.18.22.38.39.61.53-.29.11-.54.28-.76.5-.22.22-.41.49-.56.81-.15.31-.26.67-.34,1.07-.08.4-.12.84-.12,1.3,0,.58.06,1.11.18,1.59.12.48.3.89.54,1.24.24.34.53.61.87.81.34.19.72.28,1.15.28s.81-.09,1.15-.28c.34-.2.62-.46.86-.81.23-.34.41-.76.53-1.24.12-.48.19-1.01.19-1.59,0-.94-.15-1.73-.45-2.36-.29-.64-.73-1.07-1.32-1.29.23-.14.43-.31.6-.54ZM10.07,7.43c-.05.29-.11.55-.2.77-.09.22-.21.39-.35.52-.14.13-.31.2-.51.2s-.36-.07-.51-.2c-.14-.13-.26-.3-.36-.52-.09-.22-.16-.48-.2-.77s-.07-.6-.07-.91.02-.62.06-.92c.04-.29.1-.55.2-.77.09-.23.21-.41.35-.53.15-.13.33-.2.54-.2s.37.07.52.2c.15.13.27.31.35.53.09.22.16.48.19.77.05.29.07.6.07.92,0,.32-.02.62-.07.91ZM9.62,10.11c.19.14.35.33.48.59.13.26.23.57.29.94.07.37.11.79.11,1.26,0,.94-.13,1.67-.38,2.21-.26.53-.62.8-1.11.8s-.87-.27-1.12-.8c-.25-.54-.38-1.28-.38-2.21s.13-1.68.39-2.2c.26-.53.63-.79,1.11-.79.23,0,.43.07.61.2Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="five" viewBox="0 0 18 20">
+			<g>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M7.97,4.29h3.16v-1.11h-4.23l-.23,6.85h.99c.11-.38.27-.67.48-.86.22-.2.47-.29.76-.29.5,0,.86.3,1.09.91.23.6.34,1.47.34,2.62,0,.49-.03.95-.09,1.36-.05.41-.13.76-.24,1.06-.11.3-.25.53-.41.7-.16.16-.35.24-.58.24-.39,0-.72-.28-.98-.83-.26-.56-.39-1.41-.39-2.54h-1.22c0,.79.07,1.47.21,2.04.15.56.35,1.03.59,1.38.25.35.52.61.82.77.31.16.63.24.96.22.45,0,.84-.11,1.16-.34.33-.24.59-.55.79-.94.21-.4.36-.87.46-1.4.1-.54.14-1.11.14-1.72,0-.66-.05-1.27-.16-1.83-.11-.56-.27-1.04-.48-1.44-.2-.41-.45-.73-.75-.95-.29-.23-.62-.34-.99-.34-.25,0-.5.04-.73.12-.23.08-.45.24-.65.48l.17-4.15Z"
+				      style="stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="five_2" viewBox="0 0 18 20">
+			<g>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M7.97,4.29h3.16v-1.11h-4.23l-.23,6.85h.99c.11-.38.27-.67.48-.86.22-.2.47-.29.76-.29.5,0,.86.3,1.09.91.23.6.34,1.47.34,2.62,0,.49-.03.95-.09,1.36-.05.41-.13.76-.24,1.06-.11.3-.25.53-.41.7-.16.16-.35.24-.58.24-.39,0-.72-.28-.98-.83-.26-.56-.39-1.41-.39-2.54h-1.22c0,.79.07,1.47.21,2.04.15.56.35,1.03.59,1.38.25.35.52.61.82.77.31.16.63.24.96.22.45,0,.84-.11,1.16-.34.33-.24.59-.55.79-.94.21-.4.36-.87.46-1.4.1-.54.14-1.11.14-1.72,0-.66-.05-1.27-.16-1.83-.11-.56-.27-1.04-.48-1.44-.2-.41-.45-.73-.75-.95-.29-.23-.62-.34-.99-.34-.25,0-.5.04-.73.12-.23.08-.45.24-.65.48l.17-4.15Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="four" viewBox="0 0 18 20">
+			<g>
+				<rect x="2.25" y="2.5" width="13.5" height="15" style="fill: none; stroke-width: 0px;"/>
+				<rect x="2.25" y="2.5" width="13.5" height="15" style="fill: none; stroke-width: 0px;"/>
+				<path d="M8.17,16.69h3.56v-1.1h-1.2v-2.38h1.38v-1.04h-1.38V3.31h-1.55l-2.91,8.87v1.02h3.28v2.38h-1.19v1.1ZM9.36,12.16h-2.25l2.25-6.94v6.94Z"
+				      style="stroke-width: 0px;"/>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M8.17,16.69h3.56v-1.1h-1.2v-2.38h1.38v-1.04h-1.38V3.31h-1.55l-2.91,8.87v1.02h3.28v2.38h-1.19v1.1ZM9.36,12.16h-2.25l2.25-6.94v6.94Z"
+				      style="stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="four_2" viewBox="0 0 18 20">
+			<g>
+				<rect x="2.25" y="2.5" width="13.5" height="15" style="fill: none; stroke-width: 0px;"/>
+				<rect x="2.25" y="2.5" width="13.5" height="15" style="fill: none; stroke-width: 0px;"/>
+				<path d="M8.17,16.69h3.56v-1.1h-1.2v-2.38h1.38v-1.04h-1.38V3.31h-1.55l-2.91,8.87v1.02h3.28v2.38h-1.19v1.1ZM9.36,12.16h-2.25l2.25-6.94v6.94Z"
+				      style="stroke-width: 0px;"/>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M8.17,16.69h3.56v-1.1h-1.2v-2.38h1.38v-1.04h-1.38V3.31h-1.55l-2.91,8.87v1.02h3.28v2.38h-1.19v1.1ZM9.36,12.16h-2.25l2.25-6.94v6.94Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="heart" viewBox="0 0 28 28">
+			<g>
+				<rect width="28" height="28" style="fill: none; stroke-width: 0px;"/>
+				<path d="M14.01,7.18s2.12-5.09,5.54-5.01c1.14.03,2.42.63,3.82,2.19,2.57,2.86,1.83,7.17-.83,10.85-2.95,4.08-6.45,8.43-8.54,10.61-2.09-2.19-5.59-6.53-8.54-10.61-2.66-3.68-3.39-7.98-.83-10.85,1.4-1.56,2.68-2.16,3.82-2.19,3.42-.08,5.54,5.01,5.54,5.01Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="jack" viewBox="0 0 18 20">
+			<g>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M8.06,4.32h1.4v8.58c0,.45-.01.84-.04,1.19-.03.34-.08.63-.16.86-.08.23-.19.4-.33.53-.14.12-.33.18-.56.18s-.41-.06-.54-.17c-.14-.12-.24-.3-.31-.56-.07-.26-.11-.6-.14-1.01-.02-.41-.03-.93-.04-1.54h-1.22c0,.9.05,1.64.16,2.21.1.57.25,1.02.45,1.34.2.32.43.54.7.65.28.12.6.18.94.18s.67-.07.96-.2c.29-.14.52-.35.72-.65.2-.3.35-.7.46-1.18.11-.49.17-1.08.17-1.78V4.32h1.2v-1.09h-3.82v1.09Z"
+				      style="stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="jack_2" viewBox="0 0 18 20">
+			<g>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M8.06,4.32h1.4v8.58c0,.45-.01.84-.04,1.19-.03.34-.08.63-.16.86-.08.23-.19.4-.33.53-.14.12-.33.18-.56.18s-.41-.06-.54-.17c-.14-.12-.24-.3-.31-.56-.07-.26-.11-.6-.14-1.01-.02-.41-.03-.93-.04-1.54h-1.22c0,.9.05,1.64.16,2.21.1.57.25,1.02.45,1.34.2.32.43.54.7.65.28.12.6.18.94.18s.67-.07.96-.2c.29-.14.52-.35.72-.65.2-.3.35-.7.46-1.18.11-.49.17-1.08.17-1.78V4.32h1.2v-1.09h-3.82v1.09Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="jack-face-black" viewBox="0 0 106 140">
+			<g>
+				<rect width="106" height="140" style="fill: none; stroke-width: 0px;"/>
+				<path d="M79.91,56.75c-1.1-1.18-5.84-4.66-12.32-6.27-6.48-1.62-26.15,1.23-31.86,4.12-5.71,2.89-6.43,8.49-8.04,14.82-1.61,6.33,2.88,16.09,4.5,19.1,1.62,3.02,2.23,12.64,2.23,14.11s-.93,10.03-1.47,14.42c-.54,4.4-1.39,8.18-2.08,10.57-.7,2.39-6.41,12.39-6.41,12.39l37.39-14.39,2.42-9.03s10.8,1.54,13.58.54c2.78-1.01,1.62-6.25,1.55-7.87-.08-1.62,1.08-.85,1.62-1.39.54-.54-.23-1.24-.23-1.24,0,0,0-.39.62-.85.62-.46.77-.93.39-2.86-.39-1.93.39-1.78,1.31-3.01.93-1.23,4.31-1.23,4.31-2.85s-4.77-8.56-5.39-10.26c-.62-1.7,1.46-1.93,1.08-4.55s-1.61-11.6-1.61-11.6c1.63-4.78-.48-12.72-1.58-13.9Z"
+				      style="stroke-width: 0px;"/>
+				<path d="M69.97,55.55c1.35-.06,2.65.09,3.88.69,1.13.54,2.42.64,3.5,1.29,1.13.91,2.65.66,3.93.33,1.02-.26,2.06-.68,3.11-.35,1.97.61,2.6,2.91,2.95,5,.29,1.77-.4,3.47-1.09,5.04-.69,1.58-.6,3.36-.66,5.07-.03.88.35,1.63.93,2.23.76.79-.51.86-1.06.9-1.27.1-3.37.74-3.79-.55-.56-1.72.11-3.54-.36-5.29-.36-1.35-1.24-2.65-2.6-3.03-1.02-.29-2.04-.6-3.1-.67-1.29-.08-2.59.21-3.75.84-1.52.83-3.15,1.43-4.84,1.73-1.13,1.17-1.37,2.8-.96,4.64.62,2.78-1.01,4.48-3.78,6.71-2.78,2.24-4.01,5.09-4.86,8.33-1.54-2.16.46-3.55,1.31-7.87.85-4.32-5.63.08-7.25,3.55-1.62,3.47,1.08,4.71,1.85,7.33-3.16-1.31-5.09-5.25-4.71-9.33.39-4.09-4.24-6.17-4.24-6.17,0-.01,0-.02,0-.03-.35,0-.82-.35-1.13-.5-.76-.38-1.63-.5-2.47-.27-1.42.4-2.26,1.76-3.08,3.03-1.05,1.61-.81,3.67-.56,5.51.09.69.33,1.33.8,1.87,1.55,1.77,3.06,3.72,3.59,6.13.36,1.65.35,6.42-.43,4.96-.96-1.81-2.09-3.58-3.62-4.94-.43-.39-1.49-.81-1.59.04-.09.84,2.37,2.8,1.72,4.84-.36,2.29-1.55,4.44-3.14,5.39-.88-3.81-5.42-14.58-6.39-18.42-.65-2.58-.61-5.31-1.19-7.91-.25-1.14-.28-2.31-.16-3.47.25-2.42,1.19-4.68,1.77-7.02.43-1.76,1.4-3.65,3.13-4.22,2.32-.77,4.72-1.31,7.14-1.56,3.13-.32,6.28-.45,9.4-.94,3.33-.52,6.65-1.04,9.99-1.43,1.67-.19,3.32-.63,5-.67,2.23-.06,4.57-.71,6.82-.8h0Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+				<path d="M88,56.14c.06.02,5.22,2.16,7.14,3.09,1.93.93,4.78,3.03-1.7,3.18-6.23.15-26.63-2.8-28.22-3.03-12.26.5-26.14-.48-36.11,3.62-3.79-1.37-6.94-8.86-7.4-16,21.57-10.42,64.81-11.81,71.45-11.49.03,6.99-3.23,15.94-5.16,20.63Z"
+				      style="stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="jack-face-red" viewBox="0 0 106 140">
+			<g>
+				<rect width="106" height="140" style="fill: none; stroke-width: 0px;"/>
+				<path d="M79.91,56.75c-1.1-1.18-5.84-4.66-12.32-6.27-6.48-1.62-26.15,1.23-31.86,4.12-5.71,2.89-6.43,8.49-8.04,14.82-1.61,6.33,2.88,16.09,4.5,19.1,1.62,3.02,2.23,12.64,2.23,14.11s-.93,10.03-1.47,14.42c-.54,4.4-1.39,8.18-2.08,10.57-.7,2.39-6.41,12.39-6.41,12.39l37.39-14.39,2.42-9.03s10.8,1.54,13.58.54c2.78-1.01,1.62-6.25,1.55-7.87-.08-1.62,1.08-.85,1.62-1.39.54-.54-.23-1.24-.23-1.24,0,0,0-.39.62-.85.62-.46.77-.93.39-2.86-.39-1.93.39-1.78,1.31-3.01.93-1.23,4.31-1.23,4.31-2.85s-4.77-8.56-5.39-10.26c-.62-1.7,1.46-1.93,1.08-4.55s-1.61-11.6-1.61-11.6c1.63-4.78-.48-12.72-1.58-13.9Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+				<path d="M69.97,55.55c1.35-.06,2.65.09,3.88.69,1.13.54,2.42.64,3.5,1.29,1.13.91,2.65.66,3.93.33,1.02-.26,2.06-.68,3.11-.35,1.97.61,2.6,2.91,2.95,5,.29,1.77-.4,3.47-1.09,5.04-.69,1.58-.6,3.36-.66,5.07-.03.88.35,1.63.93,2.23.76.79-.51.86-1.06.9-1.27.1-3.37.74-3.79-.55-.56-1.72.11-3.54-.36-5.29-.36-1.35-1.24-2.65-2.6-3.03-1.02-.29-2.04-.6-3.1-.67-1.29-.08-2.59.21-3.75.84-1.52.83-3.15,1.43-4.84,1.73-1.13,1.17-1.37,2.8-.96,4.64.62,2.78-1.01,4.48-3.78,6.71-2.78,2.24-4.01,5.09-4.86,8.33-1.54-2.16.46-3.55,1.31-7.87.85-4.32-5.63.08-7.25,3.55-1.62,3.47,1.08,4.71,1.85,7.33-3.16-1.31-5.09-5.25-4.71-9.33.39-4.09-4.24-6.17-4.24-6.17,0-.01,0-.02,0-.03-.35,0-.82-.35-1.13-.5-.76-.38-1.63-.5-2.47-.27-1.42.4-2.26,1.76-3.08,3.03-1.05,1.61-.81,3.67-.56,5.51.09.69.33,1.33.8,1.87,1.55,1.77,3.06,3.72,3.59,6.13.36,1.65.35,6.42-.43,4.96-.96-1.81-2.09-3.58-3.62-4.94-.43-.39-1.49-.81-1.59.04-.09.84,2.37,2.8,1.72,4.84-.36,2.29-1.55,4.44-3.14,5.39-.88-3.81-5.42-14.58-6.4-18.42-.65-2.58-.61-5.31-1.19-7.91-.25-1.14-.28-2.31-.16-3.47.25-2.42,1.19-4.68,1.77-7.02.43-1.76,1.4-3.65,3.13-4.23,2.32-.77,4.72-1.31,7.14-1.56,3.13-.32,6.28-.45,9.4-.94,3.33-.52,6.65-1.04,9.99-1.43,1.67-.19,3.32-.63,5-.67,2.23-.06,4.57-.71,6.82-.8h0Z"
+				      style="stroke-width: 0px;"/>
+				<path d="M88,56.23c.06.02,5.22,2.15,7.14,3.07,1.93.93,4.78,3.01-1.7,3.16-6.23.15-26.63-2.78-28.22-3.01-12.26.5-26.14-.47-36.11,3.59-3.79-1.36-6.94-8.81-7.4-15.9,21.57-10.36,64.82-11.73,71.45-11.42.03,6.95-3.23,15.84-5.16,20.5Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="king" viewBox="0 0 18 20">
+			<g>
+				<rect x="0" y="0" width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<rect x="0" y="0" width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M5.27,3.31h3.6v1.09h-1.2v4.57l2.47-4.57h-.73v-1.09h2.97v1.09h-1l-2.51,4.65,2.76,6.53h1.1v1.1h-3.17v-1.1h.82l-2.26-5.5-.44.8v4.7h1.2v1.1h-3.6v-1.1h1.19V4.4h-1.19v-1.09Z"
+				      style="stroke-width: 0px;"/>
+				<rect y="0" width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M5.27,4.4h1.19v11.19h-1.19v1.1h3.6v-1.1h-1.2v-4.7l.44-.8,2.26,5.5h-.82v1.1h3.17v-1.1h-1.1l-2.76-6.53,2.51-4.65h1v-1.09h-2.97v1.09h.73l-2.47,4.57v-4.57h1.2v-1.09h-3.6v1.09Z"
+				      style="stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="king_2" viewBox="0 0 18 20">
+			<g>
+				<rect x="0" y="0" width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<rect x="0" y="0" width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M5.27,3.31h3.6v1.09h-1.2v4.57l2.47-4.57h-.73v-1.09h2.97v1.09h-1l-2.51,4.65,2.76,6.53h1.1v1.1h-3.17v-1.1h.82l-2.26-5.5-.44.8v4.7h1.2v1.1h-3.6v-1.1h1.19V4.4h-1.19v-1.09Z"
+				      style="stroke-width: 0px;"/>
+				<rect y="0" width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M5.27,4.4h1.19v11.19h-1.19v1.1h3.6v-1.1h-1.2v-4.7l.44-.8,2.26,5.5h-.82v1.1h3.17v-1.1h-1.1l-2.76-6.53,2.51-4.65h1v-1.09h-2.97v1.09h.73l-2.47,4.57v-4.57h1.2v-1.09h-3.6v1.09Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="king-face-black" viewBox="0 0 106 140">
+			<g>
+				<rect width="106" height="140" style="fill: none; stroke-width: 0px;"/>
+				<path d="M77.02,56.85c-.67-2.12-4.83-8.78-8.59-11.58-3.76-2.8-14.38-5.31-21.62-5.21-7.24.09-20.75,7.91-25.1,12.26-4.35,4.35-5.12,9.37-4.73,14.77s-1.16,19.88.77,22.11c1.93,2.22,1.83,2.41,2.9,4.34s1.06,3.67.96,5.5c-.09,1.83,1.35,4.73,4.06,7.43,2.7,2.7,6.66,1.35,6.66,1.35,0,0,.87,6.66-.77,9.94-1.64,3.28-9.25,22.24-9.25,22.24l38.69-16.36s.12-2.5,1.95-5.06c.84-1.17-.59-3.65-.17-4.36,1.25-2.12,2.94-1.35,4.58-2.42,1.64-1.06,4.72.86,6.66,1.53,1.93.68,5.92.18,7.08-1.27,1.16-1.45.87-3.47.29-5.79-.58-2.32.77-3.02,1.73-3.5,2.08-3.11-.93-2.94-.93-2.94.87.29,2.83-1.93,2.64-3.28-.2-1.35-1.04-3.31-.94-4.67.09-1.35,2.72.21,4.36-.37,1.64-.58,2.83-3.72,1.77-4.46-2.36-1.64-4.63-5.61-6.09-8.95-.97-2.23-3.23-2.83-3.23-2.83,0,0,1.06-2.99,1.06-5.31s-4.73-12.65-4.73-13.13h0Z"
+				      style="stroke-width: 0px;"/>
+				<path d="M75.79,50.66c.42,0,.9.22,1.45.77,1.46,1.46.85,4.47,1.93,6.02,1.08,1.54,3.08,2.08,3.39,6.48.31,4.4-1.16,4.09-1.16,4.09l-3.26-8.07c-.49,2.62-.76,7.36-4.37,8.13-3.6.76-6.38-.82-7.85,1.91-1.64-.93.05-4.31,2.62-4.74,2.56-.44,4.8-1.69,4.8-2.02s-.38-.11-6.54.71c-6.16.82-8.84,3.55-9.44,5.18-.6,1.64-.76,5.35-4.42,5.46-3.65.11-7.69,3.38-9.49,3.22-1.8-.16-4.31-1.85-4.8-3.22-.49-1.36-6.55-2.95-9.22,2.07-2.67,5.02,3.87,10.03,5.46,10.96,1.16.68,2.38,2.45,2.97,3.36.92-.85,2-1.84,2-1.84,0,0-.73,3.05-.65,4.17.07.99.17,2.63.9,3.56,0,0-.03.03-.04.03-.38.6-.93,1.69-.93,2.45s1.31,1.97,3.44,3.49c2.06,1.48,2.01,2.2.61,3.73-.76-.11-1.58-.14-2.52-.08-1.36.08-3.13.19-4.61.08-.06,2.63,2.35,2.62-.08,5.05-2.56,2.57-2.29,14.57-9,17.18-.16-1.09,4.31-7.36,2.4-10.74-.87,1.91.06,4.36-3.11,7.85-3.16,3.49-5.95,1.63-6.44,4.96-.49,3.33.6,4.09.6,4.09,0,0-4.96-2.78-4.09-7.09s3.55-5.07,4.15-7.8c.6-2.73.38-5.23-.44-6.76-.82-1.53-2.23-2.51-2.83-3.6-.6-1.09-1.91-2.34-1.75-6.22.16-3.87,2.23-4.14,1.96-6.44-.27-2.29-5.87-.29-11.56-9.87-5.7-9.58,5.03-14.37,6.19-15.68,1.16-1.31,2.46-2.47,2.93-4.09.46-1.62-.85-3.32.23-6.4,1.08-3.08,1.01-5.86,5.09-7.87,4.24-1.23,2.55,1.47,2.93,2.62.39,1.16.85,1.93.85,1.93,0,0,14.89,3.24,19.13,1.16,4.24-2.08,5.09-3.55,6.02-3.93s3.78-1.08,4.94-.54.93,1.39,3.86,1.54c2.93.15-.85,1.01,4.01.15,4.86-.85,11.11-2.62,11.95-3.93.53-.82,1.09-1.46,1.8-1.46h0ZM83.54,91.68c.65.03,1.31.24,1.95.72.19.04,1.5,1.2,1.27,2.28-.23,1.08-.77,2.85-2.43,2.74-1.66-.12-2.28-.31-3.35.31-1.08.62-2.28.73-2.47,2.39s-1.42,2.62-1.35,2.89c.08.27,1.66-.81,2.04.12.39.93.89,1.47,1.78,1.43.88-.04,2.97-.31,4.28,1.5,1.31,1.81-.54,3.2.62,4.67,1.16,1.46,2.04.73,2.04.73,0,0,.34,2.32-1.74,2.55s-4.71.27-4.71,1.27-.11,2.54,1.62,2.35,2.97-.85,2.97-.85c0,0-.7,2.08-3.09,2.51-2.39.42-6.98.77-7.33-1.43-.34-2.2-1.27-2.85-1.66-2.85s-.96.31-1.5.19-.85-1.5-1.47-.58c-.62.93.23,1.35-.15,3.13-.39,1.77-3.2,2.04-3.2,2.04,0,0,1.31-.15,1.47-1.93.15-1.77-.46-3.2-1.27-3.62-.74-.39-2.3-.42-3.33-.39-.57-1.44-1.32-3.56-1.55-5.23-.26-1.89.87-4.46,1.64-5.95.03-.04.06-.08.08-.11.09-.16.2-.41.3-.6.12-.21.27-.48.27-.48l-.03-.02c.43-.9.91-1.89,1.42-2.64.73-1.08,2.86-3.13,4.48-2.55,1.62.58,2.32,1.08,3.05.96.73-.11,1.93-.31,2.97-1.39.85-.88,3.55-4.27,6.38-4.15h0Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+				<path d="M46.91,4.41c.2,2.32-.53,3.83-.53,3.83,0,0,3.36-2.49,5.76-1.45,2.4,1.05,1.96,2.65,1.42,3.86-1.05-1.03-.5-.56-1.83-1.07-1.33-.51-1.94-1.1-1.94-1.1,0,0-2.65.82-2.79,2.5-.09.93.19,3.5.34,3.91,2.94-.38,7.21-1.98,9.97-2.66,1.68-.41,5.11-.43,8.13.54.72-.26,1.36-.54,1.9-.85,2-1.15,4.28-1.8,6.6-2.01.24-.02.48-.04.72-.06h0c3.61-.2,7.23.62,9.82,2.21,4.43,2.72,3.5,14.21-7.76,19.39-7.12,3.27-8.69,6.59-8.88,8.59,0,0,2.43,1.22,2.94,1.73.51.51,1.3,2.43.82,4.2-.48,1.77-1.64.59-2.52.89s-4.13,1.05-7.49,1.1c-3.36.05-11.86.43-14.98.4-3.12-.03-11.6-.24-14.57.32-2.96.56-5.45,1.08-6.93.46-1.48-.62-1.03-1.07-1.1-2.09-.07-1.01.77-1.85,1.42-3.03.64-1.18,2.49.26,2.49.26h0c.19-1.29.05-5.81-10.04-8.9-11.85-3.62-14.31-14.89-10.28-18.18,2.36-1.93,5.83-3.23,9.45-3.51.24-.02.48-.03.73-.04,2.32-.09,4.68.25,6.8,1.11.57.23,1.25.43,2,.59,2.86-1.36,6.26-1.8,7.98-1.62,2.82.3,7.26,1.32,10.22,1.3.1-.43.03-3.02-.18-3.92-.37-1.65-3.1-2.11-3.1-2.11,0,0-.53.67-1.78,1.35-1.25.68-.77.14-1.67,1.3-.69-1.12-1.35-2.65.9-4.01s5.9.67,5.9.67c0,0-.92-1.4-1.04-3.73-.11-2.33,1.31-3.57,1.31-3.57h0s1.57,1.04,1.77,3.36ZM75.41,12.01c-.61.03-1.22.16-1.8.42-1.1.5-3,1.15-5.14,1.83,1.31.95,2.28,2.26,2.56,4.01.98,6.16-3.2,11.4-3.57,16.38,0,.03-.01.07-.01.11.29-.28.6-.57.94-.88,2.81-2.45,7.92-4.35,11.1-7.54,3.19-3.19,5.44-7.58,4.02-9.75-1.2-1.83-4.78-4.71-8.1-4.57h0,0ZM54.99,17.64c-2.55.03-2.15,1.7-2.15,1.7,0,0,6.21,1.85,8.13,7.24,1.64,4.6,2.99,9.08,3.41,10.52.24-.84.5-1.72.8-2.59,1.18-3.48,2.72-10.1,2.39-12.91-.28-2.4-.69-5.09-2.42-6.34-4.31,1.25-8.75,2.36-10.17,2.37ZM17.52,15.95c-.31-.03-.61-.03-.92,0h0c-3.31.3-6.48,3.64-7.42,5.61-1.12,2.34,1.7,6.4,5.28,9.13,3.58,2.74,8.9,3.94,12.02,5.99.38.25.73.5,1.05.74,0-.04-.02-.07-.02-.11-1.04-4.89-5.88-9.51-5.73-15.75.04-1.77.82-3.19,2-4.31-2.21-.39-4.18-.79-5.34-1.13-.3-.09-.61-.15-.92-.17h0ZM25.65,24.42c.05,2.83,2.46,9.18,4.09,12.47.41.82.79,1.66,1.14,2.46.23-1.49.97-6.11,1.98-10.88,1.18-5.6,7.09-8.27,7.09-8.27,0,0,.17-1.71-2.36-1.4-1.41.17-5.95-.32-10.39-.99-1.55,1.47-1.59,4.19-1.56,6.61ZM67.84,40.27c0-.09,0-.18,0-.19,0,.07,0,.12,0,.19ZM65.38,42.14s.31-.02.33-.02c.02,0,.04,0,.06,0l-.39.03Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="king-face-red" viewBox="0 0 106 140">
+			<g>
+				<rect width="106" height="140" style="fill: none; stroke-width: 0px;"/>
+				<path d="M77.02,56.85c-.67-2.12-4.83-8.78-8.59-11.58-3.76-2.8-14.38-5.31-21.62-5.21-7.24.09-20.75,7.91-25.1,12.26-4.35,4.35-5.12,9.37-4.73,14.77.39,5.4-1.16,19.88.77,22.11,1.93,2.22,1.83,2.41,2.9,4.34s1.06,3.67.96,5.5c-.09,1.83,1.35,4.73,4.06,7.43,2.7,2.7,6.66,1.35,6.66,1.35,0,0,.87,6.66-.77,9.94-1.64,3.28-9.25,22.24-9.25,22.24l38.69-16.36s.12-2.5,1.95-5.06c.84-1.17-.59-3.65-.17-4.36,1.25-2.12,2.94-1.35,4.58-2.42,1.64-1.06,4.72.86,6.66,1.53,1.93.68,5.92.18,7.08-1.27,1.16-1.45.87-3.47.29-5.79-.58-2.32.77-3.02,1.73-3.5,2.07-3.11-.93-2.94-.93-2.94.87.29,2.83-1.93,2.64-3.28-.2-1.35-1.04-3.31-.94-4.67.09-1.35,2.72.21,4.36-.37,1.64-.58,2.83-3.72,1.77-4.46-2.36-1.64-4.63-5.61-6.09-8.95-.97-2.23-3.23-2.83-3.23-2.83,0,0,1.06-2.99,1.06-5.31s-4.73-12.65-4.73-13.13h0Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+				<path d="M75.79,50.66c.42,0,.9.22,1.45.77,1.46,1.46.85,4.47,1.93,6.02,1.08,1.54,3.08,2.08,3.39,6.48.31,4.4-1.16,4.09-1.16,4.09l-3.26-8.07c-.49,2.62-.76,7.36-4.37,8.13-3.6.76-6.38-.82-7.85,1.91-1.64-.93.05-4.31,2.62-4.74,2.56-.44,4.8-1.69,4.8-2.02s-.38-.11-6.54.71c-6.16.82-8.84,3.55-9.44,5.18-.6,1.64-.76,5.35-4.41,5.46-3.65.11-7.69,3.38-9.49,3.22-1.8-.16-4.31-1.85-4.8-3.22-.49-1.36-6.55-2.95-9.22,2.07-2.67,5.02,3.87,10.03,5.46,10.96,1.16.68,2.38,2.45,2.97,3.36.92-.85,2-1.84,2-1.84,0,0-.73,3.05-.65,4.17.07.99.17,2.63.9,3.56,0,0-.03.03-.04.03-.38.6-.93,1.69-.93,2.45s1.31,1.97,3.44,3.49c2.06,1.48,2.01,2.2.61,3.73-.76-.11-1.58-.14-2.52-.08-1.36.08-3.13.19-4.61.08-.06,2.63,2.35,2.62-.08,5.05-2.56,2.57-2.29,14.57-9,17.18-.16-1.09,4.31-7.36,2.4-10.74-.87,1.91.06,4.36-3.11,7.85-3.16,3.49-5.95,1.63-6.44,4.96-.49,3.33.6,4.09.6,4.09,0,0-4.96-2.78-4.09-7.09.87-4.31,3.55-5.07,4.15-7.8.6-2.73.38-5.23-.44-6.76-.82-1.53-2.23-2.51-2.83-3.6-.6-1.09-1.91-2.34-1.75-6.22.16-3.87,2.23-4.14,1.96-6.44-.27-2.29-5.87-.29-11.56-9.87-5.7-9.58,5.03-14.37,6.19-15.68,1.16-1.31,2.46-2.47,2.93-4.09.46-1.62-.85-3.32.23-6.4,1.08-3.08,1.01-5.86,5.09-7.87,4.24-1.23,2.55,1.47,2.93,2.62.39,1.16.85,1.93.85,1.93,0,0,14.89,3.24,19.13,1.16,4.24-2.08,5.09-3.55,6.02-3.93.93-.39,3.78-1.08,4.94-.54s.93,1.39,3.86,1.54c2.93.15-.85,1.01,4.01.15,4.86-.85,11.11-2.62,11.95-3.93.53-.82,1.09-1.46,1.8-1.46h0ZM83.54,91.68c.65.03,1.31.24,1.95.72.19.04,1.5,1.2,1.27,2.28-.23,1.08-.77,2.85-2.43,2.74-1.66-.12-2.28-.31-3.35.31-1.08.62-2.28.73-2.47,2.39s-1.42,2.62-1.35,2.89c.08.27,1.66-.81,2.04.12.39.93.89,1.47,1.78,1.43.88-.04,2.97-.31,4.28,1.5,1.31,1.81-.54,3.2.62,4.67,1.16,1.46,2.04.73,2.04.73,0,0,.34,2.32-1.74,2.55-2.08.23-4.71.27-4.71,1.27s-.11,2.54,1.62,2.35c1.73-.19,2.97-.85,2.97-.85,0,0-.7,2.08-3.09,2.51-2.39.42-6.98.77-7.33-1.43-.34-2.2-1.27-2.85-1.66-2.85s-.96.31-1.5.19-.85-1.5-1.47-.58c-.62.93.23,1.35-.15,3.13-.39,1.77-3.2,2.04-3.2,2.04,0,0,1.31-.15,1.47-1.93.15-1.77-.46-3.2-1.27-3.62-.74-.39-2.3-.42-3.33-.39-.57-1.44-1.32-3.56-1.55-5.23-.26-1.89.87-4.46,1.64-5.95.03-.04.06-.08.08-.11.09-.16.2-.41.3-.6.12-.21.27-.48.27-.48l-.03-.02c.43-.9.91-1.89,1.42-2.64.73-1.08,2.86-3.13,4.48-2.55,1.62.58,2.32,1.08,3.05.96.73-.11,1.93-.31,2.97-1.39.85-.88,3.55-4.27,6.38-4.15h0Z"
+				      style="stroke-width: 0px;"/>
+				<path d="M45.14,1.05s1.57,1.04,1.77,3.36c.2,2.32-.53,3.83-.53,3.83,0,0,3.36-2.49,5.76-1.45,2.4,1.05,1.96,2.65,1.42,3.86-1.05-1.03-.5-.56-1.83-1.07-1.33-.51-1.94-1.1-1.94-1.1,0,0-2.65.82-2.79,2.5-.09.93.19,3.5.34,3.91,2.94-.38,7.21-1.98,9.97-2.66,1.68-.41,5.11-.43,8.13.54.72-.26,1.36-.54,1.9-.85,2-1.15,4.28-1.8,6.6-2.01.24-.02.48-.04.72-.06h0c3.61-.2,7.23.62,9.82,2.21,4.43,2.72,3.5,14.21-7.76,19.39-7.12,3.27-8.69,6.59-8.88,8.59,0,0,2.43,1.22,2.94,1.73.51.51,1.3,2.43.82,4.2-.48,1.77-1.64.59-2.52.89s-4.13,1.05-7.49,1.1c-3.36.05-11.86.43-14.98.4-3.12-.03-11.6-.24-14.57.32-2.96.56-5.45,1.08-6.93.46-1.48-.62-1.03-1.07-1.1-2.09-.07-1.01.77-1.85,1.42-3.03.64-1.18,2.49.26,2.49.26h0c.19-1.29.05-5.81-10.04-8.9-11.85-3.62-14.31-14.89-10.28-18.18,2.36-1.93,5.83-3.23,9.45-3.51.24-.02.48-.03.73-.04,2.32-.09,4.68.25,6.8,1.11.57.23,1.25.43,2,.59,2.86-1.36,6.26-1.8,7.98-1.62,2.82.3,7.26,1.32,10.22,1.3.1-.43.03-3.02-.18-3.92-.37-1.65-3.1-2.11-3.1-2.11,0,0-.53.67-1.78,1.35-1.25.68-.77.14-1.67,1.3-.69-1.12-1.35-2.65.9-4.01s5.9.67,5.9.67c0,0-.92-1.4-1.04-3.73-.11-2.33,1.31-3.57,1.31-3.57h0s0,0,0,0ZM75.41,12.01c-.61.03-1.22.16-1.8.42-1.1.5-3,1.15-5.14,1.83,1.31.95,2.28,2.26,2.56,4.01.98,6.16-3.2,11.4-3.57,16.38,0,.03-.01.07-.01.11.29-.28.6-.57.94-.88,2.81-2.45,7.92-4.35,11.1-7.54,3.19-3.19,5.44-7.58,4.02-9.75-1.2-1.83-4.78-4.71-8.1-4.57h0,0ZM65.16,15.27c-4.31,1.25-8.75,2.36-10.17,2.37-2.55.03-2.15,1.7-2.15,1.7,0,0,6.21,1.85,8.13,7.24,1.64,4.6,2.99,9.08,3.41,10.52.24-.84.5-1.72.8-2.59,1.18-3.48,2.72-10.1,2.39-12.91-.28-2.4-.69-5.09-2.42-6.34h0ZM17.52,15.95c-.31-.03-.61-.03-.92,0h0c-3.31.3-6.48,3.64-7.42,5.61-1.12,2.34,1.7,6.4,5.28,9.13,3.58,2.74,8.9,3.94,12.02,5.99.38.25.73.5,1.05.74,0-.04-.02-.07-.02-.11-1.04-4.89-5.88-9.51-5.73-15.75.04-1.77.82-3.19,2-4.31-2.21-.39-4.18-.79-5.34-1.13-.3-.09-.61-.15-.92-.17h0ZM25.65,24.42c.05,2.83,2.46,9.18,4.09,12.47.41.82.79,1.66,1.14,2.46.23-1.49.97-6.11,1.98-10.88,1.18-5.6,7.09-8.27,7.09-8.27,0,0,.17-1.71-2.36-1.4-1.41.17-5.95-.32-10.39-.99-1.55,1.47-1.59,4.19-1.56,6.61ZM67.85,40.27c0-.09,0-.18,0-.19,0,.07,0,.12,0,.19ZM65.39,42.14s.31-.02.33-.02c.02,0,.04,0,.06,0l-.39.03Z"
+				      style="stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<linearGradient id="linear-gradient" x1="352.44" y1="86.5" x2="366.57" y2="-10.01"
+				gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#455c00"/>
+			<stop offset="1" stop-color="#6cbf00"/>
+		</linearGradient>
+		<linearGradient id="linear-gradient-2" x1="0" y1="86.42" x2="163" y2="86.42"
+				gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#b11a00"/>
+			<stop offset="1" stop-color="#5c1600"/>
+		</linearGradient>
+		<linearGradient id="linear-gradient-3" x1="163" y1="91.84" x2="88" y2="91.84"
+				xlink:href="#linear-gradient-2"/>
+		<linearGradient id="linear-gradient-4" x1="725.89" y1="86.42" x2="562.89" y2="86.42"
+				xlink:href="#linear-gradient-2"/>
+		<linearGradient id="linear-gradient-5" x1="562.89" y1="91.84" x2="637.89" y2="91.84"
+				xlink:href="#linear-gradient-2"/>
+		<linearGradient id="linear-gradient-6" x1="88" y1="121.41" x2="637.89" y2="121.41"
+				gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#aa0600"/>
+			<stop offset=".5" stop-color="#e92200"/>
+			<stop offset="1" stop-color="#bf1100"/>
+		</linearGradient>
+		<linearGradient id="linear-gradient-7" x1="364.81" y1="105.72" x2="364.81" y2="165.13"
+				gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#fffc94"/>
+			<stop offset=".2" stop-color="#fff"/>
+			<stop offset=".36" stop-color="#bf992e"/>
+			<stop offset=".44" stop-color="#feff94"/>
+			<stop offset="1" stop-color="#e9e400"/>
+		</linearGradient>
+		<symbol id="logo" viewBox="0 0 725.89 186.35">
+			<g>
+				<path d="M451.8,80.99l-182.58,9.02c-3.09.15-5.72-2.23-5.87-5.32l-3.45-69.8c-.15-3.09,2.23-5.72,5.32-5.87L447.8,0c3.09-.15,5.72,2.23,5.87,5.32l3.45,69.8c.15,3.09-2.23,5.72-5.32,5.87Z"
+				      style="fill: url(#linear-gradient); stroke-width: 0px;"/>
+				<path d="M0,52.48S153,9.48,163,21.48v104.5s-107,10.5-157,27.5c58-25,105-73,105-73,0,0-50-37-111-28Z"
+				      style="fill: url(#linear-gradient-2); stroke-width: 0px;"/>
+				<path d="M163,21.48c-2,8-75,20-75,35v105.72s4-25.72,75-36.22V21.48Z"
+				      style="fill: url(#linear-gradient-3); stroke-width: 0px;"/>
+				<path d="M725.89,52.48s-153-43-163-31c0,77,0,104.5,0,104.5,0,0,107,10.5,157,27.5-58-25-105-73-105-73,0,0,50-37,111-28Z"
+				      style="fill: url(#linear-gradient-4); stroke-width: 0px;"/>
+				<path d="M562.89,21.48c2,8,75,20,75,35s0,105.72,0,105.72c0,0-4-25.72-75-36.22,0-37.01,0-104.5,0-104.5Z"
+				      style="fill: url(#linear-gradient-5); stroke-width: 0px;"/>
+				<path d="M461.89,74.48h-77.52s-.03,0-.17,0h-120.2c-130,0-176-9-176-18v105.72c0,24.72,146,24.15,178,24.15h193.89c32,0,178,.58,178-24.15V56.48c0,9-46,18-176,18Z"
+				      style="fill: url(#linear-gradient-6); stroke-width: 0px;"/>
+				<path d="M160.27,122.11c0-.07,0-.1,0-.17,9.95-2.85,13.52-9.05,13.52-15.36,0-8.22-6.26-13.86-18.71-14.25-2.13-.07-7.81-.09-13.44-.51-3.93-.29-8.46-.85-10.97-1.33v1.78c6.13,1.01,7.29,1.94,7.28,8.42-.02,14.72-.05,29.45-.08,44.17-.01,6.48-1.19,7.37-7.2,6.92v1.78c2.46.12,6.84.47,11.01.77,7.3.53,12.7.88,15.31,1,10.3.45,21.45-5.53,21.45-17.04,0-7.22-4.09-14.03-18.16-16.18ZM146.23,101.29c.02-6.13,1.2-7.54,6.63-7.34,8.9.33,12.43,4.8,12.42,13.54,0,7.74-2.62,14.62-13.1,14.21-2.4-.09-3.6-.15-6-.29.02-8.05.03-12.07.05-20.12ZM152.81,153.16c-5.53-.21-6.7-1.49-6.68-7.7.02-9.01.03-13.51.06-22.51,2.99.17,4.49.24,7.48.34,11.3.4,15.86,5.55,15.85,14.6,0,10-5.03,15.72-16.7,15.28ZM230.29,137.73h-2.04c-1,11.79-5.87,15.79-13.75,15.79h-5.61c-6.05,0-7.22-.91-7.22-7.4v-35.28c0-6.53,1.17-7.4,7.22-7.66v-1.78c-2.74.17-7.22.26-11.31.26-4.61,0-8.92-.09-11.4-.26v1.78c6.05.26,7.22,1.13,7.22,7.66v35.28c0,6.48-1.17,7.4-7.22,7.66v1.78c8.48-.26,19.79-.26,24.93-.26,5.74,0,13.75,0,19.53.26-.44-4.18-.61-8.48-.61-10.53,0-2.83.09-5.44.26-7.31ZM282.49,148.08c-6.95-15.7-13.89-31.41-20.84-47.11h-1.44c-6.55,14.85-13.11,29.7-19.66,44.55-1.78,4.09-3.92,7.4-7.31,8.27v1.78c1.52-.17,5.7-.26,7.74-.26,3.22,0,6.31.09,8.09.26v-1.78c-4.87-.39-6.92-2.22-6.92-5.26,0-1.61.52-3.48,1.48-5.7,1.2-2.66,1.8-3.99,3-6.66h21.75c1.79,4.05,2.69,6.08,4.48,10.14.83,1.78,1.22,3.17,1.22,4.22,0,2.39-2.13,3.09-6.39,3.26v1.78c2.52-.17,6.79-.26,11.44-.26,3.35,0,7.09.09,9.53.26v-1.78c-1.87-.09-4.22-1.26-6.18-5.7ZM247.42,134.38c4.05-9.07,6.08-13.6,10.14-22.67,4.02,9.07,6.03,13.6,10.05,22.67h-20.19ZM336.6,135.94c-.91,6.35-1.78,9.18-4.13,12.31-3.35,4.57-8.66,6.91-13.62,6.79-13.08-.34-17.91-14.95-17.92-26.36-.01-11.19,4.13-26.43,17.31-26.75,4.92-.12,9.88,2.31,13.27,6.79,2.22,2.92,3.22,4.87,4.44,11.4h2.04c0-9.44.09-14.7.39-18.71h-2.09c-.3,3.61-1,5.39-2.26,5.39-.48,0-1.04-.3-1.74-.87-3.57-3-7.49-5.61-13.7-5.79-15.77-.45-25.98,14.62-26.54,28.89-.59,15.26,11.03,27.93,26.45,27.8,6.69-.06,10.7-2.7,14.44-5.79.7-.57,1.26-.87,1.78-.87,1.22,0,1.91,1.78,2.22,5.39h2.04c-.26-4.18-.35-9.7-.35-19.62h-2.04ZM401.9,153.78c-2.78-1.09-4.92-2.83-6.96-5.44-6.55-8.27-13.11-16.53-19.66-24.8,5.62-5.62,8.43-8.43,14.05-14.05,4.57-4.35,6.61-5.61,10.88-6.4v-1.7c-1.7.17-3.92.26-6.31.26-3.13,0-7.31-.09-10.53-.26v1.7c3.57.09,5.26,1.31,5.26,3.05,0,1.17-.78,2.57-2.31,4-4.25,4.33-6.37,6.5-10.62,10.83-4.79,4.61-8.09,5.74-11.96,6v-16.14c0-6.53,1.17-7.4,7.22-7.66v-1.78c-2.74.17-7.22.26-11.31.26-4.61,0-8.92-.09-11.4-.26v1.78c6.05.26,7.22,1.13,7.22,7.66v35.28c0,6.48-1.17,7.4-7.22,7.66v1.78c2.48-.17,6.79-.26,11.4-.26,4.09,0,8.57.09,11.31.26v-1.78c-6.05-.26-7.22-1.17-7.22-7.66v-17.66c4.83.17,6.83,1.61,9.18,4.83,4.75,6.59,7.13,9.89,11.88,16.49.7.91,1.13,1.7,1.13,2.26,0,1.09-1.39,1.61-5.35,1.74v1.78c5.26-.26,8.92-.26,11.35-.26,2.92,0,7.09.09,9.96.26v-1.78ZM405.81,101.4v1.78c6.05.26,7.22,1.13,7.22,7.66v31.8c0,12.31-.38,16.67-1.52,20.4-1.42,4.65-4.13,7.48-8.4,7.48-.87,0-1.87-.09-2.39-.17,1.35-.78,2.31-2.39,2.31-3.92,0-2.39-2.04-4.26-4.35-4.26-2.44,0-4.31,1.87-4.31,4.26,0,2.04,1.03,3.39,2.44,4.26,1.69,1.05,3.92,1.44,5.96,1.44,9.44,0,15.14-6.14,17.01-14.36,1.35-5.96,1.52-15.83,1.52-23.23v-23.71c0-6.53,1.17-7.4,7.22-7.66v-1.78c-2.78.17-7.22.26-11.31.26-4.66,0-8.92-.09-11.4-.26ZM479.55,148.08c-6.95-15.7-13.89-31.41-20.84-47.11h-1.44c-6.55,14.85-13.11,29.7-19.66,44.55-1.78,4.09-3.92,7.4-7.31,8.27v1.78c1.52-.17,5.7-.26,7.74-.26,3.22,0,6.31.09,8.09.26v-1.78c-4.87-.39-6.92-2.22-6.92-5.26,0-1.61.52-3.48,1.48-5.7,1.2-2.66,1.8-3.99,3-6.66h21.75c1.79,4.05,2.69,6.08,4.48,10.14.83,1.78,1.22,3.17,1.22,4.22,0,2.39-2.13,3.09-6.39,3.26v1.78c2.52-.17,6.79-.26,11.44-.26,3.35,0,7.09.09,9.53.26v-1.78c-1.87-.09-4.22-1.26-6.18-5.7ZM444.49,134.38c4.05-9.07,6.08-13.6,10.14-22.67,4.02,9.07,6.03,13.6,10.05,22.67h-20.19ZM533.67,135.94c-.91,6.35-1.78,9.18-4.13,12.31-3.35,4.57-8.66,6.91-13.62,6.79-13.08-.34-17.91-14.95-17.92-26.36-.01-11.19,4.13-26.43,17.31-26.75,4.92-.12,9.88,2.31,13.27,6.79,2.22,2.92,3.22,4.87,4.44,11.4h2.04c0-9.44.09-14.7.39-18.71h-2.09c-.3,3.61-1,5.39-2.26,5.39-.48,0-1.04-.3-1.74-.87-3.57-3-7.49-5.61-13.7-5.79-15.77-.45-25.98,14.62-26.54,28.89-.59,15.26,11.03,27.93,26.45,27.8,6.69-.06,10.7-2.7,14.44-5.79.7-.57,1.26-.87,1.78-.87,1.22,0,1.91,1.78,2.22,5.39h2.04c-.26-4.18-.35-9.7-.35-19.62h-2.04ZM592.13,146.35c-6.68-7.66-13.25-15.42-19.71-23.26,5.62-5.89,8.42-8.9,14.01-15.06,4.55-4.79,6.59-6.3,10.84-7.68,0-.68,0-1.02,0-1.7-1.69.41-3.91.78-6.3,1.05-3.13.35-7.31.65-10.53.71,0,.68,0,1.02,0,1.7,3.57-.17,5.27.88,5.27,2.62,0,1.18-.77,2.65-2.29,4.21-4.23,4.7-6.34,7-10.59,11.55-4.78,4.85-8.11,6.06-12,6.39,0-6.46-.01-9.69-.02-16.16,0-6.53,1.17-7.39,7.22-7.87,0-.71,0-1.07,0-1.79-2.74.27-7.22.48-11.32.53-4.61.06-8.92-.03-11.4-.2v1.78c6.05.26,7.22,1.11,7.22,7.64,0,11.76,0,23.52,0,35.29,0,6.48-1.19,7.4-7.23,7.67v1.78c2.48-.17,6.79-.25,11.44-.29,4.12-.03,8.64-.03,11.41.06,0-.71,0-1.07,0-1.79-6.1-.08-7.29-1.02-7.29-7.51,0-7.07-.01-10.61-.02-17.68,4.85.09,6.87,1.45,9.23,4.59,4.79,6.43,7.2,9.61,11.97,15.86.7.86,1.14,1.61,1.14,2.18,0,1.09-1.38,1.76-5.35,2.13,0,.72,0,1.07,0,1.79,5.28-.58,8.92-.95,11.33-1.22,2.89-.32,6.99-.81,9.78-1.11v-1.78c-2.71-.62-4.81-2.07-6.84-4.43Z"
+				      style="stroke-width: 0px;"/>
+				<path d="M160.27,120.11c0-.07,0-.1,0-.17,9.95-2.85,13.52-9.05,13.52-15.36,0-8.22-6.26-13.86-18.71-14.25-2.13-.07-7.81-.09-13.44-.51-3.93-.29-8.46-.85-10.97-1.33v1.78c6.13,1.01,7.29,1.94,7.28,8.42-.02,14.72-.05,29.45-.08,44.17-.01,6.48-1.19,7.37-7.2,6.92v1.78c2.46.12,6.84.47,11.01.77,7.3.53,12.7.88,15.31,1,10.3.45,21.45-5.53,21.45-17.04,0-7.22-4.09-14.03-18.16-16.18ZM146.23,99.29c.02-6.13,1.2-7.54,6.63-7.34,8.9.33,12.43,4.8,12.42,13.54,0,7.74-2.62,14.62-13.1,14.21-2.4-.09-3.6-.15-6-.29.02-8.05.03-12.07.05-20.12ZM152.81,151.16c-5.53-.21-6.7-1.49-6.68-7.7.02-9.01.03-13.51.06-22.51,2.99.17,4.49.24,7.48.34,11.3.4,15.86,5.55,15.85,14.6,0,10-5.03,15.72-16.7,15.28ZM230.29,135.73h-2.04c-1,11.79-5.87,15.79-13.75,15.79h-5.61c-6.05,0-7.22-.91-7.22-7.4v-35.28c0-6.53,1.17-7.4,7.22-7.66v-1.78c-2.74.17-7.22.26-11.31.26-4.61,0-8.92-.09-11.4-.26v1.78c6.05.26,7.22,1.13,7.22,7.66v35.28c0,6.48-1.17,7.4-7.22,7.66v1.78c8.48-.26,19.79-.26,24.93-.26,5.74,0,13.75,0,19.53.26-.44-4.18-.61-8.48-.61-10.53,0-2.83.09-5.44.26-7.31ZM282.49,146.08c-6.95-15.7-13.89-31.41-20.84-47.11h-1.44c-6.55,14.85-13.11,29.7-19.66,44.55-1.78,4.09-3.92,7.4-7.31,8.27v1.78c1.52-.17,5.7-.26,7.74-.26,3.22,0,6.31.09,8.09.26v-1.78c-4.87-.39-6.92-2.22-6.92-5.26,0-1.61.52-3.48,1.48-5.7,1.2-2.66,1.8-3.99,3-6.66h21.75c1.79,4.05,2.69,6.08,4.48,10.14.83,1.78,1.22,3.17,1.22,4.22,0,2.39-2.13,3.09-6.39,3.26v1.78c2.52-.17,6.79-.26,11.44-.26,3.35,0,7.09.09,9.53.26v-1.78c-1.87-.09-4.22-1.26-6.18-5.7ZM247.42,132.38c4.05-9.07,6.08-13.6,10.14-22.67,4.02,9.07,6.03,13.6,10.05,22.67h-20.19ZM336.6,133.94c-.91,6.35-1.78,9.18-4.13,12.31-3.35,4.57-8.66,6.91-13.62,6.79-13.08-.34-17.91-14.95-17.92-26.36-.01-11.19,4.13-26.43,17.31-26.75,4.92-.12,9.88,2.31,13.27,6.79,2.22,2.92,3.22,4.87,4.44,11.4h2.04c0-9.44.09-14.7.39-18.71h-2.09c-.3,3.61-1,5.39-2.26,5.39-.48,0-1.04-.3-1.74-.87-3.57-3-7.49-5.61-13.7-5.79-15.77-.45-25.98,14.62-26.54,28.89-.59,15.26,11.03,27.93,26.45,27.8,6.69-.06,10.7-2.7,14.44-5.79.7-.57,1.26-.87,1.78-.87,1.22,0,1.91,1.78,2.22,5.39h2.04c-.26-4.18-.35-9.7-.35-19.62h-2.04ZM401.9,151.78c-2.78-1.09-4.92-2.83-6.96-5.44-6.55-8.27-13.11-16.53-19.66-24.8,5.62-5.62,8.43-8.43,14.05-14.05,4.57-4.35,6.61-5.61,10.88-6.4v-1.7c-1.7.17-3.92.26-6.31.26-3.13,0-7.31-.09-10.53-.26v1.7c3.57.09,5.26,1.31,5.26,3.05,0,1.17-.78,2.57-2.31,4-4.25,4.33-6.37,6.5-10.62,10.83-4.79,4.61-8.09,5.74-11.96,6v-16.14c0-6.53,1.17-7.4,7.22-7.66v-1.78c-2.74.17-7.22.26-11.31.26-4.61,0-8.92-.09-11.4-.26v1.78c6.05.26,7.22,1.13,7.22,7.66v35.28c0,6.48-1.17,7.4-7.22,7.66v1.78c2.48-.17,6.79-.26,11.4-.26,4.09,0,8.57.09,11.31.26v-1.78c-6.05-.26-7.22-1.17-7.22-7.66v-17.66c4.83.17,6.83,1.61,9.18,4.83,4.75,6.59,7.13,9.89,11.88,16.49.7.91,1.13,1.7,1.13,2.26,0,1.09-1.39,1.61-5.35,1.74v1.78c5.26-.26,8.92-.26,11.35-.26,2.92,0,7.09.09,9.96.26v-1.78ZM405.81,99.4v1.78c6.05.26,7.22,1.13,7.22,7.66v31.8c0,12.31-.38,16.67-1.52,20.4-1.42,4.65-4.13,7.48-8.4,7.48-.87,0-1.87-.09-2.39-.17,1.35-.78,2.31-2.39,2.31-3.92,0-2.39-2.04-4.26-4.35-4.26-2.44,0-4.31,1.87-4.31,4.26,0,2.04,1.03,3.39,2.44,4.26,1.69,1.05,3.92,1.44,5.96,1.44,9.44,0,15.14-6.14,17.01-14.36,1.35-5.96,1.52-15.83,1.52-23.23v-23.71c0-6.53,1.17-7.4,7.22-7.66v-1.78c-2.78.17-7.22.26-11.31.26-4.66,0-8.92-.09-11.4-.26ZM479.55,146.08c-6.95-15.7-13.89-31.41-20.84-47.11h-1.44c-6.55,14.85-13.11,29.7-19.66,44.55-1.78,4.09-3.92,7.4-7.31,8.27v1.78c1.52-.17,5.7-.26,7.74-.26,3.22,0,6.31.09,8.09.26v-1.78c-4.87-.39-6.92-2.22-6.92-5.26,0-1.61.52-3.48,1.48-5.7,1.2-2.66,1.8-3.99,3-6.66h21.75c1.79,4.05,2.69,6.08,4.48,10.14.83,1.78,1.22,3.17,1.22,4.22,0,2.39-2.13,3.09-6.39,3.26v1.78c2.52-.17,6.79-.26,11.44-.26,3.35,0,7.09.09,9.53.26v-1.78c-1.87-.09-4.22-1.26-6.18-5.7ZM444.49,132.38c4.05-9.07,6.08-13.6,10.14-22.67,4.02,9.07,6.03,13.6,10.05,22.67h-20.19ZM533.67,133.94c-.91,6.35-1.78,9.18-4.13,12.31-3.35,4.57-8.66,6.91-13.62,6.79-13.08-.34-17.91-14.95-17.92-26.36-.01-11.19,4.13-26.43,17.31-26.75,4.92-.12,9.88,2.31,13.27,6.79,2.22,2.92,3.22,4.87,4.44,11.4h2.04c0-9.44.09-14.7.39-18.71h-2.09c-.3,3.61-1,5.39-2.26,5.39-.48,0-1.04-.3-1.74-.87-3.57-3-7.49-5.61-13.7-5.79-15.77-.45-25.98,14.62-26.54,28.89-.59,15.26,11.03,27.93,26.45,27.8,6.69-.06,10.7-2.7,14.44-5.79.7-.57,1.26-.87,1.78-.87,1.22,0,1.91,1.78,2.22,5.39h2.04c-.26-4.18-.35-9.7-.35-19.62h-2.04ZM592.13,144.35c-6.68-7.66-13.25-15.42-19.71-23.26,5.62-5.89,8.42-8.9,14.01-15.06,4.55-4.79,6.59-6.3,10.84-7.68,0-.68,0-1.02,0-1.7-1.69.41-3.91.78-6.3,1.05-3.13.35-7.31.65-10.53.71,0,.68,0,1.02,0,1.7,3.57-.17,5.27.88,5.27,2.62,0,1.18-.77,2.65-2.29,4.21-4.23,4.7-6.34,7-10.59,11.55-4.78,4.85-8.11,6.06-12,6.39,0-6.46-.01-9.69-.02-16.16,0-6.53,1.17-7.39,7.22-7.87,0-.71,0-1.07,0-1.79-2.74.27-7.22.48-11.32.53-4.61.06-8.92-.03-11.4-.2v1.78c6.05.26,7.22,1.11,7.22,7.64,0,11.76,0,23.52,0,35.29,0,6.48-1.19,7.4-7.23,7.67v1.78c2.48-.17,6.79-.25,11.44-.29,4.12-.03,8.64-.03,11.41.06,0-.71,0-1.07,0-1.79-6.1-.08-7.29-1.02-7.29-7.51,0-7.07-.01-10.61-.02-17.68,4.85.09,6.87,1.45,9.23,4.59,4.79,6.43,7.2,9.61,11.97,15.86.7.86,1.14,1.61,1.14,2.18,0,1.09-1.38,1.76-5.35,2.13,0,.72,0,1.07,0,1.79,5.28-.58,8.92-.95,11.33-1.22,2.89-.32,6.99-.81,9.78-1.11v-1.78c-2.71-.62-4.81-2.07-6.84-4.43Z"
+				      style="fill: url(#linear-gradient-7); stroke-width: 0px;"/>
+				<g>
+					<path d="M292.93,54.21c.23,4.72,2.28,5.95,7.39,5.7l.08,1.55c-2.02.03-6.21.02-10.21.21-4.57.23-9.06.66-11.33.85l-.08-1.55c4.86-.24,7.75-1.65,7.52-6.44l-.88-17.86c-.35-7.06-2.3-7.86-8.96-7.53l-.08-1.62c7.09-.5,11.4-1.68,15.01-4.5l1.54,31.19Z"
+					      style="fill: #fff; stroke-width: 0px;"/>
+					<path d="M341.31,39.77c.58,11.81-6.51,21.04-17.63,21.59-10.26.51-18.24-6.72-18.82-18.6-.58-11.67,6.37-20.93,17.67-21.49,10.37-.51,18.21,6.79,18.78,18.5ZM312.01,42.19c.65,13.25,6.17,18.11,12.29,17.8,6.34-.31,10.49-7.63,9.9-19.66-.65-13.18-6.16-18.03-12.28-17.73-6.34.31-10.49,7.56-9.9,19.58Z"
+					      style="fill: #fff; stroke-width: 0px;"/>
+					<path d="M364.49,50.68c.23,4.72,2.28,5.95,7.39,5.7l.08,1.55c-2.02.03-6.21.02-10.21.21-4.57.23-9.06.66-11.33.85l-.08-1.55c4.86-.24,7.75-1.65,7.52-6.44l-.88-17.86c-.35-7.06-2.3-7.86-8.96-7.54l-.08-1.62c7.09-.5,11.4-1.68,15.01-4.5l1.54,31.19Z"
+					      style="fill: #fff; stroke-width: 0px;"/>
+					<path d="M412.88,36.23c.58,11.81-6.51,21.04-17.63,21.59-10.26.51-18.24-6.72-18.82-18.6-.58-11.67,6.37-20.93,17.67-21.49,10.37-.51,18.21,6.79,18.78,18.5ZM383.58,38.65c.65,13.25,6.17,18.11,12.29,17.81,6.34-.31,10.49-7.63,9.9-19.66-.65-13.18-6.16-18.03-12.28-17.73-6.34.31-10.49,7.56-9.9,19.58Z"
+					      style="fill: #fff; stroke-width: 0px;"/>
+					<path d="M436.06,47.15c.23,4.72,2.28,5.95,7.39,5.7l.08,1.55c-2.02.03-6.21.02-10.21.21-4.57.23-9.06.66-11.33.85l-.08-1.55c4.86-.24,7.75-1.65,7.52-6.44l-.88-17.86c-.35-7.06-2.3-7.86-8.96-7.54l-.08-1.62c7.09-.49,11.4-1.68,15.01-4.5l1.54,31.19Z"
+					      style="fill: #fff; stroke-width: 0px;"/>
+				</g>
+			</g>
+		</symbol>
+		<symbol id="nine" viewBox="0 0 18 20">
+			<g>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M10.45,10.26c0,.76-.03,1.48-.09,2.16-.06.67-.15,1.27-.27,1.78-.12.51-.28.92-.48,1.23-.19.3-.43.45-.7.45-.39,0-.68-.25-.88-.76-.19-.51-.28-1.24-.28-2.21h-1.2c0,.66.06,1.25.18,1.75.12.5.29.92.5,1.26.22.34.46.59.74.76.28.17.58.26.89.26.48,0,.9-.17,1.26-.5.35-.35.65-.84.88-1.47.23-.63.41-1.41.52-2.31.11-.91.16-1.93.16-3.06s-.07-2.06-.22-2.88c-.14-.82-.34-1.5-.59-2.04-.26-.54-.55-.95-.9-1.22-.34-.27-.71-.41-1.1-.41s-.76.12-1.07.35c-.31.23-.58.54-.79.94-.22.39-.38.86-.49,1.4-.11.53-.17,1.1-.17,1.71,0,.74.06,1.38.18,1.94.12.54.29,1,.49,1.36.21.36.45.63.73.82.28.18.58.26.9.26.28,0,.53-.06.74-.18.21-.12.38-.27.52-.44.15-.17.27-.35.35-.53.09-.18.16-.33.2-.45h0ZM8.28,10.57c-.16-.16-.3-.38-.41-.66-.1-.29-.18-.63-.24-1.04-.05-.41-.08-.88-.08-1.4s.03-.96.08-1.37c.06-.41.14-.77.26-1.06.11-.29.25-.52.41-.67.16-.16.35-.24.56-.24.23,0,.43.12.62.35.2.23.36.54.49.92.14.38.24.81.3,1.28.07.47.1.95.09,1.43-.04.25-.1.54-.18.85s-.19.6-.32.88c-.12.27-.27.5-.43.69-.16.19-.35.28-.55.28-.23,0-.43-.07-.59-.22Z"
+				      style="stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="nine_2" viewBox="0 0 18 20">
+			<g>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M10.45,10.26c0,.76-.03,1.48-.09,2.16-.06.67-.15,1.27-.27,1.78-.12.51-.28.92-.48,1.23-.19.3-.43.45-.7.45-.39,0-.68-.25-.88-.76-.19-.51-.28-1.24-.28-2.21h-1.2c0,.66.06,1.25.18,1.75.12.5.29.92.5,1.26.22.34.46.59.74.76.28.17.58.26.89.26.48,0,.9-.17,1.26-.5.35-.35.65-.84.88-1.47.23-.63.41-1.41.52-2.31.11-.91.16-1.93.16-3.06s-.07-2.06-.22-2.88c-.14-.82-.34-1.5-.59-2.04-.26-.54-.55-.95-.9-1.22-.34-.27-.71-.41-1.1-.41s-.76.12-1.07.35c-.31.23-.58.54-.79.94-.22.39-.38.86-.49,1.4-.11.53-.17,1.1-.17,1.71,0,.74.06,1.38.18,1.94.12.54.29,1,.49,1.36.21.36.45.63.73.82.28.18.58.26.9.26.28,0,.53-.06.74-.18.21-.12.38-.27.52-.44.15-.17.27-.35.35-.53.09-.18.16-.33.2-.45h0ZM8.28,10.57c-.16-.16-.3-.38-.41-.66-.1-.29-.18-.63-.24-1.04-.05-.41-.08-.88-.08-1.4s.03-.96.08-1.37c.06-.41.14-.77.26-1.06.11-.29.25-.52.41-.67.16-.16.35-.24.56-.24.23,0,.43.12.62.35.2.23.36.54.49.92.14.38.24.81.3,1.28.07.47.1.95.09,1.43-.04.25-.1.54-.18.85s-.19.6-.32.88c-.12.27-.27.5-.43.69-.16.19-.35.28-.55.28-.23,0-.43-.07-.59-.22Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="queen" viewBox="0 0 18 20">
+			<g>
+				<rect x="0" y="0" width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<rect x="0" y="0" width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M11.8,9.91c0,1.14-.08,2.13-.24,2.97-.15.84-.37,1.54-.65,2.11.33.2.67.37,1.03.52.36.14.71.24,1.06.3l-.49,1.22c-.37-.13-.74-.3-1.1-.5-.36-.2-.71-.42-1.05-.66-.27.33-.58.58-.9.74-.33.16-.67.24-1.04.24-.49,0-.94-.14-1.35-.41-.42-.27-.78-.69-1.08-1.26-.31-.57-.55-1.29-.72-2.16-.17-.88-.26-1.91-.26-3.12s.09-2.23.26-3.1c.18-.88.42-1.6.72-2.17.31-.57.67-.99,1.09-1.26.42-.27.86-.41,1.34-.41s.92.14,1.34.41c.41.27.77.69,1.07,1.26.31.56.55,1.28.72,2.16.17.87.26,1.9.26,3.11h0ZM10.46,9.91c0-1.9-.17-3.34-.52-4.33-.34-.99-.85-1.49-1.53-1.49s-1.21.5-1.56,1.51c-.35,1-.52,2.43-.52,4.31s.17,3.34.52,4.33c.34.99.86,1.49,1.56,1.49.41,0,.77-.2,1.07-.6-.32-.29-.6-.6-.86-.94l.5-.78c.21.31.48.6.8.88.36-.99.54-2.45.54-4.38h0Z"
+				      style="stroke-width: 0px;"/>
+				<rect y="0" width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M11.8,9.91c0-1.2-.09-2.24-.26-3.11-.18-.88-.42-1.6-.72-2.16-.3-.57-.65-.99-1.07-1.26-.42-.27-.86-.41-1.34-.41s-.93.14-1.34.41c-.41.27-.78.69-1.09,1.26-.31.57-.55,1.3-.72,2.17-.17.87-.26,1.9-.26,3.1s.09,2.24.26,3.12c.18.87.42,1.59.72,2.16.3.57.66.98,1.08,1.26.41.27.86.41,1.35.41.37,0,.72-.08,1.04-.24.33-.16.63-.41.9-.74.34.24.69.46,1.05.66.36.2.73.37,1.1.5l.49-1.22c-.35-.06-.71-.16-1.06-.3-.36-.14-.7-.31-1.03-.52.28-.57.5-1.28.65-2.11.16-.84.24-1.83.24-2.97h0ZM9.92,14.29c-.32-.27-.58-.56-.8-.88l-.5.78c.25.33.54.64.86.94-.31.4-.66.6-1.07.6-.69,0-1.21-.5-1.56-1.49-.35-.99-.52-2.43-.52-4.33s.17-3.31.52-4.31c.34-1.01.86-1.51,1.56-1.51s1.18.5,1.53,1.49c.35.99.52,2.43.52,4.33s-.18,3.39-.54,4.38Z"
+				      style="stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="queen_2" viewBox="0 0 18 20">
+			<g>
+				<rect x="0" y="0" width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<rect x="0" y="0" width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M11.8,9.91c0,1.14-.08,2.13-.24,2.97-.15.84-.37,1.54-.65,2.11.33.2.67.37,1.03.52.36.14.71.24,1.06.3l-.49,1.22c-.37-.13-.74-.3-1.1-.5-.36-.2-.71-.42-1.05-.66-.27.33-.58.58-.9.74-.33.16-.67.24-1.04.24-.49,0-.94-.14-1.35-.41-.42-.27-.78-.69-1.08-1.26-.31-.57-.55-1.29-.72-2.16-.17-.88-.26-1.91-.26-3.12s.09-2.23.26-3.1c.18-.88.42-1.6.72-2.17.31-.57.67-.99,1.09-1.26.42-.27.86-.41,1.34-.41s.92.14,1.34.41c.41.27.77.69,1.07,1.26.31.56.55,1.28.72,2.16.17.87.26,1.9.26,3.11h0ZM10.46,9.91c0-1.9-.17-3.34-.52-4.33-.34-.99-.85-1.49-1.53-1.49s-1.21.5-1.56,1.51c-.35,1-.52,2.43-.52,4.31s.17,3.34.52,4.33c.34.99.86,1.49,1.56,1.49.41,0,.77-.2,1.07-.6-.32-.29-.6-.6-.86-.94l.5-.78c.21.31.48.6.8.88.36-.99.54-2.45.54-4.38h0Z"
+				      style="stroke-width: 0px;"/>
+				<rect y="0" width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M11.8,9.91c0-1.2-.09-2.24-.26-3.11-.18-.88-.42-1.6-.72-2.16-.3-.57-.65-.99-1.07-1.26-.42-.27-.86-.41-1.34-.41s-.93.14-1.34.41c-.41.27-.78.69-1.09,1.26-.31.57-.55,1.3-.72,2.17-.17.87-.26,1.9-.26,3.1s.09,2.24.26,3.12c.18.87.42,1.59.72,2.16.3.57.66.98,1.08,1.26.41.27.86.41,1.35.41.37,0,.72-.08,1.04-.24.33-.16.63-.41.9-.74.34.24.69.46,1.05.66.36.2.73.37,1.1.5l.49-1.22c-.35-.06-.71-.16-1.06-.3-.36-.14-.7-.31-1.03-.52.28-.57.5-1.28.65-2.11.16-.84.24-1.83.24-2.97h0ZM9.92,14.29c-.32-.27-.58-.56-.8-.88l-.5.78c.25.33.54.64.86.94-.31.4-.66.6-1.07.6-.69,0-1.21-.5-1.56-1.49-.35-.99-.52-2.43-.52-4.33s.17-3.31.52-4.31c.34-1.01.86-1.51,1.56-1.51s1.18.5,1.53,1.49c.35.99.52,2.43.52,4.33s-.18,3.39-.54,4.38Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="queen-face-black" viewBox="0 0 106 140">
+			<g>
+				<rect width="106" height="140" style="fill: none; stroke-width: 0px;"/>
+				<path d="M70.3,45.27c-3.76-2.8-14.38-5.31-21.62-5.21-7.24.09-20.75,7.91-25.1,12.26-4.35,4.35-5.12,9.37-4.73,14.77.39,5.4-1.16,19.88.77,22.11,1.93,2.22,1.83,2.41,2.9,4.34s1.06,3.67.96,5.5c-.09,1.83,1.35,4.73,4.06,7.43,2.7,2.7,6.66,1.35,6.66,1.35,0,0,.87,6.66-.77,9.94-1.64,3.28-9.25,22.24-9.25,22.24l38.69-16.36s1.07-7.52,2.32-9.65c1.25-2.12,2.6-2.61,4.25-3.67,1.64-1.06,6.85,2.61,8.78,3.28,1.93.67,3.57-.1,4.73-1.55,1.16-1.45.87-3.47.29-5.79s.39-2.42,1.35-2.9c.97-.48.97-1.73.97-2.51s-2.42-1.54-2.42-1.54c0,0,.58-.87,1.45-.58.87.29,2.12-1.54,1.93-2.9-.19-1.35-.87-2.6-.77-3.96.09-1.35,1.74-.77,3.38-1.35,1.64-.58,1.35-2.22,1.06-3.47-.29-1.25-7.63-11.78-7.63-11.78,0,0,1.06-2.99,1.06-5.31s-4.73-12.65-4.73-13.13c-.68-2.12-4.83-8.78-8.59-11.58Z"
+				      style="stroke-width: 0px;"/>
+				<path d="M79.09,55.11c4.73-1.64-5.41-7.24-7.34-10.33-1.93-3.09-6.37-3.19-14.38-5.12-8.01-1.93-16.41.2-20.95,1.84-4.54,1.64-15.93,10.14-18.25,15.25-2.32,5.12-2.32,7.82-2.51,10.81-.19,2.99.1,4.25-.39,6.95s-1.35,4.15-1.83,6.37c-.48,2.22,0,4.83,1.74,8.88,1.73,4.06,3.47,5.21,5.5,7.34,2.03,2.12,1.45,3.67,3.19,6.76,1.74,3.09,3.09,3.67,5.12,4.44,2.03.77,6.18.19,7.53-.97,1.35-1.16,1.16-2.6.97-7.62-.2-5.02,4.24-10.52,4.24-10.52,0,0-1.25-2.61-1.06-5.79.19-3.18,4.54-4.24,6.86-3.96,2.32.29,3.09,2.42,3.09,2.42,0,0,10.23-7.14,12.65-8.69,2.41-1.55,4.83-3.67,5.7-6.27.87-2.61,1.93-5.79,5.5-7.43,3.57-1.64,4.63-4.34,4.63-4.34h0Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+				<path d="M69.04,30.35c1.16,0,2.12.96,2.12,2.12h0c0,.76-.42,1.47-1.08,1.84.47.86,1.05,1.91,1.65,3.07,0,0,.01,0,.02,0,0,0,1.93-2.94,2.99-.19,1.06,2.75,0,5.16,0,5.16,0,0-.34-5.02-1.21-4.44-.37.25-.57.98-.67,1.72,1.44,2.96,2.8,6.16,3.13,8.31,0,0-4.06,4.92-14.67,8.78-10.62,3.86-23.46,6.08-23.46,6.08,0,0-2.32-.77,3.76-2.9,3.55-1.24,6.19-2.44,7.79-3.23-.85-.32-3.25-1.35-3.39-2.88-.08-.9.41-1.87,1.2-2.54-.45-.51-.93-1.06-1.32-1.48-.32.18-.68.28-1.05.28-1.16,0-2.12-.96-2.12-2.12s.96-2.12,2.12-2.12h0c1.17,0,2.12.96,2.12,2.12h0c0,.54-.21,1.06-.58,1.46.65.35,1.35.75,2.05,1.17.59-.2,1.24-.23,1.88-.02,0,0,2.17-3.12,3.48-.5.82,1.62.68,3.19.46,4.15.02,0,2.9-1.06,4.05-2.12.52-.47-.28-2.39-1.32-4.37-.34-.05-.59.08-.67.51-.34,1.76,1.69,3.65,1.69,3.65,0,0-3.53-1.13-3.7-2.99-.1-1.09.64-2.28,1.72-2.92-.43-.76-.87-1.47-1.21-2.03-.24.1-.5.15-.77.15-1.16,0-2.12-.96-2.12-2.12s.96-2.12,2.12-2.12h0c1.17,0,2.12.96,2.12,2.12h0c0,.71-.36,1.38-.95,1.77.57.5,1.28,1.13,2.04,1.79.43-.06.89-.03,1.34.11,0,0,2.17-3.11,3.48-.49.96,1.91.6,3.75.34,4.61.03.02.09.06.12.08,1.93-.48,5.26-2.71,5.26-2.71l-2.03-3.51c-.52-.41-.98-.55-.99.18-.04,1.76,1.54,3.65,1.54,3.65,0,0-2.52-1.13-2.83-2.99-.2-1.18.25-2.46,1.01-3.05l-1.53-2.66c-.2.06-.41.09-.62.09-1.16,0-2.12-.96-2.12-2.12h0c0-1.16.96-2.12,2.12-2.12h0c1.16,0,2.12.96,2.12,2.12h0c0,.79-.44,1.51-1.14,1.88.5.55,1.44,1.58,2.26,2.48.15.02.31.06.47.14,0,0,.88-2.42,1.89-1.2.06-1.21.94-2.37,2.05-2.74l-.63-2.71c-.12.02-.24.03-.37.04h0c-1.16,0-2.12-.96-2.12-2.12h0c0-1.17.96-2.12,2.12-2.12h0ZM69.72,39.81c-.34,1.74,1.35,3.81,1.35,3.81,0,0-1.29-.62-2.21-1.59.31,1.16.34,2.21.3,2.91.41.44.74.8.8.84.29.24,1.79-1.11,1.79-1.11l-1.21-5.24c-.15-.08-.29-.12-.41-.11-.2.01-.34.15-.41.48ZM67.55,41.56c-.21.23-.28.74-.3,1.31.58.63,1.09,1.19,1.54,1.68-.28-1.28-.74-3.05-1.13-3.05-.04,0-.08.02-.12.06ZM60.74,46c-.45.29-.65,1.07-.74,1.85.9.75,1.71,1.41,2.19,1.75-.17-1.22-.6-3.66-1.27-3.66-.06,0-.12.02-.18.06ZM52.44,50.93c-.41.27-.62.96-.72,1.67.98.62,1.65,1.05,2.07,1.33-.22-1.28-.61-3.06-1.17-3.05-.06,0-.12.02-.18.06ZM48.04,53.18c-.28,1.45,1.04,2.97,1.51,3.47,1.05-.53,1.63-.86,1.63-.86,0,0-1.29-1.47-2.73-3.11-.2.05-.35.2-.41.5Z"
+				      style="stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="queen-face-red" viewBox="0 0 106 140">
+			<g>
+				<rect width="106" height="140" style="fill: none; stroke-width: 0px;"/>
+				<path d="M80.05,56.85c-.68-2.12-4.83-8.78-8.59-11.58-3.76-2.8-14.38-5.31-21.62-5.21-7.24.09-20.75,7.91-25.1,12.26-4.35,4.35-5.12,9.37-4.73,14.77.39,5.4-1.16,19.88.77,22.11,1.93,2.22,1.83,2.41,2.9,4.34s1.06,3.67.96,5.5c-.09,1.83,1.35,4.73,4.06,7.43,2.7,2.7,6.66,1.35,6.66,1.35,0,0,.87,6.66-.77,9.94-1.64,3.28-9.25,22.24-9.25,22.24l38.69-16.36s1.07-7.52,2.32-9.65c1.25-2.12,2.6-2.61,4.25-3.67,1.64-1.06,6.85,2.61,8.78,3.28,1.93.67,3.57-.1,4.73-1.55,1.16-1.45.87-3.47.29-5.79-.58-2.32.39-2.42,1.35-2.9.97-.48.97-1.73.97-2.51s-2.42-1.54-2.42-1.54c0,0,.58-.87,1.45-.58.87.29,2.12-1.54,1.93-2.9-.19-1.35-.87-2.6-.77-3.96.09-1.35,1.74-.77,3.38-1.35,1.64-.58,1.35-2.22,1.06-3.47-.29-1.25-7.63-11.78-7.63-11.78,0,0,1.06-2.99,1.06-5.31s-4.73-12.65-4.73-13.13h0Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+				<path d="M80.25,55.11c4.73-1.64-5.41-7.24-7.34-10.33-1.93-3.09-6.37-3.19-14.38-5.12-8.01-1.93-16.41.2-20.95,1.84-4.54,1.64-15.93,10.14-18.25,15.25-2.32,5.12-2.32,7.82-2.51,10.81-.19,2.99.1,4.25-.39,6.95s-1.35,4.15-1.83,6.37c-.48,2.22,0,4.83,1.74,8.88,1.73,4.06,3.47,5.21,5.5,7.34,2.03,2.12,1.45,3.67,3.19,6.76,1.74,3.09,3.09,3.67,5.12,4.44,2.03.77,6.18.19,7.53-.97,1.35-1.16,1.16-2.6.97-7.62-.2-5.02,4.24-10.52,4.24-10.52,0,0-1.25-2.61-1.06-5.79.19-3.18,4.54-4.24,6.86-3.96,2.32.29,3.09,2.42,3.09,2.42,0,0,10.23-7.14,12.65-8.69,2.41-1.55,4.83-3.67,5.7-6.27s1.93-5.79,5.5-7.43c3.57-1.64,4.63-4.34,4.63-4.34h0Z"
+				      style="stroke-width: 0px;"/>
+				<path d="M70.21,30.35c1.16,0,2.12.96,2.12,2.12h0c0,.76-.42,1.47-1.08,1.84.47.86,1.05,1.91,1.65,3.07,0,0,.01,0,.02,0,0,0,1.93-2.94,2.99-.19,1.06,2.75,0,5.16,0,5.16,0,0-.34-5.02-1.21-4.44-.37.25-.57.98-.67,1.72,1.44,2.96,2.8,6.16,3.13,8.31,0,0-4.06,4.92-14.67,8.78-10.62,3.86-23.46,6.08-23.46,6.08,0,0-2.32-.77,3.76-2.9,3.55-1.24,6.19-2.44,7.79-3.23-.85-.32-3.25-1.35-3.39-2.88-.08-.9.41-1.87,1.2-2.54-.45-.51-.93-1.06-1.32-1.48-.32.18-.68.28-1.05.28-1.16,0-2.12-.96-2.12-2.12s.96-2.12,2.12-2.12h0c1.17,0,2.12.96,2.12,2.12h0c0,.54-.21,1.06-.58,1.46.65.35,1.35.75,2.05,1.17.59-.2,1.24-.23,1.88-.02,0,0,2.17-3.12,3.48-.5.82,1.62.68,3.19.46,4.15.02,0,2.9-1.06,4.05-2.12.52-.47-.28-2.39-1.32-4.37-.34-.05-.59.08-.67.51-.34,1.76,1.69,3.65,1.69,3.65,0,0-3.53-1.13-3.7-2.99-.1-1.09.64-2.28,1.72-2.92-.43-.76-.87-1.47-1.21-2.03-.24.1-.5.15-.77.15-1.16,0-2.12-.96-2.12-2.12s.96-2.12,2.12-2.12h0c1.17,0,2.12.96,2.12,2.12h0c0,.71-.36,1.38-.95,1.77.57.5,1.28,1.13,2.04,1.79.43-.06.89-.03,1.34.11,0,0,2.17-3.11,3.48-.49.96,1.91.6,3.75.34,4.61.03.02.09.06.12.08,1.93-.48,5.26-2.71,5.26-2.71l-2.03-3.51c-.52-.41-.98-.55-.99.18-.04,1.76,1.54,3.65,1.54,3.65,0,0-2.52-1.13-2.83-2.99-.2-1.18.25-2.46,1.01-3.05l-1.53-2.66c-.2.06-.41.09-.62.09-1.16,0-2.12-.96-2.12-2.12h0c0-1.16.96-2.12,2.12-2.12h0c1.16,0,2.12.96,2.12,2.12h0c0,.79-.44,1.51-1.14,1.88.5.55,1.44,1.58,2.26,2.48.15.02.31.06.47.14,0,0,.88-2.42,1.89-1.2.06-1.21.94-2.37,2.05-2.74l-.63-2.71c-.12.02-.24.03-.37.04h0c-1.16,0-2.12-.96-2.12-2.12h0c0-1.17.96-2.12,2.12-2.12h0ZM70.88,39.81c-.34,1.74,1.35,3.81,1.35,3.81,0,0-1.29-.62-2.21-1.59.31,1.16.34,2.21.3,2.91.41.44.74.8.8.84.29.24,1.79-1.11,1.79-1.11l-1.21-5.24c-.15-.08-.29-.12-.41-.11-.2.01-.34.15-.41.48ZM68.72,41.56c-.21.23-.28.74-.3,1.31.58.63,1.09,1.19,1.54,1.68-.28-1.28-.74-3.05-1.13-3.05-.04,0-.08.02-.12.06ZM61.9,46c-.45.29-.65,1.07-.74,1.85.9.75,1.71,1.41,2.19,1.75-.17-1.22-.6-3.66-1.27-3.66-.06,0-.12.02-.18.06ZM53.6,50.93c-.41.27-.62.96-.72,1.67.98.62,1.65,1.05,2.07,1.33-.22-1.28-.61-3.06-1.17-3.05-.06,0-.12.02-.18.06ZM49.21,53.18c-.28,1.45,1.04,2.97,1.51,3.47,1.05-.53,1.63-.86,1.63-.86,0,0-1.29-1.47-2.73-3.11-.2.05-.35.2-.41.5Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="seven" viewBox="0 0 18 20">
+			<g>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M7.47,6.91v-2.49h2.72c-.21.54-.46,1.18-.74,1.94-.28.75-.55,1.63-.8,2.64-.25,1-.47,2.14-.65,3.42-.18,1.27-.26,2.7-.26,4.27h1.28c0-2.59.22-4.93.67-7.03.45-2.09,1.09-3.99,1.9-5.67v-.67h-5.16v3.6h1.05Z"
+				      style="stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="seven_2" viewBox="0 0 18 20">
+			<g>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M7.47,6.91v-2.49h2.72c-.21.54-.46,1.18-.74,1.94-.28.75-.55,1.63-.8,2.64-.25,1-.47,2.14-.65,3.42-.18,1.27-.26,2.7-.26,4.27h1.28c0-2.59.22-4.93.67-7.03.45-2.09,1.09-3.99,1.9-5.67v-.67h-5.16v3.6h1.05Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="six" viewBox="0 0 18 20">
+			<g>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M7.56,9.74c0-.76.03-1.48.09-2.15.06-.68.15-1.28.27-1.79.12-.51.28-.92.48-1.22.2-.31.43-.46.7-.46.39,0,.68.25.86.76.2.51.29,1.24.29,2.21h1.2c0-.66-.06-1.24-.19-1.74-.12-.51-.28-.93-.5-1.27-.21-.34-.45-.59-.73-.76-.28-.18-.58-.26-.89-.26-.49,0-.91.17-1.26.52-.35.34-.64.82-.88,1.46-.23.63-.4,1.41-.51,2.32-.11.9-.16,1.92-.16,3.05s.07,2.06.21,2.88c.15.82.35,1.5.6,2.04.25.54.55.94.89,1.22.34.27.71.4,1.11.4s.75-.11,1.06-.34c.31-.23.57-.55.79-.94.21-.4.38-.87.48-1.4.12-.54.18-1.11.18-1.72,0-.74-.06-1.38-.18-1.93-.12-.55-.28-1.01-.49-1.37-.2-.36-.44-.63-.72-.82-.28-.18-.58-.27-.9-.27-.29,0-.53.06-.74.18-.21.12-.39.26-.54.44-.14.17-.26.35-.35.53-.09.18-.15.33-.2.45h0ZM9.72,9.43c.17.15.31.37.41.65.11.29.19.64.24,1.05.05.41.08.87.08,1.39s-.03.97-.09,1.38c-.05.41-.13.76-.24,1.05s-.25.52-.41.68c-.16.16-.35.24-.56.24-.23,0-.44-.12-.63-.35-.19-.23-.35-.54-.49-.92-.13-.38-.23-.81-.3-1.28-.07-.47-.09-.96-.08-1.44.04-.25.1-.53.19-.84.08-.31.19-.6.31-.88.13-.27.28-.5.44-.69.16-.19.34-.28.54-.28.23,0,.42.08.58.23Z"
+				      style="stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="six_2" viewBox="0 0 18 20">
+			<g>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M7.56,9.74c0-.76.03-1.48.09-2.15.06-.68.15-1.28.27-1.79.12-.51.28-.92.48-1.22.2-.31.43-.46.7-.46.39,0,.68.25.86.76.2.51.29,1.24.29,2.21h1.2c0-.66-.06-1.24-.19-1.74-.12-.51-.28-.93-.5-1.27-.21-.34-.45-.59-.73-.76-.28-.18-.58-.26-.89-.26-.49,0-.91.17-1.26.52-.35.34-.64.82-.88,1.46-.23.63-.4,1.41-.51,2.32-.11.9-.16,1.92-.16,3.05s.07,2.06.21,2.88c.15.82.35,1.5.6,2.04.25.54.55.94.89,1.22.34.27.71.4,1.11.4s.75-.11,1.06-.34c.31-.23.57-.55.79-.94.21-.4.38-.87.48-1.4.12-.54.18-1.11.18-1.72,0-.74-.06-1.38-.18-1.93-.12-.55-.28-1.01-.49-1.37-.2-.36-.44-.63-.72-.82-.28-.18-.58-.27-.9-.27-.29,0-.53.06-.74.18-.21.12-.39.26-.54.44-.14.17-.26.35-.35.53-.09.18-.15.33-.2.45h0ZM9.72,9.43c.17.15.31.37.41.65.11.29.19.64.24,1.05.05.41.08.87.08,1.39s-.03.97-.09,1.38c-.05.41-.13.76-.24,1.05s-.25.52-.41.68c-.16.16-.35.24-.56.24-.23,0-.44-.12-.63-.35-.19-.23-.35-.54-.49-.92-.13-.38-.23-.81-.3-1.28-.07-.47-.09-.96-.08-1.44.04-.25.1-.53.19-.84.08-.31.19-.6.31-.88.13-.27.28-.5.44-.69.16-.19.34-.28.54-.28.23,0,.42.08.58.23Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="spade" viewBox="0 0 28 28">
+			<g>
+				<rect width="28" height="28" style="fill: none; stroke-width: 0px;"/>
+				<path d="M22.54,11.47c2.66,3.26,3.4,7.08.83,9.61-1.4,1.38-2.68,1.91-3.82,1.94-2.07.04-3.66-1.59-4.6-2.89h0c-.15,2.82,2.76,5.8,2.76,5.8h-7.42s2.92-2.97,2.76-5.79h0c-.94,1.3-2.53,2.93-4.6,2.88-1.14-.02-2.42-.56-3.82-1.94-2.57-2.54-1.83-6.35.83-9.61,2.95-3.62,6.45-7.47,8.54-9.41,2.09,1.94,5.59,5.79,8.54,9.41Z"
+				      style="stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="ten" viewBox="0 0 18 20">
+			<g>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M4.52,16.68h3.79v-1.1h-1.3V3.3h-1.2l-1.6.99v1.08l1.6-1v11.21h-1.3v1.1ZM13.57,6.87c-.14-.88-.34-1.6-.59-2.16-.25-.56-.56-.98-.91-1.24-.34-.27-.72-.4-1.12-.4s-.79.13-1.14.4c-.35.26-.65.68-.91,1.24-.25.56-.45,1.28-.59,2.16-.14.88-.22,1.92-.22,3.13s.07,2.27.22,3.15c.14.88.34,1.6.59,2.16.26.56.56.97.91,1.24.35.27.73.4,1.14.4s.77-.13,1.12-.4c.35-.27.65-.68.91-1.24.25-.56.45-1.28.59-2.16.14-.88.22-1.92.22-3.15s-.07-2.26-.22-3.13ZM12.43,12.68c-.08.74-.19,1.35-.33,1.83-.14.48-.31.82-.5,1.04-.2.22-.41.33-.63.33s-.44-.11-.64-.33c-.2-.22-.37-.57-.52-1.04-.14-.47-.26-1.08-.34-1.82-.08-.75-.12-1.64-.12-2.69s.04-1.94.12-2.68c.08-.75.2-1.36.34-1.83.15-.47.32-.82.52-1.04.2-.22.41-.33.64-.33s.44.11.63.33c.19.22.36.57.5,1.04.14.47.26,1.09.33,1.83.09.74.13,1.63.13,2.68s-.04,1.94-.13,2.68Z"
+				      style="stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="ten_2" viewBox="0 0 18 20">
+			<g>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M4.52,16.68h3.79v-1.1h-1.3V3.3h-1.2l-1.6.99v1.08l1.6-1v11.21h-1.3v1.1ZM13.57,6.87c-.14-.88-.34-1.6-.59-2.16-.25-.56-.56-.98-.91-1.24-.34-.27-.72-.4-1.12-.4s-.79.13-1.14.4c-.35.26-.65.68-.91,1.24-.25.56-.45,1.28-.59,2.16-.14.88-.22,1.92-.22,3.13s.07,2.27.22,3.15c.14.88.34,1.6.59,2.16.26.56.56.97.91,1.24.35.27.73.4,1.14.4s.77-.13,1.12-.4c.35-.27.65-.68.91-1.24.25-.56.45-1.28.59-2.16.14-.88.22-1.92.22-3.15s-.07-2.26-.22-3.13ZM12.43,12.68c-.08.74-.19,1.35-.33,1.83-.14.48-.31.82-.5,1.04-.2.22-.41.33-.63.33s-.44-.11-.64-.33c-.2-.22-.37-.57-.52-1.04-.14-.47-.26-1.08-.34-1.82-.08-.75-.12-1.64-.12-2.69s.04-1.94.12-2.68c.08-.75.2-1.36.34-1.83.15-.47.32-.82.52-1.04.2-.22.41-.33.64-.33s.44.11.63.33c.19.22.36.57.5,1.04.14.47.26,1.09.33,1.83.09.74.13,1.63.13,2.68s-.04,1.94-.13,2.68Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="three" viewBox="0 0 18 20">
+			<g>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M11.52,4.02v-.84h-4.85v3.21h1.06v-2.1h2.42l-2,3.82v1.05c.4,0,.74.09,1.02.25.28.16.5.38.68.67.17.28.3.63.37,1.03.08.4.12.84.12,1.33,0,.45-.02.87-.07,1.28-.05.4-.13.75-.24,1.06-.11.31-.25.55-.42.73-.18.18-.39.27-.64.27-.46,0-.8-.28-1.02-.86-.22-.57-.33-1.48-.33-2.72h-1.2c0,.84.07,1.56.2,2.15s.31,1.07.54,1.44c.23.37.49.64.79.8.3.17.62.25.97.25.41,0,.78-.1,1.11-.29.33-.2.61-.48.84-.86.24-.37.41-.84.54-1.39.12-.55.18-1.17.18-1.87,0-.36-.02-.75-.07-1.18-.05-.43-.15-.85-.31-1.25s-.39-.76-.7-1.07c-.31-.31-.72-.54-1.24-.67l2.27-4.22Z"
+				      style="stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="three_2" viewBox="0 0 18 20">
+			<g>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M11.52,4.02v-.84h-4.85v3.21h1.06v-2.1h2.42l-2,3.82v1.05c.4,0,.74.09,1.02.25.28.16.5.38.68.67.17.28.3.63.37,1.03.08.4.12.84.12,1.33,0,.45-.02.87-.07,1.28-.05.4-.13.75-.24,1.06-.11.31-.25.55-.42.73-.18.18-.39.27-.64.27-.46,0-.8-.28-1.02-.86-.22-.57-.33-1.48-.33-2.72h-1.2c0,.84.07,1.56.2,2.15s.31,1.07.54,1.44c.23.37.49.64.79.8.3.17.62.25.97.25.41,0,.78-.1,1.11-.29.33-.2.61-.48.84-.86.24-.37.41-.84.54-1.39.12-.55.18-1.17.18-1.87,0-.36-.02-.75-.07-1.18-.05-.43-.15-.85-.31-1.25s-.39-.76-.7-1.07c-.31-.31-.72-.54-1.24-.67l2.27-4.22Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="two" viewBox="0 0 18 20">
+			<g>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M11.58,16.81v-3.79h-1.06v2.67h-2.59c1.17-1.7,2.05-3.29,2.62-4.77.58-1.48.86-2.84.86-4.08,0-.52-.05-1.01-.16-1.46-.11-.45-.27-.83-.47-1.16-.21-.32-.46-.58-.77-.76-.31-.18-.66-.27-1.06-.27-.31,0-.61.09-.91.25-.29.16-.55.43-.78.8-.22.37-.41.84-.54,1.43-.14.59-.2,1.3-.2,2.15h1.24c0-1.23.1-2.14.31-2.71.21-.57.52-.86.92-.86.22,0,.41.07.56.21.16.14.28.32.37.55.09.23.16.5.2.79.04.3.07.61.07.94,0,.83-.09,1.62-.26,2.38-.17.76-.42,1.51-.75,2.25-.33.74-.72,1.49-1.18,2.24-.46.76-.99,1.55-1.57,2.37v.82h5.15Z"
+				      style="stroke-width: 0px;"/>
+			</g>
+		</symbol>
+		<symbol id="two_2" viewBox="0 0 18 20">
+			<g>
+				<rect width="18" height="20" style="fill: none; stroke-width: 0px;"/>
+				<path d="M11.58,16.81v-3.79h-1.06v2.67h-2.59c1.17-1.7,2.05-3.29,2.62-4.77.58-1.48.86-2.84.86-4.08,0-.52-.05-1.01-.16-1.46-.11-.45-.27-.83-.47-1.16-.21-.32-.46-.58-.77-.76-.31-.18-.66-.27-1.06-.27-.31,0-.61.09-.91.25-.29.16-.55.43-.78.8-.22.37-.41.84-.54,1.43-.14.59-.2,1.3-.2,2.15h1.24c0-1.23.1-2.14.31-2.71.21-.57.52-.86.92-.86.22,0,.41.07.56.21.16.14.28.32.37.55.09.23.16.5.2.79.04.3.07.61.07.94,0,.83-.09,1.62-.26,2.38-.17.76-.42,1.51-.75,2.25-.33.74-.72,1.49-1.18,2.24-.46.76-.99,1.55-1.57,2.37v.82h5.15Z"
+				      style="fill: #c83737; stroke-width: 0px;"/>
+			</g>
+		</symbol>
+	</defs>
+</svg>
