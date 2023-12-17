@@ -432,7 +432,8 @@ function gameScreen(options) {
 		cardNode.animate([
 			{transform: 'translate(100vw, -100vh)'},
 			{transform: 'translate(0, 0)'},
-		], {duration: 300}).onfinish = callback
+			{transform: 'translate(0, 0)'},
+		], {duration: 500}).onfinish = callback
 	}
 
 	function revealHoleCard(card) {
