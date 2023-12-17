@@ -401,21 +401,18 @@ function gameScreen(options) {
 	} // <-- handleGameEvent
 
 	function clearTable(advance) {
-		let cards = elements.region.querySelectorAll('[data-slot=card]')
-		let cardsToRemove = cards.length
-
-		if (!cardsToRemove) advance()
-
-		for (let i = 0, card; card = cards[i]; i++) {
-			let animation = card.animate([
+		let cards = [...elements.region.querySelectorAll('[data-slot=card]')]
+		!function removeCard() {
+			let card = cards.shift()
+			if (!card) advance()
+			card.animate([
+				{transform: 'translate(0, 0)'},
 				{transform: 'translate(-100vw, -100vh)'}
-			], {duration: 300, delay: i * 200})
-			animation.onfinish = function () {
+			], {duration: 300}).onfinish = function () {
 				card.remove()
-				cardsToRemove--
-				if (!cardsToRemove) advance()
+				removeCard()
 			}
-		}
+		}()
 	}
 
 	function renderNextDealerCard(card, advance) {
@@ -432,7 +429,7 @@ function gameScreen(options) {
 	function animateCardDeal(cardNode, callback) {
 		cardNode.animate([
 			{transform: 'translate(100vw, -100vh)'},
-			{transform: 'none'},
+			{transform: 'translate(0, 0)'},
 		], {duration: 300}).onfinish = callback
 	}
 
