@@ -1,6 +1,6 @@
-# Blackjack 1011
+# Blackjack 10101
 
-Browser-based Blackjack 1011 game.
+Browser-based Blackjack 10101 game.
 
 ## Starting the development server
 
