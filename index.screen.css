@@ -185,20 +185,15 @@ body {
 }
 
 .card {
+	flex: 1;
+	min-width: 2em;
 	height: 100%;
 	display: flex;
 	justify-content: center;
 }
 
-.card:not(:last-child) {
-	min-width: 1em; /* NB: minimum visible portion of the card */
-}
-
-.card:last-child {
-	min-width: max-content;
-}
-
 .card > svg {
+	position: absolute;
 	height: 100%;
 	aspect-ratio: 160/224;
 	padding: 0.1em;
