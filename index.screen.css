@@ -91,9 +91,8 @@ body {
 	padding: 3em;
 }
 
-#initial-screen h1 svg {
-	min-width: 40em;
-	max-width: calc(100vw - 2em);
+#initial-screen h1 img {
+	width: min(40em, calc(100vw - 2em));
 }
 
 #start-game {
@@ -146,7 +145,7 @@ body {
 	text-align: center;
 }
 
-#game-screen h1 svg {
+#game-screen h1 img {
 	height: 3em;
 	aspect-ratio: 726/186;
 }
