@@ -81,49 +81,61 @@ let Blackjack = (function () {
 		}
 	} // <-- createHandWithValue
 
-	function createPlayerHand() {
+	function createHand() {
 		let cards = []
-		let handValues = createHandValueCalculator(cards)
 
-		function addCard(card) {
-			cards.push(card)
+		function addCard(card, faceDown = false) {
+			if (faceDown)
+				cards.push({
+					suit: 'face-down',
+					value: 0,
+					face: card,
+				})
+			else
+				cards.push(card)
 		}
 
 		function getCards() {
 			return cards
 		}
 
+		function revealFaceDownCards() {
+			for (let card of cards)
+				if (card.suit == 'face-down') {
+					Object.assign(card, card.face)
+					delete card.face
+				}
+		}
+
 		return {
-			...handValues,
 			addCard,
+			revealFaceDownCards,
 			getCards,
+		}
+	} // <-- createHand
+
+	function createPlayerHand() {
+		let hand = createHand()
+		let handValue = createHandValueCalculator(hand.getCards())
+
+		return {
+			...hand,
+			...handValue,
 		}
 	} // <-- createPlayerHand
 
 	function createDealerHand() {
-		let cards = []
-		let holeShown = false
-		let handValues = createHandValueCalculator(cards)
+		let hand = createHand()
+		let handValue = createHandValueCalculator(hand.getCards())
 
 		function addCard(card) {
-			if (cards.length == 1) cards[1] = {suit: 'hole', value: 0, actual: card}
-			else cards.push(card)
-		}
-
-		function getCards() {
-			return cards
-		}
-
-		function revealHole() {
-			cards[1] = cards[1].actual
-			revealHole = function () {}
+			hand.addCard(card, hand.getCards().length == 1)
 		}
 
 		return {
-			...handValues,
+			...hand,
+			...handValue,
 			addCard,
-			getCards,
-			revealHole,
 		}
 	} // <-- createDealerHand
 
@@ -161,13 +173,13 @@ let Blackjack = (function () {
 		playerHand.addCard(deck.draw())
 		yield createGameEvent(DEAL_TO_PLAYER)
 
-		dealerHand.addCard(deck.draw())
+		dealerHand.addCard(deck.draw(), true)
 		yield createGameEvent(DEAL_TO_DEALER)
 
 		if (playerHand.isBlackjack()) { // Blackjack or push?
 			yield createGameEvent(PLAYER_HAS_BLACKJACK)
 
-			dealerHand.revealHole()
+			dealerHand.revealFaceDownCards()
 			yield createGameEvent(DEALER_REVEALS_HOLE)
 
 			if (dealerHand.isBlackjack()) // push
@@ -188,7 +200,7 @@ let Blackjack = (function () {
 			playerHand.addCard(deck.draw())
 			yield createGameEvent(DEAL_TO_PLAYER)
 			if (playerHand.isBust()) {
-				dealerHand.revealHole()
+				dealerHand.revealFaceDownCards()
 				yield createGameEvent(DEALER_REVEALS_HOLE)
 				yield createGameEvent(ITS_A_BUST)
 				return
@@ -199,7 +211,7 @@ let Blackjack = (function () {
 
 		yield createGameEvent(DEALERS_TURN)
 
-		dealerHand.revealHole()
+		dealerHand.revealFaceDownCards()
 		yield createGameEvent(DEALER_REVEALS_HOLE)
 
 		while (dealerHand.getValue() < 17) {
@@ -346,9 +358,8 @@ function gameScreen(options) {
 				break
 
 			case gameFlow.DEALER_REVEALS_HOLE:
-				revealHoleCard(gameState.dealerCards[1])
 				renderDealerHandValue(gameState.dealerHandValue)
-				game.advance()
+				revealHoleCard(gameState.dealerCards[1], game.advance)
 				break
 
 			case gameFlow.PLAYER_HAS_BLACKJACK:
@@ -418,13 +429,13 @@ function gameScreen(options) {
 	}
 
 	function renderNextDealerCard(card, advance) {
-		if (card.suit == 'hole') elements.dealerCards.append(renderHole())
-		else elements.dealerCards.append(renderCard(card))
+		if (card.suit == 'face-down') elements.dealerCards.append(renderFaceDownCard())
+		else elements.dealerCards.append(renderFaceUpCard(card))
 		animateCardDeal(elements.dealerCards.lastElementChild, advance)
 	}
 
 	function renderNextPlayerCard(card, advance) {
-		elements.playerCards.append(renderCard(card))
+		elements.playerCards.append(renderFaceUpCard(card))
 		animateCardDeal(elements.playerCards.lastElementChild, advance)
 	}
 
@@ -435,15 +446,22 @@ function gameScreen(options) {
 		], {duration: 500, easing: 'cubic-bezier(0, 0.7, 0, 1)'}).onfinish = callback
 	}
 
-	function revealHoleCard(card) {
-		let holeCardNode = elements.dealerCards.querySelector('[data-facedown]')
-		let realCard = renderCard(card)
-		let cardSlot = realCard.querySelector('[data-slot=card]')
-		cardSlot.dataset.facedown = true
-		holeCardNode.replaceWith(cardSlot)
-		requestAnimationFrame(function () {
-			delete cardSlot.dataset.facedown
-		})
+	function revealHoleCard(card, callback) {
+		let cardNode = elements.dealerCards.querySelector('[data-facedown]')
+		let cardFace = renderFaceUpCard(card)
+		delete cardNode.dataset.facedown
+		cardNode.animate([
+			{zIndex: 1},
+			{transform: `translateX(-5em) rotateY(90deg)`},
+		], {duration: 200}).onfinish = function () {
+			cardNode.replaceChildren(...cardFace.querySelector('[data-slot=card]').children)
+			cardNode.animate([
+				{transform: `translateX(-3em) rotateY(90deg)`},
+				{transform: `none`},
+			], {duration: 200}).onfinish = function () {
+				callback()
+			}
+		}
 	}
 
 	function renderPlayerHandValue(value) {
@@ -486,24 +504,25 @@ function gameScreen(options) {
 		outcome.textContent = 'It\'s a push'
 	}
 
-	function renderCard(card) {
+	function renderFaceUpCard(card) {
 		let cardNode = elements.cardTemplate.cloneNode(true)
 		cardNode.querySelector('[data-slot=suit]').textContent = card.suit
 		cardNode.querySelector('[data-slot=value]').textContent = formatCardValue(card.value)
-		cardNode.querySelector('[data-slot=graphic]').setAttribute(
-			'href',
-			'cards.svg#card-' + card.suit + '-' + card.value,
-		)
+		cardNode.querySelector('[data-slot=graphic]').setAttribute('href', getCardUrl(card))
 		return cardNode
 	}
 
-	function renderHole() {
+	function renderFaceDownCard() {
 		let cardNode = elements.cardTemplate.cloneNode(true)
 		let cardSlot = cardNode.querySelector('[data-slot=card]')
 		cardSlot.dataset.facedown = true
 		cardNode.querySelector('[data-slot=desc]').textContent = 'face-down card'
 		cardNode.querySelector('[data-slot=graphic]').setAttribute('href', 'cards.svg#card-back')
 		return cardNode
+	}
+
+	function getCardUrl(card) {
+		return 'cards.svg#card-' + card.suit + '-' + card.value
 	}
 
 	function hidePlayerActions() {
