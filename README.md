@@ -10,9 +10,12 @@ By default the server starts on port 3000.
 
 ## Running tests
 
-To execute all tests from the command line run: `npm test`
+Use the following npm scripts to run tests:
 
-To start the Playwright test UI run: `npm test:ui`
+- `npm test` - Run all test suites
+- `npm run test:libs` - Run library tests
+- `npm run test:func` - Run functional tests only
+- `npm run test:func:ui` - Bring up the Playwright test UI
 
 ## Making changes
 
