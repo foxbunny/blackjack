@@ -58,7 +58,7 @@ export async function startGame(page, options = {}) {
 	}`)
 
 	// Patch the deck module
-	await page.route('/deck.js', async function (route) {
+	await page.route('/lib/deck.js', async function (route) {
 		await route.fulfill({
 			path: path.join(mocksDir, 'deck.js'),
 		})

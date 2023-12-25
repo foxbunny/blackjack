@@ -6,7 +6,7 @@
   "scripts": {
     "test:func": "playwright test",
     "test:func:ui": "playwright test --ui",
-    "test:libs": "mocha",
+    "test:libs": "mocha '**/*.test.js' --ignore 'node_modules/**'",
     "test": "npm run test:libs && npm run test:func",
     "start": "npx http-server . --port 3000"
   },

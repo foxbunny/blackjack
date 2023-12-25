@@ -1,6 +1,6 @@
-export function createDeck() {
+export function createDeck(cards = window.__TEST_DECK) {
 	function draw() {
-		return window.__TEST_DECK?.shift() // NB: We use shift() instead of pop() to make tests more readable, in an actual deck it's irrelevant as it is shuffled
+		return cards?.shift() // NB: We use shift() instead of pop() to make tests more readable, in an actual deck it's irrelevant as it is shuffled
 	}
 
 	return {

@@ -10,6 +10,8 @@ By default the server starts on port 3000.
 
 ## Running tests
 
+**NOTE:** Please note that the test suite requires NodeJS v19.0.0 or higher.
+
 Use the following npm scripts to run tests:
 
 - `npm test` - Run all test suites
