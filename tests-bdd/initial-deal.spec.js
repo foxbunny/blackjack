@@ -96,3 +96,17 @@ test(
 		await expect(page.getByText('It\'s a push')).toBeVisible()
 	},
 )
+
+test(
+	'When the dealer deals the cards, and I get two aces, I don\'t bust',
+	async function ({page, context}) {
+		await rigTheDeck(context, [
+			{suit: 'spades', value: 1},
+			{suit: 'hearts', value: 9},
+			{suit: 'clubs', value: 1},
+			{suit: 'spades', value: 12},
+		])
+		await startGame(page)
+		await expect(page.getByText('Player\'s hand: 12')).toBeVisible()
+	},
+)

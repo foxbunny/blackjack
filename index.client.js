@@ -39,31 +39,30 @@ let Blackjack = (function () {
 
 	function createHandValueCalculator(cards) {
 		function getValue() {
-			let lowValue = 0
-			let highValue = 0
+			let value = 0
+			let numAces = 0
 
 			if (!cards.length) return 0
 
 			for (let card of cards) {
 				switch (card.value) {
 					case 1:
-						lowValue += 1
-						highValue += 11
+						numAces++
 						break
 					case 11:
 					case 12:
 					case 13:
-						lowValue += 10
-						highValue += 10
+						value += 10
 						break
 					default:
-						lowValue += card.value
-						highValue += card.value
+						value += card.value
 				}
 			}
-
-			if (highValue > 21) return lowValue
-			else return highValue
+			while (numAces--) {
+				if (value + 11 > 21) value += 1
+				else value += 11
+			}
+			return value
 		}
 
 		function isBlackjack() {
